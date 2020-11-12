@@ -52,7 +52,7 @@ Java SDK is available through Maven distribution. You can include the SDK to you
 
 2. Gradle
 
-    ```json
+    ```gradle
     repositories{
         maven { url "https://maven.zohodl.com" }
     }
