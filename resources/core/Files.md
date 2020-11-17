@@ -86,7 +86,7 @@ Contains methods for all possible [File operations](../../src/com/zoho/crm/api/f
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/file/ActionHandler.java)&gt;*** | uploadFile(***[BodyWrapper](#bodywrapper)*** request, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To upload a file and get the encrypted ID. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/file/ActionHandler.java)&gt;*** | uploadFiles(***[BodyWrapper](#bodywrapper)*** request, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To upload a file and get the encrypted ID. |
 | ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/file/ResponseHandler.java)&gt;*** | getFile(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the uploaded file through its encrypted ID.|
 ----
 
@@ -94,7 +94,7 @@ Contains methods for all possible [File operations](../../src/com/zoho/crm/api/f
 
 | Class                               |
 | :---------------------------------- |
-| [UploadFileParam](#uploadfileparam) |
+| [UploadFilesParam](#uploadfilesparam) |
 | [GetFileParam](#getfileparam)       |
 ----
 
@@ -120,9 +120,9 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 
 [source](../../src/com/zoho/crm/api/file/SuccessResponse.java)
 
-## UploadFileParam
+## UploadFilesParam
 
-Contains all possible parameters for the [Upload File operation](../../src/com/zoho/crm/api/file/FileOperations.java).
+Contains all possible parameters for the [Upload Files operation](../../src/com/zoho/crm/api/file/FileOperations.java).
 
 ### Fields
 
