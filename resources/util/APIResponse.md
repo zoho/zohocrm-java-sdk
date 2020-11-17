@@ -8,7 +8,7 @@ This class is the common API response object.
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [APIResponse](../../src/com/zoho/crm/api/util/APIResponse.java)(***HashMap&lt;String,String&gt;*** headers, ***int*** statusCode, ***[Model](../../src/com/zoho/crm/api/util/Model.java)*** object, ***boolean*** exe) |Creates an ***APIResponse&lt;T&gt;*** class instance with the specified parameters. |
+| [APIResponse](../../src/main/java/com/zoho/crm/api/util/APIResponse.java)(***HashMap&lt;String,String&gt;*** headers, ***int*** statusCode, ***[Model](../../src/main/java/com/zoho/crm/api/util/Model.java)*** object, ***boolean*** exe) |Creates an ***APIResponse&lt;T&gt;*** class instance with the specified parameters. |
 ----
 
 ## Methods
@@ -18,8 +18,8 @@ This class is the common API response object.
 | ***HashMap&lt;String,String&gt;*** | getHeaders() | The getter method to get the API response headers. |
 | ***int***     | getStatusCode() | The getter method to get the API response HTTP status code.      |
 | ***boolean*** | isExpected()    | The getter method to get an API response instance to check if the response is in the expected type or not. |
-| ***[Model](../../src/com/zoho/crm/api/util/Model.java)*** | getModel() | The getter method to get an API response instance to check if the response is in the expected type or not.  |
+| ***[Model](../../src/main/java/com/zoho/crm/api/util/Model.java)*** | getModel() | The getter method to get an API response instance to check if the response is in the expected type or not.  |
 | ***T***       | getObject()     | The method to get the API response POJO class instance.                |
 ----
 
-[source](../../src/com/zoho/crm/api/util/APIResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/util/APIResponse.java)

@@ -18,7 +18,7 @@ The Zoho CRM [Layouts Meta Data API](https://www.zoho.com/crm/developer/docs/api
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/layouts/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/layouts/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -34,11 +34,11 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/layouts/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/layouts/APIException.java)
 
 ## Layout
 
-Structure of Zoho CRM [Layout](../../src/com/zoho/crm/api/layouts/Layout.java).
+Structure of Zoho CRM [Layout](../../src/main/java/com/zoho/crm/api/layouts/Layout.java).
 
 ### Methods
 
@@ -70,32 +70,32 @@ Structure of Zoho CRM [Layout](../../src/com/zoho/crm/api/layouts/Layout.java).
 | ***void***           | setStatus(***Integer*** status)                   | The method to set the value of ***Layout Status***              |
 ----
 
-[source](../../src/com/zoho/crm/api/layouts/Layout.java)
+[source](../../src/main/java/com/zoho/crm/api/layouts/Layout.java)
 
 ## LayoutsOperations
 
-Contains methods for all possible [Layouts operations](../../src/com/zoho/crm/api/layouts/LayoutsOperations.java).
+Contains methods for all possible [Layouts operations](../../src/main/java/com/zoho/crm/api/layouts/LayoutsOperations.java).
 
 ### Constructors
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [LayoutsOperations](../../src/com/zoho/crm/api/layouts/LayoutsOperations.java)(***String*** module) | Creates a ***LayoutsOperations*** class instance with the ***moduleAPIName***. |
+| [LayoutsOperations](../../src/main/java/com/zoho/crm/api/layouts/LayoutsOperations.java)(***String*** module) | Creates a ***LayoutsOperations*** class instance with the ***moduleAPIName***. |
 ----
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/layouts/ResponseHandler.java)&gt;*** | getLayouts() | To get the details of all the layouts in a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/layouts/ResponseHandler.java)&gt;*** | getLayout(***Long*** id) | To get the details (metadata) of a specific layout in a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/layouts/ResponseHandler.java)&gt;*** | getLayouts() | To get the details of all the layouts in a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/layouts/ResponseHandler.java)&gt;*** | getLayout(***Long*** id) | To get the details (metadata) of a specific layout in a module. |
 ----
 
-[source](../../src/com/zoho/crm/api/layouts/LayoutsOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/layouts/LayoutsOperations.java)
 
 ## Properties
 
-Structure representing the Section's [properties](../../src/com/zoho/crm/api/layouts/Properties.java).
+Structure representing the Section's [properties](../../src/main/java/com/zoho/crm/api/layouts/Properties.java).
 
 ### Methods
 
@@ -109,11 +109,11 @@ Structure representing the Section's [properties](../../src/com/zoho/crm/api/lay
 | ***void***            | setMaximumRows(***Integer*** maximumRows)| The method to set the value of ***Properties MaximumRows*** |
 ----
 
-[source](../../src/com/zoho/crm/api/layouts/Properties.java)
+[source](../../src/main/java/com/zoho/crm/api/layouts/Properties.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/layouts/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/layouts/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -123,7 +123,7 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***                   | setLayouts(***List&lt;[Layout](#layout)&gt;*** layouts)| The method to set the list of obtained ***Layout*** instances.|
 ----
 
-[source](../../src/com/zoho/crm/api/layouts/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/layouts/ResponseWrapper.java)
 
 ## Section
 
@@ -155,4 +155,4 @@ Structure that represents the Layout's section.
 | ***void*** | setProperties(***[Properties](#properties)*** properties)     | The method to set the value of ***Section Properties*** |
 ----
 
-[source](../../src/com/zoho/crm/api/layouts/Section.java)
+[source](../../src/main/java/com/zoho/crm/api/layouts/Section.java)

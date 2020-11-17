@@ -1,6 +1,6 @@
 # OAuthToken
 
-implements [Token](../../src/com/zoho/api/authenticator/Token.java)
+implements [Token](../../src/main/java/com/zoho/api/authenticator/Token.java)
 
 This class maintains the tokens and authenticates every request.
 
@@ -12,8 +12,8 @@ The Zoho CRM [OAuth 2.0](https://www.zoho.com/crm/developer/docs/api/oauth-overv
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [OAuthToken](../../src/com/zoho/api/authenticator/OAuthToken.java)(***String*** clientID, ***String*** clientSecret, ***String*** token, ***[TokenType](#tokentype)*** type)  | Creates an OAuthToken class instance with the specified parameters. |
-| [OAuthToken](../../src/com/zoho/api/authenticator/OAuthToken.java)(***String*** clientID, ***String*** clientSecret, ***String*** token, ***[TokenType](#tokentype)*** type, ***String*** redirectURL)  | Creates an OAuthToken class instance with the specified parameters. |
+| [OAuthToken](../../src/main/java/com/zoho/api/authenticator/OAuthToken.java)(***String*** clientID, ***String*** clientSecret, ***String*** token, ***[TokenType](#tokentype)*** type)  | Creates an OAuthToken class instance with the specified parameters. |
+| [OAuthToken](../../src/main/java/com/zoho/api/authenticator/OAuthToken.java)(***String*** clientID, ***String*** clientSecret, ***String*** token, ***[TokenType](#tokentype)*** type, ***String*** redirectURL)  | Creates an OAuthToken class instance with the specified parameters. |
 ----
 
 ### clientID
@@ -57,5 +57,4 @@ A String containing the OAuth redirect URL.
 | ***Boolean*** | remove()          | The method to remove the current token from the Store.   |
 ----
 
-[source](../../src/com/zoho/api/authenticator/OAuthToken.java)
-
+[source](../../src/main/java/com/zoho/api/authenticator/OAuthToken.java)

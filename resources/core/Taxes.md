@@ -20,21 +20,21 @@ The Zoho CRM [Org Tax API](#Taxes) reference provides information about the poss
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/taxes/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations.
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/taxes/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations.
 
 ### Methods
 
 | Return Type | Method                                  | Description                                                      |
 | :---------- | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/taxes/ActionResponse.java)&gt;*** | getTaxes() | The method to get the list of obtained ***ActionResponse*** instances  |
-| ***void***  | setTaxes(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/taxes/ActionResponse.java)&gt;*** taxes)| The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/taxes/ActionResponse.java)&gt;*** | getTaxes() | The method to get the list of obtained ***ActionResponse*** instances  |
+| ***void***  | setTaxes(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/taxes/ActionResponse.java)&gt;*** taxes)| The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/taxes/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/taxes/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/taxes/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/taxes/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -50,7 +50,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***  | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/taxes/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/taxes/APIException.java)
 
 ## BodyWrapper
 
@@ -64,7 +64,7 @@ A structure that contains all possible keys of a single request.
 | ***void***  | setTaxes(***List&lt;[Tax](#tax)&gt;*** taxes) | The method to set the list of obtained ***Tax*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/taxes/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/taxes/BodyWrapper.java)
 
 ## Preference
 
@@ -80,11 +80,11 @@ Structure representing the properties of the Taxes set by the User.
 | ***void***    | setModifyTaxRates(***Boolean*** modifyTaxRates)   | The method to set the value of ***Preference ModifyTaxRates*** |
 ----
 
-[source](../../src/com/zoho/crm/api/taxes/Preference.java)
+[source](../../src/main/java/com/zoho/crm/api/taxes/Preference.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/taxes/ResponseWrapper.java) is returned for ***GET*** operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/taxes/ResponseWrapper.java) is returned for ***GET*** operations
 
 ### Methods
 
@@ -94,11 +94,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***  | setTaxes(***List&lt;[Tax](#tax)&gt;*** taxes) | The method to set the list of obtained ***Tax*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/taxes/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/taxes/ResponseWrapper.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/taxes/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/taxes/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -114,11 +114,11 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***  | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/taxes/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/taxes/SuccessResponse.java)
 
 ## Tax
 
-Structure of Zoho CRM [Tax](../../src/com/zoho/crm/api/taxes/Tax.java).
+Structure of Zoho CRM [Tax](../../src/main/java/com/zoho/crm/api/taxes/Tax.java).
 
 ### Methods
 
@@ -136,22 +136,22 @@ Structure of Zoho CRM [Tax](../../src/com/zoho/crm/api/taxes/Tax.java).
 | ***void***    | setSequenceNumber(***Integer*** sequenceNumber) | The method to set the value of ***ContactRole SequenceNumber*** |
 ----
 
-[source](../../src/com/zoho/crm/api/taxes/Tax.java)
+[source](../../src/main/java/com/zoho/crm/api/taxes/Tax.java)
 
 ## TaxesOperations
 
-Contains methods for all possible [TaxesOperations operations](../../src/com/zoho/crm/api/taxes/TaxesOperations.java).
+Contains methods for all possible [TaxesOperations operations](../../src/main/java/com/zoho/crm/api/taxes/TaxesOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/taxes/ResponseHandler.java)&gt;*** | getTaxes() | To get the taxes of your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/taxes/ActionHandler.java)&gt;*** | createTaxes(***[BodyWrapper](#bodywrapper)*** request) | To add taxes to your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/taxes/ActionHandler.java)&gt;*** | updateTaxes(***[BodyWrapper](#bodywrapper)*** request) | To update the existing taxes of your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/taxes/ActionHandler.java)&gt;*** | deleteTaxes(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete multiple taxes from your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/taxes/ResponseHandler.java)&gt;*** | getTax(***Long*** id) | To get the details of a specific tax. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/taxes/ActionHandler.java)&gt;*** | deleteTax(***Long*** id) | To delete a specific tax from your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/taxes/ResponseHandler.java)&gt;*** | getTaxes() | To get the taxes of your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/taxes/ActionHandler.java)&gt;*** | createTaxes(***[BodyWrapper](#bodywrapper)*** request) | To add taxes to your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/taxes/ActionHandler.java)&gt;*** | updateTaxes(***[BodyWrapper](#bodywrapper)*** request) | To update the existing taxes of your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/taxes/ActionHandler.java)&gt;*** | deleteTaxes(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete multiple taxes from your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/taxes/ResponseHandler.java)&gt;*** | getTax(***Long*** id) | To get the details of a specific tax. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/taxes/ActionHandler.java)&gt;*** | deleteTax(***Long*** id) | To delete a specific tax from your organization. |
 ----
 
 ### Inner Static Classes
@@ -161,11 +161,11 @@ Contains methods for all possible [TaxesOperations operations](../../src/com/zoh
 | [DeleteTaxesParam](#deletetaxesparam) |
 ----
 
-[source](../../src/com/zoho/crm/api/taxes/TaxesOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/taxes/TaxesOperations.java)
 
 ## DeleteTaxesParam
 
-Contains all possible parameters for the [Delete Taxes operation](../../src/com/zoho/crm/api/taxes/TaxesOperations.java).
+Contains all possible parameters for the [Delete Taxes operation](../../src/main/java/com/zoho/crm/api/taxes/TaxesOperations.java).
 
 ### Fields
 

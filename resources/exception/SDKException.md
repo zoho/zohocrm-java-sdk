@@ -10,12 +10,12 @@ This class is the common SDKException object. This stands as a POJO for the SDKE
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [SDKException](../../src/com/zoho/crm/api/exception/SDKException.java)(***String*** code, ***String*** message, ***Exception*** cause) | Creates an SDKException class instance with the specified parameters. |
-| [SDKException](../../src/com/zoho/crm/api/exception/SDKException.java)(***String*** code, ***JSONObject*** details) | Creates an SDKException class instance with the specified parameters. |
-| [SDKException](../../src/com/zoho/crm/api/exception/SDKException.java)(***String*** code, ***String*** message) | Creates an SDKException class instance with the specified parameters. |
-| [SDKException](../../src/com/zoho/crm/api/exception/SDKException.java)(***String*** message, ***Exception*** cause) | Creates an SDKException class instance with the specified parameters. |
-| [SDKException](../../src/com/zoho/crm/api/exception/SDKException.java)(***Exception*** cause) | Creates an SDKException class instance with the specified parameters. |
-| [SDKException](../../src/com/zoho/crm/api/exception/SDKException.java)(***String*** code, ***String*** message, ***JSONObject*** details, ***Exception*** cause) | Creates an SDKException class instance with the specified parameters. |
+| [SDKException](../../src/main/java/com/zoho/crm/api/exception/SDKException.java)(***String*** code, ***String*** message, ***Exception*** cause) | Creates an SDKException class instance with the specified parameters. |
+| [SDKException](../../src/main/java/com/zoho/crm/api/exception/SDKException.java)(***String*** code, ***JSONObject*** details) | Creates an SDKException class instance with the specified parameters. |
+| [SDKException](../../src/main/java/com/zoho/crm/api/exception/SDKException.java)(***String*** code, ***String*** message) | Creates an SDKException class instance with the specified parameters. |
+| [SDKException](../../src/main/java/com/zoho/crm/api/exception/SDKException.java)(***String*** message, ***Exception*** cause) | Creates an SDKException class instance with the specified parameters. |
+| [SDKException](../../src/main/java/com/zoho/crm/api/exception/SDKException.java)(***Exception*** cause) | Creates an SDKException class instance with the specified parameters. |
+| [SDKException](../../src/main/java/com/zoho/crm/api/exception/SDKException.java)(***String*** code, ***String*** message, ***JSONObject*** details, ***Exception*** cause) | Creates an SDKException class instance with the specified parameters. |
 ----
 
 ### code
@@ -44,4 +44,4 @@ A JSONObject containing the error response.
 | ***JSONObject*** | getDetails() | This is a getter method to get ***SDKException Details***. |
 ----
 
-[source](../../src/com/zoho/crm/api/exception/SDKException.java)
+[source](../../src/main/java/com/zoho/crm/api/exception/SDKException.java)

@@ -19,21 +19,21 @@ The Zoho CRM [RelatedRecords API](https://www.zoho.com/crm/developer/docs/api/ge
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/relatedrecords/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations.
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/relatedrecords/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations.
 
 ### Methods
 
 | Return Type                       | Method                                  | Description                                                      |
 | :-------------------------------  | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/relatedrecords/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances  |
-| ***void*** | setData(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/relatedrecords/ActionResponse.java)&gt;*** data)| The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/relatedrecords/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances  |
+| ***void*** | setData(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/relatedrecords/ActionResponse.java)&gt;*** data)| The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/relatedrecords/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/relatedrecords/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/relatedrecords/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/relatedrecords/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -49,7 +49,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/relatedrecords/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/relatedrecords/APIException.java)
 
 ## BodyWrapper
 
@@ -63,7 +63,7 @@ A structure that contains all possible keys of a single request.
 | ***void***            | setData(***List&lt;[Record](Record.md#record-1)&gt;*** data) | The method to set the list of obtained ***Record*** instances |
 ----
 
-[source](../../src/com/zoho/crm/api/relatedrecords/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/relatedrecords/BodyWrapper.java)
 
 ## FileBodyWrapper
 
@@ -77,29 +77,29 @@ Serves as the response for the downloading Attachment operation.
 | ***void***           | setFile(***[StreamWrapper](../util/StreamWrapper.md#streamwrapper)*** file)| The method to set the ***StreamWrapper*** class instances |
 ----
 
-[source](../../src/com/zoho/crm/api/relatedrecords/FileBodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/relatedrecords/FileBodyWrapper.java)
 
 ## RelatedRecordsOperations
 
-Contains methods for all possible [RelatedRecords operations](../../src/com/zoho/crm/api/relatedrecords/RelatedRecordsOperations.java).
+Contains methods for all possible [RelatedRecords operations](../../src/main/java/com/zoho/crm/api/relatedrecords/RelatedRecordsOperations.java).
 
 ### Constructors
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [RelatedRecordsOperations](../../src/com/zoho/crm/api/relatedrecords/RelatedRecordsOperations.java)(***String*** relatedListAPIName,***Long*** recordId, ***String*** moduleAPIName)  |  Creates a ***RelatedRecordsOperations*** class instance with the ***relatedListAPIName***, ***recordId*** and ***moduleAPIName***.|
+| [RelatedRecordsOperations](../../src/main/java/com/zoho/crm/api/relatedrecords/RelatedRecordsOperations.java)(***String*** relatedListAPIName,***Long*** recordId, ***String*** moduleAPIName)  |  Creates a ***RelatedRecordsOperations*** class instance with the ***relatedListAPIName***, ***recordId*** and ***moduleAPIName***.|
 ----
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                                |
 | :---------------------------------------- | :---------------------------------------------- | :--------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/relatedrecords/ResponseHandler.java)&gt;*** | getRelatedRecords(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the list of records from the related list of a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/relatedrecords/ActionHandler.java)&gt;*** | updateRelatedRecords(***[BodyWrapper](#bodywrapper)*** request) | To update the association/relation between the records. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/relatedrecords/ActionHandler.java)&gt;*** | delinkRecords(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete the association between the records. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/relatedrecords/ResponseHandler.java)&gt;*** | getRelatedRecord(***Long*** relatedRecordId, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the records from a specific related list of a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/relatedrecords/ActionHandler.java)&gt;*** | updateRelatedRecord(***Long*** relatedRecordId, ***[BodyWrapper](#bodywrapper)*** request)| To update the details of a specific record of a related list in a module.|
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/relatedrecords/ActionHandler.java)&gt;*** | delinkRecord(***Long*** relatedRecordId) | To delete a specific record from the related list of a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/relatedrecords/ResponseHandler.java)&gt;*** | getRelatedRecords(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the list of records from the related list of a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/relatedrecords/ActionHandler.java)&gt;*** | updateRelatedRecords(***[BodyWrapper](#bodywrapper)*** request) | To update the association/relation between the records. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/relatedrecords/ActionHandler.java)&gt;*** | delinkRecords(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete the association between the records. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/relatedrecords/ResponseHandler.java)&gt;*** | getRelatedRecord(***Long*** relatedRecordId, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the records from a specific related list of a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/relatedrecords/ActionHandler.java)&gt;*** | updateRelatedRecord(***Long*** relatedRecordId, ***[BodyWrapper](#bodywrapper)*** request)| To update the details of a specific record of a related list in a module.|
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/relatedrecords/ActionHandler.java)&gt;*** | delinkRecord(***Long*** relatedRecordId) | To delete a specific record from the related list of a module. |
 ----
 
 ### Inner Static Classes
@@ -112,11 +112,11 @@ Contains methods for all possible [RelatedRecords operations](../../src/com/zoho
 | [GetRelatedRecordHeader](#getrelatedrecordheader)   |
 ----
 
-[source](../../src/com/zoho/crm/api/relatedrecords/RelatedRecordsOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/relatedrecords/RelatedRecordsOperations.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/relatedrecords/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/relatedrecords/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -128,11 +128,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***| setInfo(***[Info](Record.md#info)*** info) | The method to set the ***Record*** response information. |
 ----
 
-[source](../../src/com/zoho/crm/api/relatedrecords/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/relatedrecords/ResponseWrapper.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/relatedrecords/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/relatedrecords/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -148,11 +148,11 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***                      | setStatus(***[Choice](../util/Choice.md#choice&lt;t>)&lt;String&gt;*** status)        | The method to set the value of ***status*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/relatedrecords/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/relatedrecords/SuccessResponse.java)
 
 ## GetRelatedRecordsParam
 
-Contains all possible parameters for the [GetRelatedRecords operation](../../src/com/zoho/crm/api/relatedrecords/RelatedRecordsOperations.java).
+Contains all possible parameters for the [GetRelatedRecords operation](../../src/main/java/com/zoho/crm/api/relatedrecords/RelatedRecordsOperations.java).
 
 ### Fields
 
@@ -164,7 +164,7 @@ Contains all possible parameters for the [GetRelatedRecords operation](../../src
 
 ## GetRelatedRecordsHeader
 
-Contains all possible headers for the [GetRelatedRecords operation](../../src/com/zoho/crm/api/record/RelatedRecordsOperations.java).
+Contains all possible headers for the [GetRelatedRecords operation](../../src/main/java/com/zoho/crm/api/record/RelatedRecordsOperations.java).
 
 ### Fields
 
@@ -175,7 +175,7 @@ Contains all possible headers for the [GetRelatedRecords operation](../../src/co
 
 ## DelinkRecordsParam
 
-Contains all possible parameters for the [DelinkRecords operation](../../src/com/zoho/crm/api/relatedrecords/RelatedRecordsOperations.java).
+Contains all possible parameters for the [DelinkRecords operation](../../src/main/java/com/zoho/crm/api/relatedrecords/RelatedRecordsOperations.java).
 
 ### Fields
 
@@ -186,7 +186,7 @@ Contains all possible parameters for the [DelinkRecords operation](../../src/com
 
 ## GetRelatedRecordHeader
 
-Contains all possible headers for the [GetRelatedRecord operation](../../src/com/zoho/crm/api/record/RelatedRecordsOperations.java).
+Contains all possible headers for the [GetRelatedRecord operation](../../src/main/java/com/zoho/crm/api/record/RelatedRecordsOperations.java).
 
 ### Fields
 

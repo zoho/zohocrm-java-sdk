@@ -26,21 +26,21 @@ The Zoho CRM [Users API](https://www.zoho.com/crm/developer/docs/api/get-users.h
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/users/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/users/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
 
 ### Methods
 
 | Return Type | Method                                  | Description                                                      |
 | :---------  | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/users/ActionResponse.java)&gt;*** | getUsers() | The method to get the list of obtained **ActionResponse** instances |
-| ***void***  | setUsers(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/users/ActionResponse.java)&gt;*** users) | The method to set the list of obtained **ActionResponse** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/users/ActionResponse.java)&gt;*** | getUsers() | The method to get the list of obtained **ActionResponse** instances |
+| ***void***  | setUsers(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/users/ActionResponse.java)&gt;*** users) | The method to set the list of obtained **ActionResponse** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/users/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/users/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/users/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/users/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -56,7 +56,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 
 ----
-[source](../../src/com/zoho/crm/api/users/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/users/APIException.java)
 
 ## BodyWrapper
 
@@ -70,7 +70,7 @@ A structure that contains all possible keys of a single request.
 | ***void*** | setUsers(***List&lt;[User](#user)&gt;*** users) | The method to set the list of obtained ***User*** instances |
 ----
 
-[source](../../src/com/zoho/crm/api/users/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/users/BodyWrapper.java)
 
 ## CustomizeInfo
 
@@ -94,7 +94,7 @@ Structure representing the properties of the User's customization information
 | ***void***    | setUnpinRecentItem(***String*** unpinRecentItem) | The method to set the value of ***CustomizeInfo UnpinRecentItem***|
 ----
 
-[source](../../src/com/zoho/crm/api/users/CustomizeInfo.java)
+[source](../../src/main/java/com/zoho/crm/api/users/CustomizeInfo.java)
 
 ## Info
 
@@ -114,7 +114,7 @@ Structure representing additional information about the retrieved data.
 | ***void***    | setMoreRecords(***Boolean*** moreRecords) | The method to set the value of ***Info MoreRecords*** |
 ----
 
-[source](../../src/com/zoho/crm/api/users/Info.java)
+[source](../../src/main/java/com/zoho/crm/api/users/Info.java)
 
 ## RequestWrapper
 
@@ -128,11 +128,11 @@ A structure that contains all possible keys of a single request.
 | ***void*** | setUsers(***List&lt;[User](#user)&gt;*** users)    | The method to set the list of obtained ***User*** instances  |
 ----
 
-[source](../../src/com/zoho/crm/api/users/RequestWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/users/RequestWrapper.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/users/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/users/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -144,7 +144,7 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***                      | setInfo(***[Info](#info)*** info)               | The method to set the value of ***Info*** instance.          |
 ----
 
-[source](../../src/com/zoho/crm/api/users/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/users/ResponseWrapper.java)
 
 ## Shift
 
@@ -160,11 +160,11 @@ Structure representing the User's shift information.
 | ***void***    | setName(***String*** name) | The method to set the value of ***Shift Name*** |
 ----
 
-[source](../../src/com/zoho/crm/api/users/Shift.java)
+[source](../../src/main/java/com/zoho/crm/api/users/Shift.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/users/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/users/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -180,7 +180,7 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/users/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/users/SuccessResponse.java)
 
 ## TabTheme
 
@@ -196,7 +196,7 @@ Structure representing the user's customized tab information.
 | ***void***    | setBackground(***String*** background) | The method to set the value of ***TabTheme Background*** |
 ----
 
-[source](../../src/com/zoho/crm/api/users/Shift.java)
+[source](../../src/main/java/com/zoho/crm/api/users/Shift.java)
 
 ## Territory
 
@@ -214,11 +214,11 @@ Structure representing the properties of the territory, to which the user is ass
 | ***void***         | setId(***Long*** id)             | The method to set the value of ***Territory Id***      |
 ----
 
-[source](../../src/com/zoho/crm/api/users/Territory.java)
+[source](../../src/main/java/com/zoho/crm/api/users/Territory.java)
 
 ## Theme
 
-Structure representing the user's [Theme](../../src/com/zoho/crm/api/users/Theme.java).
+Structure representing the user's [Theme](../../src/main/java/com/zoho/crm/api/users/Theme.java).
 
 ### Methods
 
@@ -238,11 +238,11 @@ Structure representing the user's [Theme](../../src/com/zoho/crm/api/users/Theme
 | ***void***         | setType(***String*** type)               | The method to set the value of ***Theme Type***                      |
 ----
 
-[source](../../src/com/zoho/crm/api/users/Theme.java)
+[source](../../src/main/java/com/zoho/crm/api/users/Theme.java)
 
 ## User
 
-Structure of Zoho CRM [User](../../src/com/zoho/crm/api/users/User.java).
+Structure of Zoho CRM [User](../../src/main/java/com/zoho/crm/api/users/User.java).
 
 ### Methods
 
@@ -330,22 +330,22 @@ Structure of Zoho CRM [User](../../src/com/zoho/crm/api/users/User.java).
 | ***void***           | setName(***String*** name)                   | The method to set the value of ***User Name*** |
 ----
 
-[source](../../src/com/zoho/crm/api/users/User.java)
+[source](../../src/main/java/com/zoho/crm/api/users/User.java)
 
 ## UsersOperations
 
-Contains methods for all possible [Users operations](../../src/com/zoho/crm/api/users/UsersOperations.java).
+Contains methods for all possible [Users operations](../../src/main/java/com/zoho/crm/api/users/UsersOperations.java).
 
 ### Methods
 
 | Return Type                         | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/users/ResponseHandler.java)&gt;*** | getUsers(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the list of users in your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/users/ActionHandler.java)&gt;*** | createUser(***[RequestWrapper](#requestwrapper)*** request) | To add a user to your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/users/ActionHandler.java)&gt;*** | updateUsers(***[BodyWrapper](#bodywrapper)*** request) | To update the existing users of your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/users/ResponseHandler.java)&gt;*** | getUser(***Long*** id, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the details of a specific user. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/users/ActionHandler.java)&gt;*** | updateUser(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of a specific user. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/users/ActionHandler.java)&gt;*** | deleteUser(***Long*** id) | To delete a specific user from your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/users/ResponseHandler.java)&gt;*** | getUsers(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the list of users in your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/users/ActionHandler.java)&gt;*** | createUser(***[RequestWrapper](#requestwrapper)*** request) | To add a user to your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/users/ActionHandler.java)&gt;*** | updateUsers(***[BodyWrapper](#bodywrapper)*** request) | To update the existing users of your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/users/ResponseHandler.java)&gt;*** | getUser(***Long*** id, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the details of a specific user. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/users/ActionHandler.java)&gt;*** | updateUser(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of a specific user. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/users/ActionHandler.java)&gt;*** | deleteUser(***Long*** id) | To delete a specific user from your organization. |
 ----
 
 ### Inner Static Classes
@@ -357,11 +357,11 @@ Contains methods for all possible [Users operations](../../src/com/zoho/crm/api/
 | [GetUserHeader](#getuserheader)   |
 ----
 
-[source](../../src/com/zoho/crm/api/users/UsersOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/users/UsersOperations.java)
 
 ## GetUsersParam
 
-Contains all possible parameters for the [Get Users operation](../../src/com/zoho/crm/api/users/UsersOperations.java).
+Contains all possible parameters for the [Get Users operation](../../src/main/java/com/zoho/crm/api/users/UsersOperations.java).
 
 ### Fields
 
@@ -374,7 +374,7 @@ Contains all possible parameters for the [Get Users operation](../../src/com/zoh
 
 ## GetUsersHeader
 
-Contains all possible headers for the [Get Users operation](../../src/com/zoho/crm/api/users/UsersOperations.java).
+Contains all possible headers for the [Get Users operation](../../src/main/java/com/zoho/crm/api/users/UsersOperations.java).
 
 ### Fields
 
@@ -385,7 +385,7 @@ Contains all possible headers for the [Get Users operation](../../src/com/zoho/c
 
 ## GetUserHeader
 
-Contains all possible headers for the [Get User operation](../../src/com/zoho/crm/api/users/UsersOperations.java).
+Contains all possible headers for the [Get User operation](../../src/main/java/com/zoho/crm/api/users/UsersOperations.java).
 
 ### Fields
 

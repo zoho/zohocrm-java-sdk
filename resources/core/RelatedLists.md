@@ -16,7 +16,7 @@ The Zoho CRM [RelatedLists Meta Data API](https://www.zoho.com/crm/developer/doc
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/relatedlists/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/relatedlists/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -32,11 +32,11 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/relatedlists/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/relatedlists/APIException.java)
 
 ## RelatedList
 
-Structure of Zoho CRM [RelatedList](../../src/com/zoho/crm/api/relatedlists/RelatedList.java).
+Structure of Zoho CRM [RelatedList](../../src/main/java/com/zoho/crm/api/relatedlists/RelatedList.java).
 
 ### Methods
 
@@ -66,32 +66,32 @@ Structure of Zoho CRM [RelatedList](../../src/com/zoho/crm/api/relatedlists/Rela
 | ***void***   | setLinkingmodule(***String*** linkingmodule) | The method to set the value of ***RelatedList Linkingmodule***       |
 ----
 
-[source](../../src/com/zoho/crm/api/relatedlists/RelatedList.java)
+[source](../../src/main/java/com/zoho/crm/api/relatedlists/RelatedList.java)
 
 ## RelatedListsOperations
 
-Contains methods for all possible [RelatedLists operations](../../src/com/zoho/crm/api/relatedlists/RelatedListsOperations.java).
+Contains methods for all possible [RelatedLists operations](../../src/main/java/com/zoho/crm/api/relatedlists/RelatedListsOperations.java).
 
 ### Constructors
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [RelatedListsOperations](../../src/com/zoho/crm/api/relatedlists/RelatedListsOperations.java)(***String*** module) | Creates a ***RelatedListsOperations*** class instance with the ***moduleAPIName***. |
+| [RelatedListsOperations](../../src/main/java/com/zoho/crm/api/relatedlists/RelatedListsOperations.java)(***String*** module) | Creates a ***RelatedListsOperations*** class instance with the ***moduleAPIName***. |
 ----
 
 ### Methods
 
 | Return Type                         | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/relatedlists/ResponseHandler.java)&gt;*** | getRelatedLists() | To get the details of all the related lists of a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/relatedlists/ResponseHandler.java)&gt;*** | getRelatedList(***Long*** id) | To get the details of a specific related list of a module.|
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/relatedlists/ResponseHandler.java)&gt;*** | getRelatedLists() | To get the details of all the related lists of a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/relatedlists/ResponseHandler.java)&gt;*** | getRelatedList(***Long*** id) | To get the details of a specific related list of a module.|
 ----
 
-[source](../../src/com/zoho/crm/api/relatedlists/RelatedListsOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/relatedlists/RelatedListsOperations.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/relatedlists/ResponseWrapper.java) is returned for GET operations.
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/relatedlists/ResponseWrapper.java) is returned for GET operations.
 
 ### Methods
 
@@ -101,4 +101,4 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void*** | setRelatedLists(***List&lt;[RelatedList](#RelatedList)&gt;*** relatedLists)| The method to set the list of obtained ***RelatedList*** instances.|
 ----
 
-[source](../../src/com/zoho/crm/api/relatedlists/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/relatedlists/ResponseWrapper.java)

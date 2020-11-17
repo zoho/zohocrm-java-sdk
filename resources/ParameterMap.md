@@ -12,4 +12,4 @@ This class represents the HTTP parameter name and value.
 | ***void***       | add([Param&lt;T&gt;](Param.md#param&lt;t>) param, T value) | The method to add the parameter name and value. |
 ----
 
-[source](../src/com/zoho/crm/api/ParameterMap.java)
+[source](../src/main/java/com/zoho/crm/api/ParameterMap.java)

@@ -19,21 +19,21 @@ The Zoho CRM [Notification API](https://www.zoho.com/crm/developer/docs/api/noti
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/notification/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations.
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/notification/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations.
 
 ### Methods
 
 | Return Type | Method                                  | Description                                                      |
 | :---------- | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/notification/ActionResponse.java)&gt;*** | getWatch() | The method to get the list of obtained ***ActionResponse*** instances. |
-| ***void***  | setWatch(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/notification/ActionResponse.java)&gt;*** watch)| The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/notification/ActionResponse.java)&gt;*** | getWatch() | The method to get the list of obtained ***ActionResponse*** instances. |
+| ***void***  | setWatch(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/notification/ActionResponse.java)&gt;*** watch)| The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/notification/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/notification/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/notification/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/notification/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -49,7 +49,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***  | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/notification/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/notification/APIException.java)
 
 ## BodyWrapper
 
@@ -63,7 +63,7 @@ A structure that contains all possible keys of a request.
 | ***void***  | setWatch(***List&lt;[Notification](#notification)&gt;*** watch) | The method to set the list of obtained ***Notification*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/notification/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/notification/BodyWrapper.java)
 
 ## Info
 
@@ -83,11 +83,11 @@ Structure representing additional information about the retrieved data.
 | ***void***    | setMoreRecords(***Boolean*** moreRecords) | The method to set the value of ***Info MoreRecords*** |
 ----
 
-[source](../../src/com/zoho/crm/api/notification/Info.java)
+[source](../../src/main/java/com/zoho/crm/api/notification/Info.java)
 
 ## Notification
 
-Structure of Zoho CRM [Notification](../../src/com/zoho/crm/api/notification/Notification.java).
+Structure of Zoho CRM [Notification](../../src/main/java/com/zoho/crm/api/notification/Notification.java).
 
 ### Methods
 
@@ -117,23 +117,23 @@ Structure of Zoho CRM [Notification](../../src/com/zoho/crm/api/notification/Not
 | ***void***       | setDeleteevents(***Boolean*** deleteevents)          | The method to set the value of ***Notification Deleteevents***  |
 ----
 
-[source](../../src/com/zoho/crm/api/notification/Notification.java)
+[source](../../src/main/java/com/zoho/crm/api/notification/Notification.java)
 
 ## NotificationOperations
 
-Contains methods for all possible [Notification operations](../../src/com/zoho/crm/api/notification/NotificationOperations.java).
+Contains methods for all possible [Notification operations](../../src/main/java/com/zoho/crm/api/notification/NotificationOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/notification/ActionHandler.java)&gt;*** | enableNotifications(***[BodyWrapper](#bodywrapper)*** request) | To enable instant notifications of actions performed on a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/notification/ResponseHandler.java)&gt;*** | getNotificationDetails(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the details of the notifications enabled by the user.
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/notification/ActionHandler.java)&gt;*** | enableNotifications(***[BodyWrapper](#bodywrapper)*** request) | To enable instant notifications of actions performed on a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/notification/ResponseHandler.java)&gt;*** | getNotificationDetails(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the details of the notifications enabled by the user.
 |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/notification/ActionHandler.java)&gt;*** | updateNotifications(***[BodyWrapper](#bodywrapper)*** request) | To update the details of the notifications enabled by a user. All the provided details would be persisted and rest of the details would be removed.|
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/notification/ActionHandler.java)&gt;*** | updateNotification(***[BodyWrapper](#bodywrapper)*** request) | To update only specific details of a specific notification enabled by the user. All the provided details would be persisted and rest of the details will not be removed.|
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/notification/ActionHandler.java)&gt;*** | disableNotifications(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To stop all the instant notifications enabled by the user for a channel.|
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/notification/ActionHandler.java)&gt;*** | disableNotification(***[BodyWrapper](#bodywrapper)*** request) | To disable notifications for the specified events in a channel.
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/notification/ActionHandler.java)&gt;*** | updateNotifications(***[BodyWrapper](#bodywrapper)*** request) | To update the details of the notifications enabled by a user. All the provided details would be persisted and rest of the details would be removed.|
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/notification/ActionHandler.java)&gt;*** | updateNotification(***[BodyWrapper](#bodywrapper)*** request) | To update only specific details of a specific notification enabled by the user. All the provided details would be persisted and rest of the details will not be removed.|
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/notification/ActionHandler.java)&gt;*** | disableNotifications(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To stop all the instant notifications enabled by the user for a channel.|
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/notification/ActionHandler.java)&gt;*** | disableNotification(***[BodyWrapper](#bodywrapper)*** request) | To disable notifications for the specified events in a channel.
 |
 ----
 
@@ -145,11 +145,11 @@ Contains methods for all possible [Notification operations](../../src/com/zoho/c
 | [DisableNotificationsParam](#disablenotificationsparam)     |
 ----
 
-[source](../../src/com/zoho/crm/api/notification/NotificationOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/notification/NotificationOperations.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/notification/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/notification/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -159,11 +159,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***  | setWatch(***List&lt;[Notification](#notification)&gt;*** watch) | The method to set the list of obtained ***Notification*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/notification/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/notification/ResponseWrapper.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/notification/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/notification/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -179,11 +179,11 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***  | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/notification/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/notification/SuccessResponse.java)
 
 ## GetNotificationDetailsParam
 
-Contains all possible parameters for the [Get Notification Details operation](../../src/com/zoho/crm/api/notification/NotificationOperations.java).
+Contains all possible parameters for the [Get Notification Details operation](../../src/main/java/com/zoho/crm/api/notification/NotificationOperations.java).
 
 ### Fields
 
@@ -197,7 +197,7 @@ Contains all possible parameters for the [Get Notification Details operation](..
 
 ## DisableNotificationsParam
 
-Contains all possible parameters for the [Disable Notifications operation](../../src/com/zoho/crm/api/notification/NotificationOperations.java).
+Contains all possible parameters for the [Disable Notifications operation](../../src/main/java/com/zoho/crm/api/notification/NotificationOperations.java).
 
 ### Fields
 

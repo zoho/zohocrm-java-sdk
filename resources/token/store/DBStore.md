@@ -1,6 +1,6 @@
 # DBStore
 
-implements ***[TokenStore](../../../src/com/zoho/api/authenticator/store/TokenStore.java)***
+implements ***[TokenStore](../../../src/main/java/com/zoho/api/authenticator/store/TokenStore.java)***
 
 This class stores the user token details to the MySQL DataBase.
 
@@ -10,8 +10,8 @@ This class stores the user token details to the MySQL DataBase.
 
 | Constructor                                                          | Description                                                                     |
 | :------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
-| [DBStore](../../../src/com/zoho/api/authenticator/store/DBStore.java)() | Create a DBStore class instance with the following default values.           |
-| [DBStore](../../../src/com/zoho/api/authenticator/store/DBStore.java)(***String*** host, ***String*** databaseName, ***String*** userName, ***String*** password, ***String*** portNumber) | Creates a DBStore class instance with the specified parameters. |
+| [DBStore](../../../src/main/java/com/zoho/api/authenticator/store/DBStore.java)() | Create a DBStore class instance with the following default values.           |
+| [DBStore](../../../src/main/java/com/zoho/api/authenticator/store/DBStore.java)(***String*** host, ***String*** databaseName, ***String*** userName, ***String*** password, ***String*** portNumber) | Creates a DBStore class instance with the specified parameters. |
 ----
 
 ### host
@@ -38,11 +38,11 @@ A String containing the DataBase port number. The default value is `3306`.
 
 | Return Type   | Method            | Description                                              |
 | :------------ | :---------------- | :------------------------------------------------------- |
-| ***[Token](../../../src/com/zoho/api/authenticator/Token.java)***  | getToken(***[UserSignature](../../UserSignature.md#usersignature)*** user, ***[Token](../../../src/com/zoho/api/authenticator/Token.java)*** token) | The method to get the user's token details. |
-| ***void***  | saveToken(***[UserSignature](../../UserSignature.md#usersignature)*** user, ***[Token](../../../src/com/zoho/api/authenticator/Token.java)*** token) | The method to store the user's token details. |
-| ***void***  | deleteToken(***[Token](../../../src/com/zoho/api/authenticator/Token.java)*** token) | The method to delete the user's token details. |
-| ***List&lt;[Token](../../../src/com/zoho/api/authenticator/Token.java)&gt;***  | getTokens() | The method to retrieve all the stored tokens. |
+| ***[Token](../../../src/main/java/com/zoho/api/authenticator/Token.java)***  | getToken(***[UserSignature](../../UserSignature.md#usersignature)*** user, ***[Token](../../../src/main/java/com/zoho/api/authenticator/Token.java)*** token) | The method to get the user's token details. |
+| ***void***  | saveToken(***[UserSignature](../../UserSignature.md#usersignature)*** user, ***[Token](../../../src/main/java/com/zoho/api/authenticator/Token.java)*** token) | The method to store the user's token details. |
+| ***void***  | deleteToken(***[Token](../../../src/main/java/com/zoho/api/authenticator/Token.java)*** token) | The method to delete the user's token details. |
+| ***List&lt;[Token](../../../src/main/java/com/zoho/api/authenticator/Token.java)&gt;***  | getTokens() | The method to retrieve all the stored tokens. |
 | ***void***  | deleteTokens() | The method to delete all the stored tokens. |
 ----
 
-[source](../../../src/com/zoho/api/authenticator/store/DBStore.java)
+[source](../../../src/main/java/com/zoho/api/authenticator/store/DBStore.java)

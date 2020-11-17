@@ -8,7 +8,7 @@ This class represents the Logger level and log file path.
 
 | Return Type      | Method       | Description                                                |
 | :--------------- | :----------- | :--------------------------------------------------------- |
-| ***[Logger](../../src/com/zoho/api/logger/Logger.java)*** | getInstance(***[Levels](#levels)*** level, ***String*** filePath) | Creates a Logger class instance with the specified log level and file path. |
+| ***[Logger](../../src/main/java/com/zoho/api/logger/Logger.java)*** | getInstance(***[Levels](#levels)*** level, ***String*** filePath) | Creates a Logger class instance with the specified log level and file path. |
 ----
 
 ### Levels
@@ -35,4 +35,4 @@ A String representing the Absolute file path where messages need to be logged.
 | ***String*** | getFilePath() | The getter method to get log the file path. |
 ----
 
-[source](../../src/com/zoho/api/logger/Logger.java)
+[source](../../src/main/java/com/zoho/api/logger/Logger.java)

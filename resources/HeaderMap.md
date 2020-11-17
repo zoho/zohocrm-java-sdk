@@ -12,4 +12,4 @@ This class represents the HTTP header name and value.
 | ***void***       | add([Header&lt;T&gt;](Header.md#header&lt;t>&lt;t>) header, T value) | The method to add the header name and value. |
 ----
 
-[source](../src/com/zoho/crm/api/HeaderMap.java)
+[source](../src/main/java/com/zoho/crm/api/HeaderMap.java)

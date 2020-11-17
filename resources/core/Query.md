@@ -16,7 +16,7 @@ The Zoho CRM [CRM Object Query Language(COQL) API](https://www.zoho.com/crm/deve
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/query/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/query/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -32,7 +32,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***  | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/query/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/query/APIException.java)
 
 ## BodyWrapper
 
@@ -46,24 +46,24 @@ A structure that contains all possible keys of a single request.
 | ***void***   | setSelectQuery(***String*** selectQuery) | The method to set the input select query. |
 ----
 
-[source](../../src/com/zoho/crm/api/query/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/query/BodyWrapper.java)
 
 ## QueryOperations
 
-Contains methods for all possible [Query operations](../../src/com/zoho/crm/api/query/QueryOperations.java).
+Contains methods for all possible [Query operations](../../src/main/java/com/zoho/crm/api/query/QueryOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/query/ResponseHandler.java)&gt;*** | getRecords(***[BodyWrapper](#bodywrapper)*** request) | To get records from the module through a COQL query. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/query/ResponseHandler.java)&gt;*** | getRecords(***[BodyWrapper](#bodywrapper)*** request) | To get records from the module through a COQL query. |
 ----
 
-[source](../../src/com/zoho/crm/api/query/QueryOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/query/QueryOperations.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/query/ResponseWrapper.java) is returned for GET operations.
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/query/ResponseWrapper.java) is returned for GET operations.
 
 ### Methods
 
@@ -75,4 +75,4 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***          | setInfo(***[Info](Record.md#info)*** info)                 | The method to set the value of ***Info*** instance.            |
 ----
 
-[source](../../src/com/zoho/crm/api/query/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/query/ResponseWrapper.java)

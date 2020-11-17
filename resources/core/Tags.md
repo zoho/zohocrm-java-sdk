@@ -24,21 +24,21 @@ The Zoho CRM [Tags API](https://www.zoho.com/crm/developer/docs/api/get-tag-list
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/tags/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/tags/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
 
 ### Methods
 
 | Return Type | Method                                  | Description                                                      |
 | :---------  | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/tags/ActionResponse.java)&gt;*** | getTags() | The method to get the list of obtained ***ActionResponse*** instances |
-| ***void***  | setTags(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/tags/ActionResponse.java)&gt;*** tags) | The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/tags/ActionResponse.java)&gt;*** | getTags() | The method to get the list of obtained ***ActionResponse*** instances |
+| ***void***  | setTags(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/tags/ActionResponse.java)&gt;*** tags) | The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/tags/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/tags/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/tags/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -54,7 +54,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 
 ----
-[source](../../src/com/zoho/crm/api/tags/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/APIException.java)
 
 ## BodyWrapper
 
@@ -68,7 +68,7 @@ A structure that contains all possible keys of a single request.
 | ***void*** | setTags(***List&lt;[Tag](#tag)&gt;*** tags) | The method to set the list of obtained ***Tag*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/tags/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/BodyWrapper.java)
 
 ## ConflictWrapper
 
@@ -82,11 +82,11 @@ A structure that contains all possible keys of a single Merge Tag request.
 | ***void***   | setConflictId(***String*** conflictId) | The method to set the value of ***ConflictWrapper ConflictId*** |
 ----
 
-[source](../../src/com/zoho/crm/api/tags/ConflictWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/ConflictWrapper.java)
 
 ## CountWrapper
 
-After a successful **API** request, an instance of [CountWrapper](../../src/com/zoho/crm/api/tags/CountWrapper.java) is returned for ***Get Record Count For Tag***  operation
+After a successful **API** request, an instance of [CountWrapper](../../src/main/java/com/zoho/crm/api/tags/CountWrapper.java) is returned for ***Get Record Count For Tag***  operation
 
 ### Methods
 
@@ -96,7 +96,7 @@ After a successful **API** request, an instance of [CountWrapper](../../src/com/
 | ***void***   | setCount(***String*** count) | The method to set the value of ***CountWrapper Count*** |
 ----
 
-[source](../../src/com/zoho/crm/api/tags/CountWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/CountWrapper.java)
 
 ## Info
 
@@ -112,7 +112,7 @@ Structure representing additional information about the retrieved data.
 | ***void***    | setAllowedCount(***Integer*** allowedCount) | The method to set the value of ***Info AllowedCount*** |
 ----
 
-[source](../../src/com/zoho/crm/api/tags/Info.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/Info.java)
 
 ## MergeWrapper
 
@@ -126,18 +126,18 @@ Structure that serves as the request for Merge Tags operation.
 | ***void*** | setTags(***List&lt;[ConflictWrapper](#conflictwrapper)&gt;*** tags)  | The method to set the list of obtained ***ConflictWrapper*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/tags/MergeWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/MergeWrapper.java)
 
 ## RecordActionWrapper
 
-After a successful **API** request involving record, an instance of [RecordActionWrapper](../../src/com/zoho/crm/api/tags/RecordActionWrapper.java) is returned for **POST** operations
+After a successful **API** request involving record, an instance of [RecordActionWrapper](../../src/main/java/com/zoho/crm/api/tags/RecordActionWrapper.java) is returned for **POST** operations
 
 ### Methods
 
 | Return Type                     | Method                                          | Description                                                             |
 | :------------------------------ | :---------------------------------------------- | :---------------------------------------------------------------------- |
-| ***List&lt;[RecordActionResponse](../../src/com/zoho/crm/api/tags/RecordActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***RecordActionResponse*** instances. |
-| ***void***    | setData(***List&lt;[RecordActionResponse](../../src/com/zoho/crm/api/tags/RecordActionResponse.java)&gt;*** data) | The method to set the list of obtained ***RecordActionResponse*** instances. |
+| ***List&lt;[RecordActionResponse](../../src/main/java/com/zoho/crm/api/tags/RecordActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***RecordActionResponse*** instances. |
+| ***void***    | setData(***List&lt;[RecordActionResponse](../../src/main/java/com/zoho/crm/api/tags/RecordActionResponse.java)&gt;*** data) | The method to set the list of obtained ***RecordActionResponse*** instances. |
 | ***Boolean*** | getWfScheduler()                           | The method to get the value of ***RecordActionWrapper WfScheduler***.  |
 | ***void***    | setWfScheduler(***Boolean*** wfScheduler)  | The method to set the value of ***RecordActionWrapper WfScheduler***.  |
 | ***String***  | getSuccessCount()                          | The method to get the value of ***RecordActionWrapper SuccessCount***. |
@@ -146,11 +146,11 @@ After a successful **API** request involving record, an instance of [RecordActio
 | ***void***    | setLockedCount(***Integer*** lockedCount)  | The method to set the value of ***RecordActionWrapper LockedCount***.  |
 ----
 
-[source](../../src/com/zoho/crm/api/tags/RecordActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/RecordActionWrapper.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/tags/ResponseWrapper.java) is returned for GET operations.
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/tags/ResponseWrapper.java) is returned for GET operations.
 
 ### Methods
 
@@ -162,11 +162,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***                    | setInfo(***[Info](#info)*** info)           | The method to set the value of ***Info*** instance.          |
 ----
 
-[source](../../src/com/zoho/crm/api/tags/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/ResponseWrapper.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/tags/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/tags/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -182,11 +182,11 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***     | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/tags/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/SuccessResponse.java)
 
 ## Tag
 
-Structure of Zoho CRM [Tag](../../src/com/zoho/crm/api/tags/Tag.java).
+Structure of Zoho CRM [Tag](../../src/main/java/com/zoho/crm/api/tags/Tag.java).
 
 ### Methods
 
@@ -206,27 +206,27 @@ Structure of Zoho CRM [Tag](../../src/com/zoho/crm/api/tags/Tag.java).
 | ***void***    | setCreatedBy(***[User](Users.md#user)*** createdBy)   | The method to set the value of ***Tag CreatedBy***    |
 ----
 
-[source](../../src/com/zoho/crm/api/tags/Tag.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/Tag.java)
 
 ## TagsOperations
 
-Contains methods for all possible [Tags operations](../../src/com/zoho/crm/api/tags/TagsOperations.java).
+Contains methods for all possible [Tags operations](../../src/main/java/com/zoho/crm/api/tags/TagsOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/tags/ResponseHandler.java)&gt;*** | getTags(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the list of all tags in your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/tags/ActionHandler.java)&gt;*** | createTags(***[BodyWrapper](#bodywrapper)*** request, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To create tags. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/tags/ActionHandler.java)&gt;*** | updateTags(***[BodyWrapper](#bodywrapper)*** request, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To update multiple tags. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/tags/ActionHandler.java)&gt;*** | updateTag(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To update a specific tag. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/tags/ActionHandler.java)&gt;*** | deleteTag( ***Long*** id) | To delete a specific tag from the module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/tags/ActionHandler.java)&gt;*** | mergeTags(***Long*** id, ***[MergeWrapper](#mergewrapper)*** request) | To merge two tags. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[RecordActionHandler](../../src/com/zoho/crm/api/tags/RecordActionHandler.java)&gt;*** | addTagsToRecord(***Long*** recordId, ***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To add tags to a specific record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[RecordActionHandler](../../src/com/zoho/crm/api/tags/RecordActionHandler.java)&gt;*** | removeTagsFromRecord(***Long*** recordId, ***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To remove tags from a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[RecordActionHandler](../../src/com/zoho/crm/api/tags/RecordActionHandler.java)&gt;*** | addTagsToMultipleRecords(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To add tags to multiple records. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[RecordActionHandler](../../src/com/zoho/crm/api/tags/RecordActionHandler.java)&gt;*** | removeTagsFromMultipleRecords(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To remove tags from multiple records. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[RecordActionHandler](../../src/com/zoho/crm/api/tags/RecordActionHandler.java)&gt;*** | getRecordCountForTag(***Long*** id, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the record count for a tag. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/tags/ResponseHandler.java)&gt;*** | getTags(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the list of all tags in your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/tags/ActionHandler.java)&gt;*** | createTags(***[BodyWrapper](#bodywrapper)*** request, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To create tags. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/tags/ActionHandler.java)&gt;*** | updateTags(***[BodyWrapper](#bodywrapper)*** request, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To update multiple tags. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/tags/ActionHandler.java)&gt;*** | updateTag(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To update a specific tag. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/tags/ActionHandler.java)&gt;*** | deleteTag( ***Long*** id) | To delete a specific tag from the module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/tags/ActionHandler.java)&gt;*** | mergeTags(***Long*** id, ***[MergeWrapper](#mergewrapper)*** request) | To merge two tags. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[RecordActionHandler](../../src/main/java/com/zoho/crm/api/tags/RecordActionHandler.java)&gt;*** | addTagsToRecord(***Long*** recordId, ***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To add tags to a specific record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[RecordActionHandler](../../src/main/java/com/zoho/crm/api/tags/RecordActionHandler.java)&gt;*** | removeTagsFromRecord(***Long*** recordId, ***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To remove tags from a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[RecordActionHandler](../../src/main/java/com/zoho/crm/api/tags/RecordActionHandler.java)&gt;*** | addTagsToMultipleRecords(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To add tags to multiple records. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[RecordActionHandler](../../src/main/java/com/zoho/crm/api/tags/RecordActionHandler.java)&gt;*** | removeTagsFromMultipleRecords(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To remove tags from multiple records. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[RecordActionHandler](../../src/main/java/com/zoho/crm/api/tags/RecordActionHandler.java)&gt;*** | getRecordCountForTag(***Long*** id, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the record count for a tag. |
 ----
 
 ### Inner Static Classes
@@ -244,11 +244,11 @@ Contains methods for all possible [Tags operations](../../src/com/zoho/crm/api/t
 | [GetRecordCountForTagParam](#getrecordcountfortagparam)                   |
 ----
 
-[source](../../src/com/zoho/crm/api/tags/TagsOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/tags/TagsOperations.java)
 
 ## GetTagsParam
 
-Contains all possible parameters for the [Get Tags operation](../../src/com/zoho/crm/api/tags/TagsOperations.java).
+Contains all possible parameters for the [Get Tags operation](../../src/main/java/com/zoho/crm/api/tags/TagsOperations.java).
 
 ### Fields
 
@@ -260,7 +260,7 @@ Contains all possible parameters for the [Get Tags operation](../../src/com/zoho
 
 ## CreateTagsParam
 
-Contains all possible parameters for the [Create Tags operation](../../src/com/zoho/crm/api/tags/TagsOperations.java).
+Contains all possible parameters for the [Create Tags operation](../../src/main/java/com/zoho/crm/api/tags/TagsOperations.java).
 
 ### Fields
 
@@ -271,7 +271,7 @@ Contains all possible parameters for the [Create Tags operation](../../src/com/z
 
 ## UpdateTagsParam
 
-Contains all possible parameters for the [Update Tags operation](../../src/com/zoho/crm/api/tags/TagsOperations.java).
+Contains all possible parameters for the [Update Tags operation](../../src/main/java/com/zoho/crm/api/tags/TagsOperations.java).
 
 ### Fields
 
@@ -282,7 +282,7 @@ Contains all possible parameters for the [Update Tags operation](../../src/com/z
 
 ## UpdateTagParam
 
-Contains all possible parameters for the [Update Tag operation](../../src/com/zoho/crm/api/tags/TagsOperations.java).
+Contains all possible parameters for the [Update Tag operation](../../src/main/java/com/zoho/crm/api/tags/TagsOperations.java).
 
 ### Fields
 
@@ -293,7 +293,7 @@ Contains all possible parameters for the [Update Tag operation](../../src/com/zo
 
 ## AddTagsToRecordParam
 
-Contains all possible parameters for the [Add Tags To Record operation](../../src/com/zoho/crm/api/tags/TagsOperations.java).
+Contains all possible parameters for the [Add Tags To Record operation](../../src/main/java/com/zoho/crm/api/tags/TagsOperations.java).
 
 ### Fields
 
@@ -305,7 +305,7 @@ Contains all possible parameters for the [Add Tags To Record operation](../../sr
 
 ## RemoveTagsFromRecordParam
 
-Contains all possible parameters for the [Remove Tags From Record operation](../../src/com/zoho/crm/api/tags/TagsOperations.java).
+Contains all possible parameters for the [Remove Tags From Record operation](../../src/main/java/com/zoho/crm/api/tags/TagsOperations.java).
 
 ### Fields
 
@@ -316,7 +316,7 @@ Contains all possible parameters for the [Remove Tags From Record operation](../
 
 ## AddTagsToMultipleRecordsParam
 
-Contains all possible parameters for the [Add Tags To Multiple Records operation](../../src/com/zoho/crm/api/tags/TagsOperations.java).
+Contains all possible parameters for the [Add Tags To Multiple Records operation](../../src/main/java/com/zoho/crm/api/tags/TagsOperations.java).
 
 ### Fields
 
@@ -329,7 +329,7 @@ Contains all possible parameters for the [Add Tags To Multiple Records operation
 
 ## RemoveTagsFromMultipleRecordsParam
 
-Contains all possible parameters for the [Remove Tags From Multiple Records operation](../../src/com/zoho/crm/api/tags/TagsOperations.java).
+Contains all possible parameters for the [Remove Tags From Multiple Records operation](../../src/main/java/com/zoho/crm/api/tags/TagsOperations.java).
 
 ### Fields
 
@@ -341,7 +341,7 @@ Contains all possible parameters for the [Remove Tags From Multiple Records oper
 
 ## GetRecordCountForTagParam
 
-Contains all possible parameters for the [Get Record Count For Tag operation](../../src/com/zoho/crm/api/tags/TagsOperations.java).
+Contains all possible parameters for the [Get Record Count For Tag operation](../../src/main/java/com/zoho/crm/api/tags/TagsOperations.java).
 
 ### Fields
 

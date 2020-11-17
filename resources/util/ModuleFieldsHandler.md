@@ -14,4 +14,4 @@ The class contains the methods to manipulate the fields of all the modules.
 | ***void***  | refreshAllModules()   | The method to force-refresh fields of all the available modules. |
 ----
 
-[source](../../src/com/zoho/crm/api/util/ModuleFieldsHandler.java)
+[source](../../src/main/java/com/zoho/crm/api/util/ModuleFieldsHandler.java)

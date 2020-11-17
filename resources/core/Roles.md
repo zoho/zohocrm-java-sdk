@@ -16,7 +16,7 @@ The Zoho CRM [Roles API](https://www.zoho.com/crm/developer/docs/api/get-roles.h
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/roles/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/roles/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -32,11 +32,11 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/roles/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/roles/APIException.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/roles/ResponseWrapper.java) is returned for **GET** operations.
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/roles/ResponseWrapper.java) is returned for **GET** operations.
 
 ### Methods
 
@@ -46,11 +46,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***                   | setRoles(***List&lt;[Role](#role)&gt;*** roles) | The method to set the list of obtained ***Role*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/roles/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/roles/ResponseWrapper.java)
 
 ## Role
 
-Structure of Zoho CRM [Role](../../src/com/zoho/crm/api/roles/Role.java).
+Structure of Zoho CRM [Role](../../src/main/java/com/zoho/crm/api/roles/Role.java).
 
 ### Methods
 
@@ -74,18 +74,18 @@ Structure of Zoho CRM [Role](../../src/com/zoho/crm/api/roles/Role.java).
 | ***void***           | setAdminUser(***Boolean*** adminUser)            | The method to set the value of ***Role AdminUser***          |
 ----
 
-[source](../../src/com/zoho/crm/api/roles/Role.java)
+[source](../../src/main/java/com/zoho/crm/api/roles/Role.java)
 
 ## RolesOperations
 
-Contains methods for all possible [Roles operations](../../src/com/zoho/crm/api/roles/RolesOperations.java).
+Contains methods for all possible [Roles operations](../../src/main/java/com/zoho/crm/api/roles/RolesOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                         |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/roles/ResponseHandler.java)&gt;*** | getRoles() | To get the list of all roles available in your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/roles/ResponseHandler.java)&gt;*** | getRole(***Long*** id) | To get the details of a specific role. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/roles/ResponseHandler.java)&gt;*** | getRoles() | To get the list of all roles available in your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/roles/ResponseHandler.java)&gt;*** | getRole(***Long*** id) | To get the details of a specific role. |
 ----
 
-[source](../../src/com/zoho/crm/api/roles/ProfilesOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/roles/ProfilesOperations.java)

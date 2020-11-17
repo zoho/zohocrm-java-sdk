@@ -8,7 +8,7 @@ Common Class to provide or obtain a value, when there are multiple supported val
 
 | Constructor                                                       | Description                                                             |
 | :---------------------------------------------------------------- | :---------------------------------------------------------------------- |
-| [Choice](../../src/com/zoho/crm/api/util/Choice.java)(***T*** value) | Creates a ***Choice class*** instance with the specified chioce value. |
+| [Choice](../../src/main/java/com/zoho/crm/api/util/Choice.java)(***T*** value) | Creates a ***Choice class*** instance with the specified chioce value. |
 ----
 
 ## Methods
@@ -18,4 +18,4 @@ Common Class to provide or obtain a value, when there are multiple supported val
 | ***T***     | getValue() | The getter method to get ***Choice Value***.       |
 ----
 
-[source](../../src/com/zoho/crm/api/util/Choice.java)
+[source](../../src/main/java/com/zoho/crm/api/util/Choice.java)
