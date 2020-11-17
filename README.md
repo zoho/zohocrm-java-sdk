@@ -128,13 +128,13 @@ Token persistence refers to storing and utilizing the authentication tokens that
 
 Once the application is authorized, OAuth access and refresh tokens can be used for subsequent user data requests to Zoho CRM. Hence, they need to be persisted by the client app.
 
-The persistence is achieved by writing an implementation of the inbuilt **[TokenStore](src/com/zoho/api/authenticator/store/TokenStore.java) interface**, which has the following callback methods.
+The persistence is achieved by writing an implementation of the inbuilt **[TokenStore](src/main/java/com/zoho/api/authenticator/store/TokenStore.java) interface**, which has the following callback methods.
 
-- **getToken([UserSignature](resources/UserSignature.md#usersignature) user, [Token](src/com/zoho/api/authenticator/Token.java) token)** - invoked before firing a request to fetch the saved tokens. This method should return an implementation of **Token interface** object for the library to process it.
+- **getToken([UserSignature](resources/UserSignature.md#usersignature) user, [Token](src/main/java/com/zoho/api/authenticator/Token.java) token)** - invoked before firing a request to fetch the saved tokens. This method should return an implementation of **Token interface** object for the library to process it.
 
-- **saveToken([UserSignature](resources/UserSignature.md#usersignature) user, [Token](src/com/zoho/api/authenticator/Token.java) token)** - invoked after fetching access and refresh tokens from Zoho.
+- **saveToken([UserSignature](resources/UserSignature.md#usersignature) user, [Token](src/main/java/com/zoho/api/authenticator/Token.java) token)** - invoked after fetching access and refresh tokens from Zoho.
 
-- **deleteToken([Token](src/com/zoho/api/authenticator/Token.java) token)** - invoked before saving the latest tokens.
+- **deleteToken([Token](src/main/java/com/zoho/api/authenticator/Token.java) token)** - invoked before saving the latest tokens.
 
 - **getTokens()** - The method to retrieve all the stored tokens.
 
@@ -325,7 +325,7 @@ Before you get started with creating your Java application, you need to register
     Token token = new OAuthToken("clientId", "clientSecret", "REFRESH/GRANT token", TokenType.REFRESH/GRANT, "redirectURL");
     ```
 
-- Create an instance of **[TokenStore](src/com/zoho/api/authenticator/store/TokenStore.java)** to persist tokens that are  used for authenticating all the requests.
+- Create an instance of **[TokenStore](src/main/java/com/zoho/api/authenticator/store/TokenStore.java)** to persist tokens that are  used for authenticating all the requests.
 
     ```java
     /*
