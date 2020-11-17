@@ -61,7 +61,7 @@ Java SDK is available through Maven distribution. You can include the SDK to you
     }
      ```
 
-3. Downloadable JARs ([by Zoho]())
+3. Downloadable JARs ([by Zoho](https://www.zoho.com/sites/default/files/crm/zcrmsdk-3.0.0.zip))
 
 ### Dependency JARs
 
@@ -128,13 +128,13 @@ Token persistence refers to storing and utilizing the authentication tokens that
 
 Once the application is authorized, OAuth access and refresh tokens can be used for subsequent user data requests to Zoho CRM. Hence, they need to be persisted by the client app.
 
-The persistence is achieved by writing an implementation of the inbuilt **[TokenStore](src/com/zoho/api/authenticator/store/TokenStore.java) interface**, which has the following callback methods.
+The persistence is achieved by writing an implementation of the inbuilt **[TokenStore](src/main/java/com/zoho/api/authenticator/store/TokenStore.java) interface**, which has the following callback methods.
 
-- **getToken([UserSignature](resources/UserSignature.md#usersignature) user, [Token](src/com/zoho/api/authenticator/Token.java) token)** - invoked before firing a request to fetch the saved tokens. This method should return an implementation of **Token interface** object for the library to process it.
+- **getToken([UserSignature](resources/UserSignature.md#usersignature) user, [Token](src/main/java/com/zoho/api/authenticator/Token.java) token)** - invoked before firing a request to fetch the saved tokens. This method should return an implementation of **Token interface** object for the library to process it.
 
-- **saveToken([UserSignature](resources/UserSignature.md#usersignature) user, [Token](src/com/zoho/api/authenticator/Token.java) token)** - invoked after fetching access and refresh tokens from Zoho.
+- **saveToken([UserSignature](resources/UserSignature.md#usersignature) user, [Token](src/main/java/com/zoho/api/authenticator/Token.java) token)** - invoked after fetching access and refresh tokens from Zoho.
 
-- **deleteToken([Token](src/com/zoho/api/authenticator/Token.java) token)** - invoked before saving the latest tokens.
+- **deleteToken([Token](src/main/java/com/zoho/api/authenticator/Token.java) token)** - invoked before saving the latest tokens.
 
 - **getTokens()** - The method to retrieve all the stored tokens.
 
@@ -309,7 +309,7 @@ Before you get started with creating your Java application, you need to register
     Environment environment = USDataCenter.PRODUCTION;
     ```
 
-- Create an instance of [OAuthToken](resources/token/OAuthToken.md#oauthtoken) with the information  that you get after registering your Zoho client.
+- Create an instance of **[OAuthToken](resources/token/OAuthToken.md#oauthtoken)** with the information  that you get after registering your Zoho client.
 
     ```java
     /*
@@ -325,7 +325,7 @@ Before you get started with creating your Java application, you need to register
     Token token = new OAuthToken("clientId", "clientSecret", "REFRESH/GRANT token", TokenType.REFRESH/GRANT, "redirectURL");
     ```
 
-- Create an instance of [TokenStore](src/com/zoho/api/authenticator/store/TokenStore.java) to persist tokens that are  used for authenticating all the requests.
+- Create an instance of **[TokenStore](src/main/java/com/zoho/api/authenticator/store/TokenStore.java)** to persist tokens that are  used for authenticating all the requests.
 
     ```java
     /*
@@ -345,7 +345,7 @@ Before you get started with creating your Java application, you need to register
     //TokenStore tokenStore = new CustomStore();
     ```
 
-- Create an instance of [SDKConfig](resources/SDKConfig.md) containing the SDK configuration.
+- Create an instance of **[SDKConfig](resources/SDKConfig.md)** containing the SDK configuration.
 
     ```java
     /*
@@ -367,7 +367,7 @@ Before you get started with creating your Java application, you need to register
     String resourcePath = "/Users/user_name/Documents/javasdk-application";
     ```
 
-- Create an instance of [RequestProxy](resources/RequestProxy.md) containing the proxy properties of the user.
+- Create an instance of **[RequestProxy](resources/RequestProxy.md)** containing the proxy properties of the user.
 
     ```java
     RequestProxy RequestProxy = new RequestProxy("proxyHost", "proxyPort", "proxyUser", "password", "userDomain");
