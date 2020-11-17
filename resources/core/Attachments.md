@@ -19,21 +19,21 @@ The Zoho CRM [Attachment API](https://www.zoho.com/crm/developer/docs/api/get-at
 
 ## ActionWrapper
 
-After a successful **API** request, and instance of [ActionWrapper](../../src/com/zoho/crm/api/attachments/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
+After a successful **API** request, and instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/attachments/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
 
 ### Methods
 
 | Return Type                      | Method                                  | Description                                                      |
 | :------------------------------- | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/attachments/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances. |
-| ***void*** | setData(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/attachments/ActionResponse.java)&gt;*** data)| The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/attachments/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances. |
+| ***void*** | setData(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/attachments/ActionResponse.java)&gt;*** data)| The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/attachments/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/attachments/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/attachments/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/attachments/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -49,11 +49,11 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void*** | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/attachments/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/attachments/APIException.java)
 
 ## Attachment
 
-Structure of Zoho CRM [Attachment](../../src/com/zoho/crm/api/attachments/Attachment.java).
+Structure of Zoho CRM [Attachment](../../src/main/java/com/zoho/crm/api/attachments/Attachment.java).
 
 ### Methods
 
@@ -96,29 +96,29 @@ Structure of Zoho CRM [Attachment](../../src/com/zoho/crm/api/attachments/Attach
 
 ----
 
-[source](../../src/com/zoho/crm/api/attachments/Attachment.java)
+[source](../../src/main/java/com/zoho/crm/api/attachments/Attachment.java)
 
 ## AttachmentsOperations
 
-Contains methods for all possible [Attachment operations](../../src/com/zoho/crm/api/attachments/AttachmentsOperations.java).
+Contains methods for all possible [Attachment operations](../../src/main/java/com/zoho/crm/api/attachments/AttachmentsOperations.java).
 
 ### Constructors
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [AttachmentsOperations](../../src/com/zoho/crm/api/attachments/AttachmentsOperations.java)(***String*** moduleAPIName, ***Long*** recordId)  |  Creates a ***AttachmentsOperations*** class instance with the ***moduleAPIName*** and ***recordId***.|
+| [AttachmentsOperations](../../src/main/java/com/zoho/crm/api/attachments/AttachmentsOperations.java)(***String*** moduleAPIName, ***Long*** recordId)  |  Creates a ***AttachmentsOperations*** class instance with the ***moduleAPIName*** and ***recordId***.|
 ----
 
 ### Methods
 
 | Return Type                         | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/attachments/ResponseHandler.java)&gt;*** | downloadAttachment(***Long*** id) | To download an attachment that was uploaded to a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/attachments/ActionHandler.java)&gt;***   | deleteAttachment(***Long*** id) | To delete an attachment that was added to a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/attachments/ResponseHandler.java)&gt;*** | getAttachments(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To fetch the list of attachments of a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/attachments/ActionHandler.java)&gt;***   | uploadAttachment(***[FileBodyWrapper](#filebodywrapper)*** request) | To upload attachments to a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/attachments/ActionHandler.java)&gt;***   | uploadLinkAttachment(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To upload a link as an attachment to a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/attachments/ActionHandler.java)&gt;***   | deleteAttachments(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete the attachments that were added to a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/attachments/ResponseHandler.java)&gt;*** | downloadAttachment(***Long*** id) | To download an attachment that was uploaded to a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/attachments/ActionHandler.java)&gt;***   | deleteAttachment(***Long*** id) | To delete an attachment that was added to a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/attachments/ResponseHandler.java)&gt;*** | getAttachments(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To fetch the list of attachments of a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/attachments/ActionHandler.java)&gt;***   | uploadAttachment(***[FileBodyWrapper](#filebodywrapper)*** request) | To upload attachments to a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/attachments/ActionHandler.java)&gt;***   | uploadLinkAttachment(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To upload a link as an attachment to a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/attachments/ActionHandler.java)&gt;***   | deleteAttachments(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete the attachments that were added to a record. |
 ----
 
 ### Inner Static Classes
@@ -130,7 +130,7 @@ Contains methods for all possible [Attachment operations](../../src/com/zoho/crm
 | [DeleteAttachmentsParam](#deleteattachmentsparam)         |
 ----
 
-[source](../../src/com/zoho/crm/api/attachments/AttachmentsOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/attachments/AttachmentsOperations.java)
 
 ## FileBodyWrapper
 
@@ -144,11 +144,11 @@ Serves as request for uploading attachment and response for downloading attachme
 | ***void***           | setFile(***[StreamWrapper](../util/StreamWrapper.md#streamwrapper)*** file) | The method to set the ***StreamWrapper*** class instances |
 ----
 
-[source](../../src/com/zoho/crm/api/attachments/FileBodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/attachments/FileBodyWrapper.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, and instance of [ResponseWrapper](../../src/com/zoho/crm/api/attachments/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, and instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/attachments/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -160,11 +160,11 @@ After a successful **API** request, and instance of [ResponseWrapper](../../src/
 | ***void***| setInfo(***[Info](Record.md#info)*** info) | The method to set the ***Attachment*** response information. |
 ----
 
-[source](../../src/com/zoho/crm/api/attachments/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/attachments/ResponseWrapper.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/attachments/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/attachments/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -180,11 +180,11 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***   | setStatus(***[Choice](../util/Choice.md#choice&lt;t>)&lt;String&gt;*** status) | The method to set the value of ***status*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/attachments/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/attachments/SuccessResponse.java)
 
 ## GetAttachmentsParam
 
-Contains all possible parameters for the [Get Attachments operation](../../src/com/zoho/crm/api/attachments/AttachmentsOperations.java).
+Contains all possible parameters for the [Get Attachments operation](../../src/main/java/com/zoho/crm/api/attachments/AttachmentsOperations.java).
 
 ### Fields
 
@@ -197,7 +197,7 @@ Contains all possible parameters for the [Get Attachments operation](../../src/c
 
 ## UploadLinkAttachmentParam
 
-Contains all possible parameters for the [Upload Link as attachment operation](../../src/com/zoho/crm/api/attachments/AttachmentsOperations.java).
+Contains all possible parameters for the [Upload Link as attachment operation](../../src/main/java/com/zoho/crm/api/attachments/AttachmentsOperations.java).
 
 ### Fields
 
@@ -208,7 +208,7 @@ Contains all possible parameters for the [Upload Link as attachment operation](.
 
 ## DeleteAttachmentsParam
 
-Contains all possible parameters for the [Delete Attachments operation](../../src/com/zoho/crm/api/attachments/AttachmentsOperations.java).
+Contains all possible parameters for the [Delete Attachments operation](../../src/main/java/com/zoho/crm/api/attachments/AttachmentsOperations.java).
 
 ### Fields
 

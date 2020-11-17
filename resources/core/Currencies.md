@@ -22,21 +22,21 @@ The Zoho CRM [Currencies API](https://www.zoho.com/crm/developer/docs/api/enable
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/currencies/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/currencies/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
 
 ### Methods
 
 | Return Type | Method                                  | Description                                                      |
 | :---------- | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/currencies/ActionResponse.java)&gt;*** | getCurrencies() | The method to get the list of obtained ***ActionResponse*** instances. |
-| ***void*** | setCurrencies(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/currencies/ActionResponse.java)&gt;*** currencies)| The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/currencies/ActionResponse.java)&gt;*** | getCurrencies() | The method to get the list of obtained ***ActionResponse*** instances. |
+| ***void*** | setCurrencies(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/currencies/ActionResponse.java)&gt;*** currencies)| The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/currencies/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/currencies/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/currencies/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/currencies/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -52,21 +52,21 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***  | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/currencies/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/currencies/APIException.java)
 
 ## BaseCurrencyActionWrapper
 
-After a successful **API** request involving Home currency, an instance of [BaseCurrencyActionWrapper](../../src/com/zoho/crm/api/currencies/BaseCurrencyActionWrapper.java) is returned for **POST** and **PUT** operations
+After a successful **API** request involving Home currency, an instance of [BaseCurrencyActionWrapper](../../src/main/java/com/zoho/crm/api/currencies/BaseCurrencyActionWrapper.java) is returned for **POST** and **PUT** operations
 
 ### Methods
 
 | Return Type | Method                                               | Description                                                        |
 | :---------- | :----------------------------------------------------| :----------------------------------------------------------------- |
-| ***[ActionResponse](../../src/com/zoho/crm/api/currencies/ActionResponse.java)*** | getBaseCurrency() | The method to get the list of obtained ***ActionResponse*** instances. |
-| ***void***  | setBaseCurrency(***[ActionResponse](../../src/com/zoho/crm/api/currencies/ActionResponse.java)*** baseCurrency) | The method to set the list of obtained ***ActionResponse*** instances. |
+| ***[ActionResponse](../../src/main/java/com/zoho/crm/api/currencies/ActionResponse.java)*** | getBaseCurrency() | The method to get the list of obtained ***ActionResponse*** instances. |
+| ***void***  | setBaseCurrency(***[ActionResponse](../../src/main/java/com/zoho/crm/api/currencies/ActionResponse.java)*** baseCurrency) | The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/currencies/BaseCurrencyActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/currencies/BaseCurrencyActionWrapper.java)
 
 ## BaseCurrencyWrapper
 
@@ -80,7 +80,7 @@ A structure that contains all possible keys of a single request that involves Ho
 | ***void***  | setBaseCurrency(***[Currency](#currency)*** baseCurrency) | The method to set the list of obtained ***Currency*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/currencies/BaseCurrencyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/currencies/BaseCurrencyWrapper.java)
 
 ## BodyWrapper
 
@@ -94,30 +94,30 @@ A structure that contains all possible keys of a single request.
 | ***void***  | setCurrencies(***List&lt;[Currency](#currency)&gt;*** currencies) | The method to set the list of obtained ***Currency*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/currencies/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/currencies/BodyWrapper.java)
 
 ## CurrenciesOperations
 
-Contains methods for all possible [Currencies operations](../../src/com/zoho/crm/api/currencies/CurrenciesOperations.java).
+Contains methods for all possible [Currencies operations](../../src/main/java/com/zoho/crm/api/currencies/CurrenciesOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/currencies/ResponseHandler.java)&gt;*** | getCurrencies() | To get the list of all currencies available for your org. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/currencies/ActionHandler.java)&gt;*** | addCurrencies(***[BodyWrapper](#bodywrapper)*** request) | To add new currencies to your org. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/currencies/ActionHandler.java)&gt;*** | updateCurrencies(***[BodyWrapper](#bodywrapper)*** request) | To update the currencies' details of your org. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[BaseCurrencyActionHandler](../../src/com/zoho/crm/api/currencies/BaseCurrencyActionHandler.java)&gt;*** | enableMultipleCurrencies(***[BaseCurrencyWrapper](#basecurrencywrapper)*** request) | To enable multiple currencies for your org. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[BaseCurrencyActionHandler](../../src/com/zoho/crm/api/currencies/BaseCurrencyActionHandler.java)&gt;*** | updateBaseCurrency(***[BaseCurrencyWrapper](#basecurrencywrapper)*** request)| To update the base currency details of your org. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/currencies/ResponseHandler.java)&gt;*** | getCurrency(***Long*** id) | To get the details of specific currency. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/currencies/ActionHandler.java)&gt;*** | updateCurrency(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of specific currency. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/currencies/ResponseHandler.java)&gt;*** | getCurrencies() | To get the list of all currencies available for your org. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/currencies/ActionHandler.java)&gt;*** | addCurrencies(***[BodyWrapper](#bodywrapper)*** request) | To add new currencies to your org. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/currencies/ActionHandler.java)&gt;*** | updateCurrencies(***[BodyWrapper](#bodywrapper)*** request) | To update the currencies' details of your org. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[BaseCurrencyActionHandler](../../src/main/java/com/zoho/crm/api/currencies/BaseCurrencyActionHandler.java)&gt;*** | enableMultipleCurrencies(***[BaseCurrencyWrapper](#basecurrencywrapper)*** request) | To enable multiple currencies for your org. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[BaseCurrencyActionHandler](../../src/main/java/com/zoho/crm/api/currencies/BaseCurrencyActionHandler.java)&gt;*** | updateBaseCurrency(***[BaseCurrencyWrapper](#basecurrencywrapper)*** request)| To update the base currency details of your org. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/currencies/ResponseHandler.java)&gt;*** | getCurrency(***Long*** id) | To get the details of specific currency. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/currencies/ActionHandler.java)&gt;*** | updateCurrency(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of specific currency. |
 ----
 
-[source](../../src/com/zoho/crm/api/currencies/CurrenciesOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/currencies/CurrenciesOperations.java)
 
 ## Currency
 
-Structure of Zoho CRM [Currency](../../src/com/zoho/crm/api/currencies/Currency.java).
+Structure of Zoho CRM [Currency](../../src/main/java/com/zoho/crm/api/currencies/Currency.java).
 
 ### Methods
 
@@ -151,7 +151,7 @@ Structure of Zoho CRM [Currency](../../src/com/zoho/crm/api/currencies/Currency.
 | ***void***       | setIsoCode(***String*** isoCode)                     | The method to set the value of ***Currency IsoCode***           |
 ----
 
-[source](../../src/com/zoho/crm/api/currencies/Currency.java)
+[source](../../src/main/java/com/zoho/crm/api/currencies/Currency.java)
 
 ## Format
 
@@ -169,11 +169,11 @@ Structure representing the display format of the Currency
 | ***void***       | setDecimalPlaces(***[Choice](../util/Choice.md#choice&lt;t>)&lt;String&gt;*** decimalPlaces) | The method to set the value of ***Format DecimalPlaces*** |
 ----
 
-[source](../../src/com/zoho/crm/api/currencies/Format.java)
+[source](../../src/main/java/com/zoho/crm/api/currencies/Format.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/currencies/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/currencies/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -183,11 +183,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***  | setCurrencies(***List&lt;[Currency](#currency)&gt;*** currencies) | The method to set the list of obtained ***Currency*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/currencies/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/currencies/ResponseWrapper.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/currencies/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/currencies/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -203,4 +203,4 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***  | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/currencies/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/currencies/SuccessResponse.java)

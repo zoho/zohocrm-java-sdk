@@ -21,7 +21,7 @@ The Zoho CRM [CustomView Meta Data API](https://www.zoho.com/crm/developer/docs/
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/customviews/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/customviews/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -37,7 +37,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void*** | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/customviews/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/customviews/APIException.java)
 
 ## Criteria
 
@@ -59,11 +59,11 @@ The structure represents the condition set to the Custom View.
 | ***void***   | setGroup(***List&lt;[Criteria](#criteria)&gt;*** group) | The method to set the list of obtained ***Criteria*** instances |
 ----
 
-[source](../../src/com/zoho/crm/api/customviews/Criteria.java)
+[source](../../src/main/java/com/zoho/crm/api/customviews/Criteria.java)
 
 ## CustomView
 
-Structure of Zoho CRM [CustomView](../../src/com/zoho/crm/api/customviews/CustomView.java).
+Structure of Zoho CRM [CustomView](../../src/main/java/com/zoho/crm/api/customviews/CustomView.java).
 
 ### Methods
 
@@ -101,25 +101,25 @@ Structure of Zoho CRM [CustomView](../../src/com/zoho/crm/api/customviews/Custom
 | ***void***   | setFields(***List&lt;String&gt;*** fields)        | The method to set the value of ***CustomView Fields*** |
 ----
 
-[source](../../src/com/zoho/crm/api/customviews/CustomView.java)
+[source](../../src/main/java/com/zoho/crm/api/customviews/CustomView.java)
 
 ## CustomViewsOperations
 
-Contains methods for all possible [CustomViews operations](../../src/com/zoho/crm/api/customviews/CustomViewsOperations.java).
+Contains methods for all possible [CustomViews operations](../../src/main/java/com/zoho/crm/api/customviews/CustomViewsOperations.java).
 
 ### Constructors
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [CustomViewsOperations](../../src/com/zoho/crm/api/customviews/CustomViewsOperations.java)(***String*** module) | Creates a ***CustomViewsOperations*** class instance with the ***moduleAPIName***.|
+| [CustomViewsOperations](../../src/main/java/com/zoho/crm/api/customviews/CustomViewsOperations.java)(***String*** module) | Creates a ***CustomViewsOperations*** class instance with the ***moduleAPIName***.|
 ----
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/customviews/ResponseHandler.java)&gt;*** | getCustomViews(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the list of all custom views in a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/customviews/ResponseHandler.java)&gt;*** | getCustomView(***Long*** id) | To get the details of specific custom view in a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/customviews/ResponseHandler.java)&gt;*** | getCustomViews(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the list of all custom views in a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/customviews/ResponseHandler.java)&gt;*** | getCustomView(***Long*** id) | To get the details of specific custom view in a module. |
 ----
 
 ### Inner Static Classes
@@ -129,7 +129,7 @@ Contains methods for all possible [CustomViews operations](../../src/com/zoho/cr
 | [GetCustomViewsParam](#getcustomviewsparam)   |
 ----
 
-[source](../../src/com/zoho/crm/api/customviews/CustomViewsOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/customviews/CustomViewsOperations.java)
 
 ## Info
 
@@ -153,11 +153,11 @@ The structure containing the additional properties of Custom Views.
 | ***void***            | setTranslation(***[Translation](#translation)*** translation) | The method to set the value of ***Info Translation*** |
 ----
 
-[source](../../src/com/zoho/crm/api/customviews/Translation.java)
+[source](../../src/main/java/com/zoho/crm/api/customviews/Translation.java)
 
 ## Range
 
-The structure reprensenting the properties of [Range](../../src/com/zoho/crm/api/customviews/Range.java).
+The structure reprensenting the properties of [Range](../../src/main/java/com/zoho/crm/api/customviews/Range.java).
 
 ### Methods
 
@@ -169,11 +169,11 @@ The structure reprensenting the properties of [Range](../../src/com/zoho/crm/api
 | ***void***    | setTo(***Integer*** to)     | The method to set the value of ***Range To***   |
 ----
 
-[source](../../src/com/zoho/crm/api/customviews/Range.java)
+[source](../../src/main/java/com/zoho/crm/api/customviews/Range.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/customviews/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/customviews/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -185,7 +185,7 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void*** | setInfo(***[Info](#info)*** info)                                       | The method to set the value of ***Response Info***|
 ----
 
-[source](../../src/com/zoho/crm/api/customviews/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/customviews/ResponseWrapper.java)
 
 ## SharedDetails
 
@@ -205,7 +205,7 @@ The structure representing the sharing properties of the Custom View.
 | ***void***    | setSubordinates(***Boolean*** subordinates) | The method to set the value of ***SharedDetails Subordinates*** |
 ----
 
-[source](../../src/com/zoho/crm/api/customviews/SharedDetails.java)
+[source](../../src/main/java/com/zoho/crm/api/customviews/SharedDetails.java)
 
 ## Translation
 
@@ -225,11 +225,11 @@ The structure representing the additional Translation properties of the Custom V
 | ***void***   | setCreatedByMe(***String*** createdByMe)         | The method to set the value of ***Translation CreatedByMe*** |
 ----
 
-[source](../../src/com/zoho/crm/api/customviews/Translation.java)
+[source](../../src/main/java/com/zoho/crm/api/customviews/Translation.java)
 
 ## GetCustomViewsParam
 
-Contains all possible parameters for the [Get CustomViews operation](../../src/com/zoho/crm/api/customviews/CustomViewsOperations.java).
+Contains all possible parameters for the [Get CustomViews operation](../../src/main/java/com/zoho/crm/api/customviews/CustomViewsOperations.java).
 
 ### Fields
 

@@ -19,7 +19,7 @@ The Zoho CRM [Organization API](https://www.zoho.com/crm/developer/docs/api/get-
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/org/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/org/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -35,7 +35,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/org/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/org/APIException.java)
 
 ## FileBodyWrapper
 
@@ -49,7 +49,7 @@ Serves as the request for Photo upload operation.
 | ***void***           | setFile(***[StreamWrapper](../util/StreamWrapper.md#streamwrapper)*** file)| The method to set the ***StreamWrapper*** class instance|
 ----
 
-[source](../../src/com/zoho/crm/api/org/FileBodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/org/FileBodyWrapper.java)
 
 ## LicenseDetails
 
@@ -73,11 +73,11 @@ Strucuture representing the details of the CRM license.
 | ***void***           | setPaidType(***String*** paidType)             | The method to set the value of ***LicenseDetails PaidType*** |
 ----
 
-[source](../../src/com/zoho/crm/api/org/LicenseDetails.java)
+[source](../../src/main/java/com/zoho/crm/api/org/LicenseDetails.java)
 
 ## Org
 
-Structure of Zoho CRM [Org](../../src/com/zoho/crm/api/org/Org.java).
+Structure of Zoho CRM [Org](../../src/main/java/com/zoho/crm/api/org/Org.java).
 
 ### Methods
 
@@ -147,25 +147,25 @@ Structure of Zoho CRM [Org](../../src/com/zoho/crm/api/org/Org.java).
 | ***void***           | setIsoCode(***String*** isoCode)                   | The method to set the value of ***Org IsoCode***                  |
 ----
 
-[source](../../src/com/zoho/crm/api/org/Org.java)
+[source](../../src/main/java/com/zoho/crm/api/org/Org.java)
 
 ## OrgOperations
 
-Contains methods for all possible [Org operations](../../src/com/zoho/crm/api/org/OrgOperations.java).
+Contains methods for all possible [Org operations](../../src/main/java/com/zoho/crm/api/org/OrgOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/org/ResponseHandler.java)&gt;*** | getOrganization() | To get the details of your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionResponse](../../src/com/zoho/crm/api/org/ActionResponse.java)&gt;*** | uploadOrganizationPhoto(***[FileBodyWrapper](#filebodywrapper)*** request) | To upload a photo of your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/org/ResponseHandler.java)&gt;*** | getOrganization() | To get the details of your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/org/ActionResponse.java)&gt;*** | uploadOrganizationPhoto(***[FileBodyWrapper](#filebodywrapper)*** request) | To upload a photo of your organization. |
 ----
 
-[source](../../src/com/zoho/crm/api/org/OrgOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/org/OrgOperations.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/org/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/org/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -175,11 +175,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***                    | setOrg(***List&lt;[Org](#org)&gt;*** org) | The method to set the list of obtained ***Org*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/org/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/org/ResponseWrapper.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/org/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/org/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -195,4 +195,4 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/org/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/org/SuccessResponse.java)

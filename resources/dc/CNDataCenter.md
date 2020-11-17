@@ -25,4 +25,4 @@ class DataCenter
 | ***String***     | getFileUploadUrl() | The method to get the ***File Upload URL***. |
 ----
 
-[source](../../src/com/zoho/crm/api/dc/CNDataCenter.java)
+[source](../../src/main/java/com/zoho/crm/api/dc/CNDataCenter.java)

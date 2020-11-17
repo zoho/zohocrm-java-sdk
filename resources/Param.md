@@ -8,7 +8,7 @@ This class represents the HTTP parameter.
 
 | Constructor                                                                            | Description                                                        |
 | :------------------------------------------------------------------------------------- | :----------------------------------------------------------------- |
-| [Param](../src/com/zoho/crm/api/Param.java)(***String*** name, ***String*** className) | Creates a ***Param class*** instance with the specified parameter name. |
+| [Param](../src/main/java/com/zoho/crm/api/Param.java)(***String*** name, ***String*** className) | Creates a ***Param class*** instance with the specified parameter name. |
 ----
 
 ## Methods
@@ -19,4 +19,4 @@ This class represents the HTTP parameter.
 | ***String***     | getClassName() | The getter method to get ***Param Class Name***. |
 ----
 
-[source](../src/com/zoho/crm/api/Param.java)
+[source](../src/main/java/com/zoho/crm/api/Param.java)

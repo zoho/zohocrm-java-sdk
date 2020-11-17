@@ -16,7 +16,7 @@ The Zoho CRM [VariableGroups API](https://www.zoho.com/crm/developer/docs/api/ge
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/variablegroups/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/variablegroups/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -32,11 +32,11 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***  | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/variablegroups/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/variablegroups/APIException.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/variablegroups/ResponseWrapper.java) is returned for ***GET*** operations.
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/variablegroups/ResponseWrapper.java) is returned for ***GET*** operations.
 
 ### Methods
 
@@ -46,11 +46,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void*** | setVariableGroups(***List&lt;[VariableGroup](#variablegroup)&gt;*** variableGroups) | The method to set the list of obtained ***VariableGroup*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/variablegroups/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/variablegroups/ResponseWrapper.java)
 
 ## VariableGroup
 
-Structure of Zoho CRM [VariableGroup](../../src/com/zoho/crm/api/variablegroups/VariableGroup.java).
+Structure of Zoho CRM [VariableGroup](../../src/main/java/com/zoho/crm/api/variablegroups/VariableGroup.java).
 
 ### Methods
 
@@ -68,19 +68,19 @@ Structure of Zoho CRM [VariableGroup](../../src/com/zoho/crm/api/variablegroups/
 | ***void***   | setId(***Long*** id)                       | The method to set the value of ***VariableGroup Id***           |
 ----
 
-[source](../../src/com/zoho/crm/api/variablegroups/VariableGroup.java)
+[source](../../src/main/java/com/zoho/crm/api/variablegroups/VariableGroup.java)
 
 ## VariableGroupsOperations
 
-Contains methods for all possible [VariableGroups operations](../../src/com/zoho/crm/api/variablegroups/VariableGroupsOperations.java).
+Contains methods for all possible [VariableGroups operations](../../src/main/java/com/zoho/crm/api/variablegroups/VariableGroupsOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                         |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/variablegroups/ResponseHandler.java)&gt;*** | getVariableGroups() | To get the list of all variable groups available for your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/variablegroups/ResponseHandler.java)&gt;*** | getVariableGroupById(***Long*** id) | To get the details of a variable group by its group ID. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/variablegroups/ResponseHandler.java)&gt;*** | getVariableGroupByAPIName(***String*** apiName) | To get the details of a specific variable group by its API name. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/variablegroups/ResponseHandler.java)&gt;*** | getVariableGroups() | To get the list of all variable groups available for your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/variablegroups/ResponseHandler.java)&gt;*** | getVariableGroupById(***Long*** id) | To get the details of a variable group by its group ID. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/variablegroups/ResponseHandler.java)&gt;*** | getVariableGroupByAPIName(***String*** apiName) | To get the details of a specific variable group by its API name. |
 ----
 
-[source](../../src/com/zoho/crm/api/variablegroups/VariableGroupsOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/variablegroups/VariableGroupsOperations.java)

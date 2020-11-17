@@ -23,7 +23,7 @@ The Zoho CRM [BulkWrite API](https://www.zoho.com/crm/developer/docs/api/bulk-wr
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/bulkwrite/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/bulkwrite/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -51,20 +51,20 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setHttpStatus(***String*** httpStatus)      | The method to set the value of ***http_status*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/bulkwrite/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkwrite/APIException.java)
 
 ## BulkWriteOperations
 
-Contains methods for all possible [BulkWrite operations](../../src/com/zoho/crm/api/bulkwrite/BulkWriteOperations.java).
+Contains methods for all possible [BulkWrite operations](../../src/main/java/com/zoho/crm/api/bulkwrite/BulkWriteOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionResponse](../../src/com/zoho/crm/api/bulkwrite/ActionResponse.java)&gt;*** | uploadFile(***[FileBodyWrapper](#filebodywrapper)*** request, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To upload a CSV file in ZIP format. The response contains the "file_id". Use this ID while making the bulk write request. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionResponse](../../src/com/zoho/crm/api/bulkwrite/ActionResponse.java)&gt;***   | createBulkWriteJob(***[RequestWrapper](#requestwrapper)*** request) | To create a bulk write job to insert, update, or upsert records. The response contains the "job_id". Use this ID while getting the status of the scheduled bulk write job. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/bulkwrite/ActionResponse.java)&gt;*** | uploadFile(***[FileBodyWrapper](#filebodywrapper)*** request, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To upload a CSV file in ZIP format. The response contains the "file_id". Use this ID while making the bulk write request. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/bulkwrite/ActionResponse.java)&gt;***   | createBulkWriteJob(***[RequestWrapper](#requestwrapper)*** request) | To create a bulk write job to insert, update, or upsert records. The response contains the "job_id". Use this ID while getting the status of the scheduled bulk write job. |
 | ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseWrapper](#responsewrapper)&gt;*** | getBulkWriteJobDetails(***Long*** jobId) | To know the status of the bulk write job scheduled previously. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/bulkwrite/ResponseHandler.java)&gt;*** | downloadBulkWriteResult(***String*** downloadUrl)| To download the result of the bulk read job. The response contains a zip file. Extract it to get the CSV or ICS file depending on the "file_type" you specified while creating the bulk read job. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/bulkwrite/ResponseHandler.java)&gt;*** | downloadBulkWriteResult(***String*** downloadUrl)| To download the result of the bulk read job. The response contains a zip file. Extract it to get the CSV or ICS file depending on the "file_type" you specified while creating the bulk read job. |
 ----
 
 ### Inner Static Classes
@@ -74,11 +74,11 @@ Contains methods for all possible [BulkWrite operations](../../src/com/zoho/crm/
 | [UploadFileHeader](#uploadfileheader)   |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkwrite/BulkWriteOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkwrite/BulkWriteOperations.java)
 
 ## BulkWriteResponse
 
-Structure of Zoho CRM [BulkWriteResponse](../../src/com/zoho/crm/api/bulkwrite/BulkWriteResponse.java).
+Structure of Zoho CRM [BulkWriteResponse](../../src/main/java/com/zoho/crm/api/bulkwrite/BulkWriteResponse.java).
 
 ### Methods
 
@@ -104,7 +104,7 @@ Structure of Zoho CRM [BulkWriteResponse](../../src/com/zoho/crm/api/bulkwrite/B
 | ***void***           | setCreatedTime(***OffsetDateTime*** createdTime)    | The method to set the value of ***BulkWrite CreatedTime***        |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkwrite/BulkWriteResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkwrite/BulkWriteResponse.java)
 
 ## CallBack
 
@@ -120,7 +120,7 @@ Structure containing the URL where the BulkWrite Job details are posted upon com
 | ***void***   | setMethod(***[Choice](../util/Choice.md#choice&lt;t>)&lt;String&gt;*** method) | The method to set the value of ***CallBack HTTP Method*** |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkwrite/CallBack.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkwrite/CallBack.java)
 
 ## FieldMapping
 
@@ -144,7 +144,7 @@ Structure representing the properties of field data in the file.
 | ***void***    | setModule(***String*** module)   | The method to set the value of ***FieldMapping Module***          |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkwrite/FieldMapping.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkwrite/FieldMapping.java)
 
 ## File
 
@@ -168,7 +168,7 @@ Structure representing the status of the data provided in the file.
 | ***void***       | setTotalCount(***Integer*** totalCount)     | The method to set the value of ***File TotalCount*** |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkwrite/File.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkwrite/File.java)
 
 ## FileBodyWrapper
 
@@ -182,11 +182,11 @@ Serves as the request for uploading the file and response for downloading the re
 | ***void***           | setFile(***[StreamWrapper](../util/StreamWrapper.md#streamwrapper)*** file) | The method to set the ***StreamWrapper*** class instance |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkwrite/FileBodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkwrite/FileBodyWrapper.java)
 
 ## RequestWrapper
 
-After a successful **API** request, an instance of [RequestWrapper](../../src/com/zoho/crm/api/bulkwrite/RequestWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
+After a successful **API** request, an instance of [RequestWrapper](../../src/main/java/com/zoho/crm/api/bulkwrite/RequestWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
 
 ### Methods
 
@@ -202,7 +202,7 @@ After a successful **API** request, an instance of [RequestWrapper](../../src/co
 | ***void***   | setResource(***List&lt;[Resource](#resource)&gt;*** resource) | The method to set the value of ***BulkWrite Request Resource***  |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkwrite/RequestWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkwrite/RequestWrapper.java)
 
 ## Resource
 
@@ -230,7 +230,7 @@ Structure representing the properties of the data present in the file that serve
 | ***void***    | setFile(***[File](#file)*** file) | The method to set the value of ***Resource File*** |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkwrite/Resource.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkwrite/Resource.java)
 
 ## Result
 
@@ -244,11 +244,11 @@ Structure containing the download URL that contains the result of the BulkWrite 
 | ***void***   | setDownloadUrl(***String*** downloadUrl) | The method to set the value of ***BulkWrite Result DownloadUrl*** |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkwrite/Result.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkwrite/Result.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/bulkwrite/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/bulkwrite/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -264,11 +264,11 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/bulkwrite/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkwrite/SuccessResponse.java)
 
 ## UploadFileHeader
 
-Contains all possible headers for [Upload file operation](../../src/com/zoho/crm/api/bulkwrite/BulkWriteOperations.java).
+Contains all possible headers for [Upload file operation](../../src/main/java/com/zoho/crm/api/bulkwrite/BulkWriteOperations.java).
 
 ### Fields
 

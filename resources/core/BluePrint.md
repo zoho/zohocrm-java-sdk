@@ -22,7 +22,7 @@ The Zoho CRM [BluePrint API](https://www.zoho.com/crm/developer/docs/api/bluepri
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/blueprint/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/blueprint/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -38,11 +38,11 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/blueprint/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/blueprint/APIException.java)
 
 ## BluePrint
 
-Structure of Zoho CRM [BluePrint](../../src/com/zoho/crm/api/blueprint/BluePrint.java).
+Structure of Zoho CRM [BluePrint](../../src/main/java/com/zoho/crm/api/blueprint/BluePrint.java).
 
 ### Methods
 
@@ -58,17 +58,17 @@ Structure of Zoho CRM [BluePrint](../../src/com/zoho/crm/api/blueprint/BluePrint
 | ***void***           | setTransitions(***List&lt;[Transition](#transition)&gt;*** transitions)   | The method to set the list of obtained ***Transition*** instances  |
 ----
 
-[source](../../src/com/zoho/crm/api/blueprint/BluePrint.java)
+[source](../../src/main/java/com/zoho/crm/api/blueprint/BluePrint.java)
 
 ## BluePrintOperations
 
-Contains methods for all possible [BluePrint operations](../../src/com/zoho/crm/api/blueprint/BluePrintOperations.java).
+Contains methods for all possible [BluePrint operations](../../src/main/java/com/zoho/crm/api/blueprint/BluePrintOperations.java).
 
 ### Constructors
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [BluePrintOperations](../../src/com/zoho/crm/api/blueprint/BluePrintOperations.java)(***Long*** recordId, ***String*** moduleAPIName) | Creates a ***BluePrintOperations*** class instance with the ***recordId*** and ***moduleAPIName***.|
+| [BluePrintOperations](../../src/main/java/com/zoho/crm/api/blueprint/BluePrintOperations.java)(***Long*** recordId, ***String*** moduleAPIName) | Creates a ***BluePrintOperations*** class instance with the ***recordId*** and ***moduleAPIName***.|
 
 ----
 
@@ -76,11 +76,11 @@ Contains methods for all possible [BluePrint operations](../../src/com/zoho/crm/
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/blueprint/ResponseHandler.java)&gt;*** | getBlueprint() | To get the next available transitions for that record, fields available for each transition, current value of each field, and validation(if any). |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionResponse](../../src/com/zoho/crm/api/blueprint/ActionResponse.java)&gt;*** | updateBlueprint(***[BodyWrapper](#bodywrapper)*** request) | To update a single transition at a time. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/blueprint/ResponseHandler.java)&gt;*** | getBlueprint() | To get the next available transitions for that record, fields available for each transition, current value of each field, and validation(if any). |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/blueprint/ActionResponse.java)&gt;*** | updateBlueprint(***[BodyWrapper](#bodywrapper)*** request) | To update a single transition at a time. |
 ----
 
-[source](../../src/com/zoho/crm/api/blueprint/BluePrintOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/blueprint/BluePrintOperations.java)
 
 ## BodyWrapper
 
@@ -95,7 +95,7 @@ A structure that contains all possible keys of a single request.
 
 ----
 
-[source](../../src/com/zoho/crm/api/blueprint/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/blueprint/BodyWrapper.java)
 
 ## NextTransition
 
@@ -111,7 +111,7 @@ List of all possible transitions for the record's current state.
 | ***void***   | setName(***String*** name)| The method to set the value of ***NextTransition Name***|
 ----
 
-[source](../../src/com/zoho/crm/api/blueprint/NextTransition.java)
+[source](../../src/main/java/com/zoho/crm/api/blueprint/NextTransition.java)
 
 ## ProcessInfo
 
@@ -143,11 +143,11 @@ Depicts Blueprint's process information.
 | ***void***   | setFieldName(***String*** fieldName)       | The method to set the value of ***ProcessInfo FieldName***   |
 ----
 
-[source](../../src/com/zoho/crm/api/blueprint/ProcessInfo.java)
+[source](../../src/main/java/com/zoho/crm/api/blueprint/ProcessInfo.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/blueprint/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/blueprint/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -157,11 +157,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***                   | setBlueprint(***[BluePrint](#blueprint-1)*** blueprint)| The method to set the ***BluePrint*** instance |
 ----
 
-[source](../../src/com/zoho/crm/api/blueprint/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/blueprint/ResponseWrapper.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/blueprint/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/blueprint/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -177,11 +177,11 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/blueprint/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/blueprint/SuccessResponse.java)
 
 ## Transition
 
-Depicts Blueprint's [Transition](../../src/com/zoho/crm/api/blueprint/Transition.java).
+Depicts Blueprint's [Transition](../../src/main/java/com/zoho/crm/api/blueprint/Transition.java).
 
 ### Methods
 
@@ -208,7 +208,7 @@ Depicts Blueprint's [Transition](../../src/com/zoho/crm/api/blueprint/Transition
 
 ----
 
-[source](../../src/com/zoho/crm/api/blueprint/Transition.java)
+[source](../../src/main/java/com/zoho/crm/api/blueprint/Transition.java)
 
 ## ValidationError
 
@@ -222,4 +222,4 @@ Depicts Blueprint's [Transition](../../src/com/zoho/crm/api/blueprint/Transition
 | ***void***   | setMessage(***String*** message) | The method to set the value of ***Validation Message***|
 ----
 
-[source](../../src/com/zoho/crm/api/blueprint/ValidationError.java)
+[source](../../src/main/java/com/zoho/crm/api/blueprint/ValidationError.java)

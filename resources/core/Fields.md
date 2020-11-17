@@ -31,7 +31,7 @@ The Zoho CRM [Fields Meta Data API](https://www.zoho.com/crm/developer/docs/api/
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/fields/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/fields/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -47,7 +47,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 
 ----
-[source](../../src/com/zoho/crm/api/fields/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/APIException.java)
 
 ## AssociationDetails
 
@@ -63,11 +63,11 @@ Structure representing the Field's association details.
 | ***void***                         | setRelatedField(***[LookupField](#lookupfield)*** lookupField)| The method to set the value of ***AssociationDetails RelatedField*** |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/AssociationDetails.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/AssociationDetails.java)
 
 ## AutoNumber
 
-Structure representing the properties of an [auto-number](../../src/com/zoho/crm/api/fields/AutoNumber.java) field
+Structure representing the properties of an [auto-number](../../src/main/java/com/zoho/crm/api/fields/AutoNumber.java) field
 
 ### Methods
 
@@ -81,7 +81,7 @@ Structure representing the properties of an [auto-number](../../src/com/zoho/crm
 | ***void***    | setStartNumber(***Integer*** startNumber) | The method to set the value of ***StartNumber***         |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/AutoNumber.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/AutoNumber.java)
 
 ## Crypt
 
@@ -105,11 +105,11 @@ Structure representing the properties of an encrypted field.
 | ***void***                | setStatus(***Integer*** status)                  | The method to set the value of ***Crypt Status***   |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/Crypt.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/Crypt.java)
 
 ## Currency
 
-Structure representing the properties of a [currency](../../src/com/zoho/crm/api/fields/Currency.java) field.
+Structure representing the properties of a [currency](../../src/main/java/com/zoho/crm/api/fields/Currency.java) field.
 
 ### Methods
 
@@ -121,11 +121,11 @@ Structure representing the properties of a [currency](../../src/com/zoho/crm/api
 | ***void***                | setPrecision(***Integer*** precision)          | The method to set the value of ***Currency Precision***           |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/Currency.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/Currency.java)
 
 ## Field
 
-Structure of Zoho CRM [Field](../../src/com/zoho/crm/api/fields/Field.java).
+Structure of Zoho CRM [Field](../../src/main/java/com/zoho/crm/api/fields/Field.java).
 
 ### Methods
 
@@ -229,25 +229,25 @@ Structure of Zoho CRM [Field](../../src/com/zoho/crm/api/fields/Field.java).
 | ***void***         | setConvertMapping(***Map&lt;String, Object&gt;*** convertMapping) | The method to set the value of ***Field ConvertMapping*** |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/Field.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/Field.java)
 
 ## FieldsOperations
 
-Contains methods for all possible [Fields operations](../../src/com/zoho/crm/api/fields/FieldsOperations.java).
+Contains methods for all possible [Fields operations](../../src/main/java/com/zoho/crm/api/fields/FieldsOperations.java).
 
 ### Constructors
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [FieldsOperations](../../src/com/zoho/crm/api/fields/FieldsOperations.java)(***String*** module)  |  Creates a ***FieldsOperations*** class instance with the ***module***.|
+| [FieldsOperations](../../src/main/java/com/zoho/crm/api/fields/FieldsOperations.java)(***String*** module)  |  Creates a ***FieldsOperations*** class instance with the ***module***.|
 ----
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/fields/ResponseHandler.java)&gt;*** | getFields(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the meta details of all fields in a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/fields/ResponseHandler.java)&gt;*** | getField(***Long*** id) | To get the meta details of specific field in a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/fields/ResponseHandler.java)&gt;*** | getFields(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the meta details of all fields in a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/fields/ResponseHandler.java)&gt;*** | getField(***Long*** id) | To get the meta details of specific field in a module. |
 ----
 
 ### Inner Static Classes
@@ -257,11 +257,11 @@ Contains methods for all possible [Fields operations](../../src/com/zoho/crm/api
 | [GetFieldsParam](#getfieldsparam)   |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/FieldsOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/FieldsOperations.java)
 
 ## Formula
 
-Structure representing the properties of a [formula](../../src/com/zoho/crm/api/fields/Formula.java) field.
+Structure representing the properties of a [formula](../../src/main/java/com/zoho/crm/api/fields/Formula.java) field.
 
 ### Methods
 
@@ -273,7 +273,7 @@ Structure representing the properties of a [formula](../../src/com/zoho/crm/api/
 | ***void***    | setExpression(***String*** expression)| The method to set the value of ***Formula Expression*** |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/Formula.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/Formula.java)
 
 ## LookupField
 
@@ -289,11 +289,11 @@ Structure containing property of a referred field.
 | ***void***    | setName(***String*** name)| The method to set the value of ***LookupField Name*** |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/LookupField.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/LookupField.java)
 
 ## Module
 
-Structure representing the properties of the referred [Module](../../src/com/zoho/crm/api/fields/Module.java).
+Structure representing the properties of the referred [Module](../../src/main/java/com/zoho/crm/api/fields/Module.java).
 
 ### Methods
 
@@ -313,11 +313,11 @@ Structure representing the properties of the referred [Module](../../src/com/zoh
 | ***void***    | setModuleName(***String*** moduleName)    | The method to set the value of ***ModuleName***          |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/Module.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/Module.java)
 
 ## MultiSelectLookup
 
-Structure representing the properties of a [MultiSelectLookup](../../src/com/zoho/crm/api/fields/MultiSelectLookup.java) field.
+Structure representing the properties of a [MultiSelectLookup](../../src/main/java/com/zoho/crm/api/fields/MultiSelectLookup.java) field.
 
 ### Methods
 
@@ -337,7 +337,7 @@ Structure representing the properties of a [MultiSelectLookup](../../src/com/zoh
 | ***void***    | setId(***Long*** id)      | The method to set the value of ***MultiSelectLookup Id*** |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/MultiSelectLookup.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/MultiSelectLookup.java)
 
 ## PickListValue
 
@@ -363,7 +363,7 @@ Structure representing the properties of each option in a PickList field
 | ***void***    | setType(***String*** type)| The method to set the value of ***PickListValue Type***        |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/PickListValue.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/PickListValue.java)
 
 ## RelatedDetails
 
@@ -385,11 +385,11 @@ Structure representing the properties of field's module.
 | ***void***    | setType(***String*** type)| The method to set the value of ***PickListValue Type***        |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/RelatedDetails.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/RelatedDetails.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, and instance of [ResponseWrapper](../../src/com/zoho/crm/api/fields/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, and instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/fields/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -399,7 +399,7 @@ After a successful **API** request, and instance of [ResponseWrapper](../../src/
 | ***void***                   | setFields(***List&lt;[Field](#field)&gt;*** fields)| The method to set the list of obtained ***Field*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/ResponseWrapper.java)
 
 ## ToolTip
 
@@ -415,7 +415,7 @@ Structure representing the properties of the field's tool tip.
 | ***void***    | setValue(***String*** value)| The method to set the value of ***ToolTip Value***|
 ----
 
-[source](../../src/com/zoho/crm/api/fields/ToolTip.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/ToolTip.java)
 
 ## Unique
 
@@ -429,11 +429,11 @@ Structure representing the field's properties, if the field is unique.
 | ***void***    | setCasesensitive(***String*** casesensitive)  | The method to set the value of ***Unique Casesensitive*** |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/Unique.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/Unique.java)
 
 ## ViewType
 
-Structure representing the properties of the field's [ViewType](../../src/com/zoho/crm/api/fields/ViewType.java).
+Structure representing the properties of the field's [ViewType](../../src/main/java/com/zoho/crm/api/fields/ViewType.java).
 
 ### Methods
 
@@ -449,7 +449,7 @@ Structure representing the properties of the field's [ViewType](../../src/com/zo
 | ***void***    | setQuickCreate(***Boolean*** quickCreate) | The method to set the value of ***ViewType QuickCreate*** |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/ViewType.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/ViewType.java)
 
 ## Private
 Structure containing the properties of sensitive fields, when privacy settings is enabled for the Org.
@@ -466,11 +466,11 @@ Structure containing the properties of sensitive fields, when privacy settings i
 | ***void*** | setType(***String*** type) | The method to set the value of ***Private Type*** |
 ----
 
-[source](../../src/com/zoho/crm/api/fields/Private.java)
+[source](../../src/main/java/com/zoho/crm/api/fields/Private.java)
 
 ## GetFieldsParam
 
-Contains all possible parameters for the [Get Fields operation](../../src/com/zoho/crm/api/fields/FieldsOperations.java).
+Contains all possible parameters for the [Get Fields operation](../../src/main/java/com/zoho/crm/api/fields/FieldsOperations.java).
 
 ### Field
 

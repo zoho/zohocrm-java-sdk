@@ -18,21 +18,21 @@ The Zoho CRM [Files API](https://www.zoho.com/crm/developer/docs/api/upload-file
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/file/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/file/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
 
 ### Methods
 
 | Return Type                 | Method                                  | Description                                                      |
 | :-------------------------  | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/file/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances  |
-| ***void*** | setData(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/file/ActionResponse.java)&gt;*** data)| The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/file/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances  |
+| ***void*** | setData(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/file/ActionResponse.java)&gt;*** data)| The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/file/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/file/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/file/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/file/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -48,7 +48,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/file/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/file/APIException.java)
 
 ## BodyWrapper
 
@@ -62,7 +62,7 @@ A structure that contains all possible keys of a single request.
 | ***void***           | setFile(***List&lt;[StreamWrapper](../util/StreamWrapper.md#streamwrapper)&gt;*** file)| The method to set the list of obtained ***StreamWrapper*** instances |
 ----
 
-[source](../../src/com/zoho/crm/api/file/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/file/BodyWrapper.java)
 
 ## FileBodyWrapper
 
@@ -76,18 +76,18 @@ Serves as response for downloading file operation.
 | ***void***           | setFile(***[StreamWrapper](../util/StreamWrapper.md#streamwrapper)*** file) | The method to set the ***StreamWrapper*** class instance |
 ----
 
-[source](../../src/com/zoho/crm/api/file/FileBodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/file/FileBodyWrapper.java)
 
 ## FileOperations
 
-Contains methods for all possible [File operations](../../src/com/zoho/crm/api/file/FileOperations.java).
+Contains methods for all possible [File operations](../../src/main/java/com/zoho/crm/api/file/FileOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/file/ActionHandler.java)&gt;*** | uploadFiles(***[BodyWrapper](#bodywrapper)*** request, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To upload a file and get the encrypted ID. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/file/ResponseHandler.java)&gt;*** | getFile(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the uploaded file through its encrypted ID.|
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/file/ActionHandler.java)&gt;*** | uploadFiles(***[BodyWrapper](#bodywrapper)*** request, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To upload a file and get the encrypted ID. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/file/ResponseHandler.java)&gt;*** | getFile(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the uploaded file through its encrypted ID.|
 ----
 
 ### Inner Static Classes
@@ -98,11 +98,11 @@ Contains methods for all possible [File operations](../../src/com/zoho/crm/api/f
 | [GetFileParam](#getfileparam)       |
 ----
 
-[source](../../src/com/zoho/crm/api/file/FileOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/file/FileOperations.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/file/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/file/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -118,11 +118,11 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/file/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/file/SuccessResponse.java)
 
 ## UploadFilesParam
 
-Contains all possible parameters for the [Upload Files operation](../../src/com/zoho/crm/api/file/FileOperations.java).
+Contains all possible parameters for the [Upload Files operation](../../src/main/java/com/zoho/crm/api/file/FileOperations.java).
 
 ### Fields
 
@@ -133,7 +133,7 @@ Contains all possible parameters for the [Upload Files operation](../../src/com/
 
 ## GetFileParam
 
-Contains all possible parameters for the [Get File operation](../../src/com/zoho/crm/api/file/FileOperations.java).
+Contains all possible parameters for the [Get File operation](../../src/main/java/com/zoho/crm/api/file/FileOperations.java).
 
 ### Fields
 

@@ -29,4 +29,4 @@ The abstract class that represents the properties of Zoho CRM Environment.
 | ***String***     | getFileUploadUrl() | The method to get the ***File Upload URL***. |
 ----
 
-[source](../../src/com/zoho/crm/api/dc/DataCenter.java)
+[source](../../src/main/java/com/zoho/crm/api/dc/DataCenter.java)

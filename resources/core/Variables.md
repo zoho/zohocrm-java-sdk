@@ -19,21 +19,21 @@ The Zoho CRM [Variables API](https://www.zoho.com/crm/developer/docs/api/get-var
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/variables/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations.
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/variables/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations.
 
 ### Methods
 
 | Return Type | Method                                  | Description                                                      |
 | :---------- | :-------------------------------------- | :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/variables/ActionResponse.java)&gt;*** | getVariables() | The method to get the list of obtained ***ActionResponse*** instances. |
-| ***void***  | setVariables(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/variables/ActionResponse.java)&gt;*** variables)| The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/variables/ActionResponse.java)&gt;*** | getVariables() | The method to get the list of obtained ***ActionResponse*** instances. |
+| ***void***  | setVariables(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/variables/ActionResponse.java)&gt;*** variables)| The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/variables/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/variables/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/variables/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/variables/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -49,7 +49,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***  | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/variables/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/variables/APIException.java)
 
 ## BodyWrapper
 
@@ -63,11 +63,11 @@ A structure that contains all possible keys of a single request.
 | ***void***  | setVariables(***List&lt;[Variable](#variable)&gt;*** variables) | The method to set the list of obtained ***Variable*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/variables/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/variables/BodyWrapper.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/variables/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/variables/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -77,11 +77,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***  | setVariables(***List&lt;[Variable](#variable)&gt;*** variables) | The method to set the list of obtained ***Variable*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/variables/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/variables/ResponseWrapper.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/variables/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/variables/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -97,11 +97,11 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***  | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/variables/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/variables/SuccessResponse.java)
 
 ## Variable
 
-Structure of Zoho CRM [Variable](../../src/com/zoho/crm/api/variables/Variable.java).
+Structure of Zoho CRM [Variable](../../src/main/java/com/zoho/crm/api/variables/Variable.java).
 
 ### Methods
 
@@ -123,25 +123,25 @@ Structure of Zoho CRM [Variable](../../src/com/zoho/crm/api/variables/Variable.j
 | ***void***   | setValue(***Object*** value)             | The method to set the value of ***Variable Value***       |
 ----
 
-[source](../../src/com/zoho/crm/api/variables/Variable.java)
+[source](../../src/main/java/com/zoho/crm/api/variables/Variable.java)
 
 ## VariablesOperations
 
-Contains methods for all possible [Variables operations](../../src/com/zoho/crm/api/variables/VariablesOperations.java).
+Contains methods for all possible [Variables operations](../../src/main/java/com/zoho/crm/api/variables/VariablesOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/variables/ResponseHandler.java)&gt;*** | getVariables(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the list of variables available for your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/variables/ActionHandler.java)&gt;*** | createVariables(***[BodyWrapper](#bodywrapper)*** request) | To add new variables to your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/variables/ActionHandler.java)&gt;*** | updateVariables(***[BodyWrapper](#bodywrapper)*** request) | To update the details of variables. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/variables/ActionHandler.java)&gt;*** | deleteVariables(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete multiple variables. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/variables/ResponseHandler.java)&gt;*** | getVariableById(***Long*** id, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the details of a specific variable by its unique ID. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/variables/ActionHandler.java)&gt;*** | updateVariableById(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of a specific variable by its unique ID. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/variables/ActionHandler.java)&gt;*** | deleteVariable(***Long*** id) | To delete a specific variable. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/variables/ResponseHandler.java)&gt;*** | getVariableForAPIName(***String*** apiName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance)| To get the details of a variable by its API name. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/variables/ResponseHandler.java)&gt;*** | updateVariableByAPIName(***String*** apiName, ***[BodyWrapper](#bodywrapper)*** request)| To update the details of a variable by its API name. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/variables/ResponseHandler.java)&gt;*** | getVariables(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the list of variables available for your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/variables/ActionHandler.java)&gt;*** | createVariables(***[BodyWrapper](#bodywrapper)*** request) | To add new variables to your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/variables/ActionHandler.java)&gt;*** | updateVariables(***[BodyWrapper](#bodywrapper)*** request) | To update the details of variables. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/variables/ActionHandler.java)&gt;*** | deleteVariables(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete multiple variables. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/variables/ResponseHandler.java)&gt;*** | getVariableById(***Long*** id, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the details of a specific variable by its unique ID. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/variables/ActionHandler.java)&gt;*** | updateVariableById(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of a specific variable by its unique ID. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/variables/ActionHandler.java)&gt;*** | deleteVariable(***Long*** id) | To delete a specific variable. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/variables/ResponseHandler.java)&gt;*** | getVariableForAPIName(***String*** apiName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance)| To get the details of a variable by its API name. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/variables/ResponseHandler.java)&gt;*** | updateVariableByAPIName(***String*** apiName, ***[BodyWrapper](#bodywrapper)*** request)| To update the details of a variable by its API name. |
 ----
 
 ### Inner Static Classes
@@ -154,11 +154,11 @@ Contains methods for all possible [Variables operations](../../src/com/zoho/crm/
 | [GetVariableForAPINameParam](#getvariableforapinameparam) |
 ----
 
-[source](../../src/com/zoho/crm/api/variables/VariablesOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/variables/VariablesOperations.java)
 
 ## GetVariablesParam
 
-Contains all possible parameters for the [Get Variables operation](../../src/com/zoho/crm/api/variables/VariablesOperations.java).
+Contains all possible parameters for the [Get Variables operation](../../src/main/java/com/zoho/crm/api/variables/VariablesOperations.java).
 
 ### Fields
 
@@ -169,7 +169,7 @@ Contains all possible parameters for the [Get Variables operation](../../src/com
 
 ## DeleteVariablesParam
 
-Contains all possible parameters for the [Delete Variables operation](../../src/com/zoho/crm/api/variables/VariablesOperations.java).
+Contains all possible parameters for the [Delete Variables operation](../../src/main/java/com/zoho/crm/api/variables/VariablesOperations.java).
 
 ### Fields
 
@@ -180,7 +180,7 @@ Contains all possible parameters for the [Delete Variables operation](../../src/
 
 ## GetVariableByIDParam
 
-Contains all possible parameters for the [Get Variable By ID operation](../../src/com/zoho/crm/api/variables/VariablesOperations.java).
+Contains all possible parameters for the [Get Variable By ID operation](../../src/main/java/com/zoho/crm/api/variables/VariablesOperations.java).
 
 ### Fields
 
@@ -191,7 +191,7 @@ Contains all possible parameters for the [Get Variable By ID operation](../../sr
 
 ## GetVariableForAPINameParam
 
-Contains all possible parameters for the [Get Variable For APIName operation](../../src/com/zoho/crm/api/variables/VariablesOperations.java).
+Contains all possible parameters for the [Get Variable For APIName operation](../../src/main/java/com/zoho/crm/api/variables/VariablesOperations.java).
 
 ### Fields
 

@@ -21,21 +21,21 @@ The Zoho CRM [ShareRecords API](https://www.zoho.com/crm/developer/docs/api/get-
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/sharerecords/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/sharerecords/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
 
 ### Methods
 
 | Return Type | Method                                  | Description                                                      |
 | :---------  | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/sharerecords/ActionResponse.java)&gt;*** | getShare() | The method to get the list of obtained ***ActionResponse*** instances. |
-| ***void***  | setShare(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/sharerecords/ActionResponse.java)&gt;*** share) | The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/sharerecords/ActionResponse.java)&gt;*** | getShare() | The method to get the list of obtained ***ActionResponse*** instances. |
+| ***void***  | setShare(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/sharerecords/ActionResponse.java)&gt;*** share) | The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/sharerecords/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/sharerecords/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/sharerecords/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/sharerecords/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -51,7 +51,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void*** | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 
 ----
-[source](../../src/com/zoho/crm/api/sharerecords/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/sharerecords/APIException.java)
 
 ## BodyWrapper
 
@@ -65,25 +65,25 @@ A structure that contains all possible keys of a single request.
 | ***void***   | setShare(***List&lt;[ShareRecord](#sharerecord)&gt;*** share)| The method to set the list of obtained ***ShareRecord*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/sharerecords/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/sharerecords/BodyWrapper.java)
 
 ## DeleteActionWrapper
 
-After a successful **API** request, an instance of [DeleteActionWrapper](../../src/com/zoho/crm/api/sharerecords/DeleteActionWrapper.java) is returned for **DELETE** operation.
+After a successful **API** request, an instance of [DeleteActionWrapper](../../src/main/java/com/zoho/crm/api/sharerecords/DeleteActionWrapper.java) is returned for **DELETE** operation.
 
 ### Methods
 
 |  Return Type | Method                         | Description                                                               |
 | :----------- | :----------------------------- | :------------------------------------------------------------------------ |
-| ***[DeleteActionResponse](../../src/com/zoho/crm/api/sharerecords/DeleteActionResponse.java)*** | getShare() | The method to get the  value of ***DeleteActionResponse*** instance. |
-| ***void***   | setShare(***[DeleteActionResponse](../../src/com/zoho/crm/api/sharerecords/DeleteActionResponse.java)*** share)| The method to set the value of ***DeleteActionResponse*** instance. |
+| ***[DeleteActionResponse](../../src/main/java/com/zoho/crm/api/sharerecords/DeleteActionResponse.java)*** | getShare() | The method to get the  value of ***DeleteActionResponse*** instance. |
+| ***void***   | setShare(***[DeleteActionResponse](../../src/main/java/com/zoho/crm/api/sharerecords/DeleteActionResponse.java)*** share)| The method to set the value of ***DeleteActionResponse*** instance. |
 ----
 
-[source](../../src/com/zoho/crm/api/sharerecords/DeleteActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/sharerecords/DeleteActionWrapper.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/sharerecords/ResponseWrapper.java) is returned for **GET** operations.
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/sharerecords/ResponseWrapper.java) is returned for **GET** operations.
 
 ### Methods
 
@@ -95,7 +95,7 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***                      | setInfo(***[User](Users.md#user)*** shareableUser)      | The method to set the list of obtained ***User*** instances.|
 ----
 
-[source](../../src/com/zoho/crm/api/sharerecords/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/sharerecords/ResponseWrapper.java)
 
 ## SharedThrough
 
@@ -113,11 +113,11 @@ Structure representing the properties of the Shared Record.
 | ***void***    | setEntityName(***String*** entityName) | The method to set the value of ***SharedThrough EntityName***     |
 ----
 
-[source](../../src/com/zoho/crm/api/sharerecords/SharedThrough.java)
+[source](../../src/main/java/com/zoho/crm/api/sharerecords/SharedThrough.java)
 
 ## ShareRecord
 
-Structure of Zoho CRM [ShareRecord](../../src/com/zoho/crm/api/sharerecords/ShareRecord.java).
+Structure of Zoho CRM [ShareRecord](../../src/main/java/com/zoho/crm/api/sharerecords/ShareRecord.java).
 
 ### Methods
 
@@ -137,27 +137,27 @@ Structure of Zoho CRM [ShareRecord](../../src/com/zoho/crm/api/sharerecords/Shar
 | ***void***    | setUser(***[User](Users.md#user)*** user)         | The method to set the value of ***ShareRecord User***       |
 ----
 
-[source](../../src/com/zoho/crm/api/sharerecords/ShareRecord.java)
+[source](../../src/main/java/com/zoho/crm/api/sharerecords/ShareRecord.java)
 
 ## ShareRecordsOperations
 
-Contains methods for all possible [ShareRecords operations](../../src/com/zoho/crm/api/sharerecords/ShareRecordsOperations.java).
+Contains methods for all possible [ShareRecords operations](../../src/main/java/com/zoho/crm/api/sharerecords/ShareRecordsOperations.java).
 
 ### Constructors
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [ShareRecordsOperations](../../src/com/zoho/crm/api/sharerecords/ShareRecordsOperations.java)(***Long*** recordId, ***String*** moduleAPIName) | Creates a ***ShareRecordsOperations*** class instance with the ***recordId*** and ***moduleAPIName***. |
+| [ShareRecordsOperations](../../src/main/java/com/zoho/crm/api/sharerecords/ShareRecordsOperations.java)(***Long*** recordId, ***String*** moduleAPIName) | Creates a ***ShareRecordsOperations*** class instance with the ***recordId*** and ***moduleAPIName***. |
 ----
 
 ### Methods
 
 | Return Type                         | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/sharerecords/ResponseHandler.java)&gt;*** | getSharedRecordDetails(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the details of a record shared with other users. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/sharerecords/ActionHandler.java)&gt;*** | shareRecord(***[BodyWrapper](#bodywrapper)*** request) | To share a record with other users in the organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/sharerecords/ActionHandler.java)&gt;*** | updateSharePermissions(***[BodyWrapper](#bodywrapper)*** request) | Update the sharing permissions of a record granted to users as Read-Write, Read-only, or grant full access. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[DeleteActionHandler](../../src/com/zoho/crm/api/sharerecords/DeleteActionHandler.java)&gt;*** | revokeSharedRecord() | To revoke access to a shared record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/sharerecords/ResponseHandler.java)&gt;*** | getSharedRecordDetails(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To get the details of a record shared with other users. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/sharerecords/ActionHandler.java)&gt;*** | shareRecord(***[BodyWrapper](#bodywrapper)*** request) | To share a record with other users in the organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/sharerecords/ActionHandler.java)&gt;*** | updateSharePermissions(***[BodyWrapper](#bodywrapper)*** request) | Update the sharing permissions of a record granted to users as Read-Write, Read-only, or grant full access. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[DeleteActionHandler](../../src/main/java/com/zoho/crm/api/sharerecords/DeleteActionHandler.java)&gt;*** | revokeSharedRecord() | To revoke access to a shared record. |
 ----
 
 ### Inner Static Classes
@@ -167,11 +167,11 @@ Contains methods for all possible [ShareRecords operations](../../src/com/zoho/c
 | [GetSharedRecordDetailsParam](#getsharedrecorddetailsparam) |
 ----
 
-[source](../../src/com/zoho/crm/api/sharerecords/ShareRecordsOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/sharerecords/ShareRecordsOperations.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/sharerecords/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/sharerecords/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -187,11 +187,11 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/sharerecords/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/sharerecords/SuccessResponse.java)
 
 ## GetSharedRecordDetailsParam
 
-Contains all possible parameters for the [Get SharedRecord Details operation](../../src/com/zoho/crm/api/sharerecords/ShareRecordsOperations.java).
+Contains all possible parameters for the [Get SharedRecord Details operation](../../src/main/java/com/zoho/crm/api/sharerecords/ShareRecordsOperations.java).
 
 ### Fields
 

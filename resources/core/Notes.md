@@ -20,21 +20,21 @@ The Zoho CRM [Notes API](https://www.zoho.com/crm/developer/docs/api/get-notes.h
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/notes/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/notes/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
 
 ### Methods
 
 | Return Type                | Method                                  | Description                                                      |
 | :------------------------- | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/notes/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances |
-| ***void*** | setData(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/notes/ActionResponse.java)&gt;*** data)| The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/notes/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances |
+| ***void*** | setData(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/notes/ActionResponse.java)&gt;*** data)| The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/notes/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/notes/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/notes/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/notes/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -50,7 +50,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***   | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/notes/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/notes/APIException.java)
 
 ## BodyWrapper
 
@@ -64,7 +64,7 @@ A structure that contains all possible keys of a single request.
 | ***void***            | setData(***List&lt;[Note](#note)&gt;*** data) | The method to set the list of obtained ***BluePrint*** instances |
 ----
 
-[source](../../src/com/zoho/crm/api/notes/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/notes/BodyWrapper.java)
 
 ## Info
 
@@ -84,11 +84,11 @@ The structure containing the additional properties of Notes.
 | ***void***    | setMoreRecords(***Boolean*** moreRecords) | The method to set the value of ***Info MoreRecords***  |
 ----
 
-[source](../../src/com/zoho/crm/api/notes/Info.java)
+[source](../../src/main/java/com/zoho/crm/api/notes/Info.java)
 
 ## Note
 
-Structure of Zoho CRM [Note](../../src/com/zoho/crm/api/notes/Note.java).
+Structure of Zoho CRM [Note](../../src/main/java/com/zoho/crm/api/notes/Note.java).
 
 ### Methods
 
@@ -128,23 +128,23 @@ Structure of Zoho CRM [Note](../../src/com/zoho/crm/api/notes/Note.java).
 | ***void***           | setNoteContent(***String*** noteContent)     | The method to set the value of ***Note NoteContent***  |
 ----
 
-[source](../../src/com/zoho/crm/api/notes/Note.java)
+[source](../../src/main/java/com/zoho/crm/api/notes/Note.java)
 
 ## NotesOperations
 
-Contains methods for all possible [Notes operations](../../src/com/zoho/crm/api/notes/NotesOperations.java).
+Contains methods for all possible [Notes operations](../../src/main/java/com/zoho/crm/api/notes/NotesOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/notes/ResponseHandler.java)&gt;*** | getNotes(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the list of notes of a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/notes/ActionHandler.java)&gt;*** | createNotes(***[BodyWrapper](#bodywrapper)*** request) | To add new notes to a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/notes/ActionHandler.java)&gt;*** | updateNotes(***[BodyWrapper](#bodywrapper)*** request) | To update the details of the notes of a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/notes/ActionHandler.java)&gt;*** | deleteNotes(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete the notes of a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/notes/ResponseHandler.java)&gt;*** | getNote(***Long*** id, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance)| To get the details of a specific note. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/notes/ActionHandler.java)&gt;*** | updateNote(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of an existing note. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/notes/ActionHandler.java)&gt;*** | deleteNote(***Long*** id) | To delete a specific note. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/notes/ResponseHandler.java)&gt;*** | getNotes(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the list of notes of a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/notes/ActionHandler.java)&gt;*** | createNotes(***[BodyWrapper](#bodywrapper)*** request) | To add new notes to a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/notes/ActionHandler.java)&gt;*** | updateNotes(***[BodyWrapper](#bodywrapper)*** request) | To update the details of the notes of a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/notes/ActionHandler.java)&gt;*** | deleteNotes(***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete the notes of a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/notes/ResponseHandler.java)&gt;*** | getNote(***Long*** id, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance)| To get the details of a specific note. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/notes/ActionHandler.java)&gt;*** | updateNote(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of an existing note. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/notes/ActionHandler.java)&gt;*** | deleteNote(***Long*** id) | To delete a specific note. |
 ----
 
 ### Inner Static Classes
@@ -158,11 +158,11 @@ Contains methods for all possible [Notes operations](../../src/com/zoho/crm/api/
 | [GetNoteHeader](#getnoteheader) |
 ----
 
-[source](../../src/com/zoho/crm/api/notes/NotesOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/notes/NotesOperations.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/notes/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/notes/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -174,11 +174,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***                      | setInfo(***[Info](#info)*** info)   | The method to set the ***Note*** response information.       |
 ----
 
-[source](../../src/com/zoho/crm/api/notes/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/notes/ResponseWrapper.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/notes/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/notes/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -194,11 +194,11 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***                      | setStatus(***[Choice](../util/Choice.md#choice&lt;t>)&lt;String&gt;*** status)        | The method to set the value of ***status*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/notes/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/notes/SuccessResponse.java)
 
 ## GetNotesParam
 
-Contains all possible parameters for the [Get Notes operation](../../src/com/zoho/crm/api/notes/NotesOperations.java).
+Contains all possible parameters for the [Get Notes operation](../../src/main/java/com/zoho/crm/api/notes/NotesOperations.java).
 
 ### Fields
 
@@ -211,7 +211,7 @@ Contains all possible parameters for the [Get Notes operation](../../src/com/zoh
 
 ## GetNotesHeader
 
-Contains all possible headers for [Get Notes operation](../../src/com/zoho/crm/api/notes/NotesOperations.java).
+Contains all possible headers for [Get Notes operation](../../src/main/java/com/zoho/crm/api/notes/NotesOperations.java).
 
 ### Fields
 
@@ -222,7 +222,7 @@ Contains all possible headers for [Get Notes operation](../../src/com/zoho/crm/a
 
 ## DeleteNotesParam
 
-Contains all possible parameters for the [Delete Notes operation](../../src/com/zoho/crm/api/notes/NotesOperations.java).
+Contains all possible parameters for the [Delete Notes operation](../../src/main/java/com/zoho/crm/api/notes/NotesOperations.java).
 
 ### Fields
 
@@ -233,7 +233,7 @@ Contains all possible parameters for the [Delete Notes operation](../../src/com/
 
 ## GetNoteParam
 
-Contains all possible parameters for the [Get Note operation](../../src/com/zoho/crm/api/notes/NotesOperations.java).
+Contains all possible parameters for the [Get Note operation](../../src/main/java/com/zoho/crm/api/notes/NotesOperations.java).
 
 ### Fields
 
@@ -244,7 +244,7 @@ Contains all possible parameters for the [Get Note operation](../../src/com/zoho
 
 ## GetNoteHeader
 
-Contains all possible headers for [Get Note operation](../../src/com/zoho/crm/api/notes/NotesOperations.java).
+Contains all possible headers for [Get Note operation](../../src/main/java/com/zoho/crm/api/notes/NotesOperations.java).
 
 ### Fields
 

@@ -8,8 +8,8 @@ This class handles the file stream and name.
 
 | Constructor                                                       | Description                                                             |
 | :---------------------------------------------------------------- | :---------------------------------------------------------------------- |
-| [StreamWrapper](../../src/com/zoho/crm/api/util/StreamWrapper.java)(***String*** name, ***InputStream*** stream) | Creates a ***StreamWrapper class*** instance with the specified parameters. |
-| [StreamWrapper](../../src/com/zoho/crm/api/util/StreamWrapper.java)(***String*** filePath) | Creates a ***StreamWrapper class*** instance with the specified file path. |
+| [StreamWrapper](../../src/main/java/com/zoho/crm/api/util/StreamWrapper.java)(***String*** name, ***InputStream*** stream) | Creates a ***StreamWrapper class*** instance with the specified parameters. |
+| [StreamWrapper](../../src/main/java/com/zoho/crm/api/util/StreamWrapper.java)(***String*** filePath) | Creates a ***StreamWrapper class*** instance with the specified file path. |
 ----
 
 ## Methods
@@ -20,4 +20,4 @@ This class handles the file stream and name.
 | ***InputStream*** | getStream() | The getter method to get the file input stream. |
 ----
 
-[source](../../src/com/zoho/crm/api/util/StreamWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/util/StreamWrapper.java)

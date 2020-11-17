@@ -22,20 +22,20 @@ The Zoho CRM [Modules API](https://www.zoho.com/crm/developer/docs/api/modules-a
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/modules/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/modules/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
 
 ### Methods
 
 | Return Type                 | Method                                  | Description                                                      |
 | :-------------------------------  | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/modules/ActionResponse.java)&gt;*** | getModules()                               | The method to get the list of obtained ***ActionResponse*** instances  |
-| ***void***                       | setModules(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/modules/ActionResponse.java)&gt;*** modules)| The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/modules/ActionResponse.java)&gt;*** | getModules()                               | The method to get the list of obtained ***ActionResponse*** instances  |
+| ***void***                       | setModules(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/modules/ActionResponse.java)&gt;*** modules)| The method to set the list of obtained ***ActionResponse*** instances. |
 ----
-[source](../../src/com/zoho/crm/api/modules/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/modules/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/modules/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/modules/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -51,7 +51,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/modules/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/modules/APIException.java)
 
 ## Argument
 
@@ -67,7 +67,7 @@ Structure representing the properties of the Module's arguments.
 | ***void***    | setValue(***String*** value) | The method to set the value of ***Argument Value***|
 ----
 
-[source](../../src/com/zoho/crm/api/modules/Argument.java)
+[source](../../src/main/java/com/zoho/crm/api/modules/Argument.java)
 
 ## BodyWrapper
 
@@ -81,11 +81,11 @@ A structure that contains all possible keys of a single request.
 | ***void*** | setModules(***List&lt;[Module](#module)&gt;*** modules)| The method to set the list of obtained ***Module*** instances  |
 ----
 
-[source](../../src/com/zoho/crm/api/modules/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/modules/BodyWrapper.java)
 
 ## Module
 
-Structure of Zoho CRM [Module](../../src/com/zoho/crm/api/modules/Module.java).
+Structure of Zoho CRM [Module](../../src/main/java/com/zoho/crm/api/modules/Module.java).
 
 ### Methods
 
@@ -181,20 +181,20 @@ Structure of Zoho CRM [Module](../../src/com/zoho/crm/api/modules/Module.java).
 | ***void***    | setTerritory(***[Territory](#territory)*** territory) | The method to set the value of ***Module Territory*** |
 ----
 
-[source](../../src/com/zoho/crm/api/modules/Module.java)
+[source](../../src/main/java/com/zoho/crm/api/modules/Module.java)
 
 ## ModulesOperations
 
-Contains methods for all possible [Modules operations](../../src/com/zoho/crm/api/modules/ModulesOperations.java).
+Contains methods for all possible [Modules operations](../../src/main/java/com/zoho/crm/api/modules/ModulesOperations.java).
 
 ### Methods
 
 | Return Type                         | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/modules/ResponseHandler.java)&gt;*** | getModules(***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the details of all the modules. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/modules/ResponseHandler.java)&gt;*** | getModule(***String*** apiName) | To get the details (metadata) of a specific module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/modules/ActionHandler.java)&gt;*** | updateModuleByAPIName(***String*** apiName, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of a module by its module API name. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/modules/ActionHandler.java)&gt;*** | updateModuleById(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of a module by its ID. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/modules/ResponseHandler.java)&gt;*** | getModules(***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get the details of all the modules. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/modules/ResponseHandler.java)&gt;*** | getModule(***String*** apiName) | To get the details (metadata) of a specific module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/modules/ActionHandler.java)&gt;*** | updateModuleByAPIName(***String*** apiName, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of a module by its module API name. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/modules/ActionHandler.java)&gt;*** | updateModuleById(***Long*** id, ***[BodyWrapper](#bodywrapper)*** request) | To update the details of a module by its ID. |
 ----
 
 ### Inner Static Classes
@@ -204,7 +204,7 @@ Contains methods for all possible [Modules operations](../../src/com/zoho/crm/ap
 | [GetModulesHeader](#getmodulesheader)   |
 ----
 
-[source](../../src/com/zoho/crm/api/modules/ModulesOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/modules/ModulesOperations.java)
 
 ## RelatedListProperties
 
@@ -222,11 +222,11 @@ Structure representing the properties, when the current module is a related list
 | ***void***                | setSortOrder(***String*** sortOrder) | The method to set the value of ***RelatedListProperties SortOrder*** |
 ----
 
-[source](../../src/com/zoho/crm/api/modules/RelatedListProperties.java)
+[source](../../src/main/java/com/zoho/crm/api/modules/RelatedListProperties.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, and instance of [ResponseWrapper](../../src/com/zoho/crm/api/modules/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, and instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/modules/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -236,11 +236,11 @@ After a successful **API** request, and instance of [ResponseWrapper](../../src/
 | ***void***   | setModules(***List&lt;[Module](#module)&gt;*** modules) | The method to set the list of obtained ***Modules*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/modules/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/modules/ResponseWrapper.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/modules/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/modules/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -256,7 +256,7 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/modules/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/modules/SuccessResponse.java)
 
 ## Territory
 
@@ -274,11 +274,11 @@ Structure representing the properties of the territory, to which the module is a
 | ***void***         | setSubordinates(***Boolean*** subordinates)| The method to set the value of ***Territory Subordinates***|
 ----
 
-[source](../../src/com/zoho/crm/api/modules/Territory.java)
+[source](../../src/main/java/com/zoho/crm/api/modules/Territory.java)
 
 ## GetModulesHeader
 
-Contains all possible headers for [Get Modules operation](../../src/com/zoho/crm/api/modules/ModulesOperations.java).
+Contains all possible headers for [Get Modules operation](../../src/main/java/com/zoho/crm/api/modules/ModulesOperations.java).
 
 ### Fields
 

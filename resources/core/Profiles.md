@@ -19,7 +19,7 @@ The Zoho CRM [Profiles API](https://www.zoho.com/crm/developer/docs/api/get-prof
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/profiles/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/profiles/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -35,7 +35,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/profiles/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/profiles/APIException.java)
 
 ## Category
 
@@ -53,7 +53,7 @@ Structure representing the category properties of each Section.
 | ***void***               | setName(***String*** name)                 | The method to set the value of ***Category Name***         |
 ----
 
-[source](../../src/com/zoho/crm/api/profiles/Category.java)
+[source](../../src/main/java/com/zoho/crm/api/profiles/Category.java)
 
 ## PermissionDetail
 
@@ -75,11 +75,11 @@ Structure representing the Permission properties of the Profile
 | ***void***               | setEnabled(***Boolean*** enabled)          | The method to set the value of ***PermissionDetail Enabled*** |
 ----
 
-[source](../../src/com/zoho/crm/api/profiles/PermissionDetail.java)
+[source](../../src/main/java/com/zoho/crm/api/profiles/PermissionDetail.java)
 
 ## Profile
 
-Structure of Zoho CRM [Profile](../../src/com/zoho/crm/api/profiles/Profile.java).
+Structure of Zoho CRM [Profile](../../src/main/java/com/zoho/crm/api/profiles/Profile.java).
 
 ### Methods
 
@@ -113,32 +113,32 @@ Structure of Zoho CRM [Profile](../../src/com/zoho/crm/api/profiles/Profile.java
 | ***void***           | setDelete(***Boolean*** delete)                  | The method to set the value of ***Profile Delete***               |
 ----
 
-[source](../../src/com/zoho/crm/api/profiles/Profile.java)
+[source](../../src/main/java/com/zoho/crm/api/profiles/Profile.java)
 
 ## ProfilesOperations
 
-Contains methods for all possible [Profiles operations](../../src/com/zoho/crm/api/profiles/ProfilesOperations.java).
+Contains methods for all possible [Profiles operations](../../src/main/java/com/zoho/crm/api/profiles/ProfilesOperations.java).
 
 ### Constructors
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [ProfilesOperations](../../src/com/zoho/crm/api/profiles/ProfilesOperations.java)(***OffsetDateTime*** ifModifiedSince)  |  Creates a ***ProfilesOperations*** class instance with the ***ifModifiedSince***.|
+| [ProfilesOperations](../../src/main/java/com/zoho/crm/api/profiles/ProfilesOperations.java)(***OffsetDateTime*** ifModifiedSince)  |  Creates a ***ProfilesOperations*** class instance with the ***ifModifiedSince***.|
 ----
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/profiles/ResponseHandler.java)&gt;*** | getProfiles() | To get the list of profiles available for your organization. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/profiles/ResponseHandler.java)&gt;*** | getProfile(***Long*** id) | To get the details of a specific profile. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/profiles/ResponseHandler.java)&gt;*** | getProfiles() | To get the list of profiles available for your organization. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/profiles/ResponseHandler.java)&gt;*** | getProfile(***Long*** id) | To get the details of a specific profile. |
 ----
 
-[source](../../src/com/zoho/crm/api/profiles/ProfilesOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/profiles/ProfilesOperations.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/profiles/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/profiles/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -148,7 +148,7 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***                   | setProfiles(***List&lt;[Profile](#profile)&gt;*** profiles) | The method to set the list of obtained ***Profile*** instances.|
 ----
 
-[source](../../src/com/zoho/crm/api/profiles/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/profiles/ResponseWrapper.java)
 
 ## Section
 
@@ -164,4 +164,4 @@ Structure that represents the Profile's section.
 | ***void*** | setCategories(***List&lt;[Category](#category)&gt;*** categories) | The method to set the value of ***Section Category*** |
 ----
 
-[source](../../src/com/zoho/crm/api/profiles/Section.java)
+[source](../../src/main/java/com/zoho/crm/api/profiles/Section.java)

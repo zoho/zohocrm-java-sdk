@@ -16,7 +16,7 @@ The Zoho CRM [Territories API](https://www.zoho.com/crm/developer/docs/api/terri
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/territories/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/territories/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -32,11 +32,11 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***  | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/territories/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/territories/APIException.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/territories/ResponseWrapper.java) is returned for ***GET*** operations.
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/territories/ResponseWrapper.java) is returned for ***GET*** operations.
 
 ### Methods
 
@@ -46,25 +46,25 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void*** | setTerritories(***List&lt;[Territory](#territory)&gt;*** territories) | The method to set the list of obtained ***Territory*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/territories/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/territories/ResponseWrapper.java)
 
 ## TerritoriesOperations
 
-Contains methods for all possible [Territories operations](../../src/com/zoho/crm/api/territories/TerritoriesOperations.java).
+Contains methods for all possible [Territories operations](../../src/main/java/com/zoho/crm/api/territories/TerritoriesOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                         |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/territories/ResponseHandler.java)&gt;*** | getTerritories() | To get the list of all territories. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/territories/ResponseHandler.java)&gt;*** | getTerritory(***Long*** id) | To get the details of a specific territory. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/territories/ResponseHandler.java)&gt;*** | getTerritories() | To get the list of all territories. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/territories/ResponseHandler.java)&gt;*** | getTerritory(***Long*** id) | To get the details of a specific territory. |
 ----
 
-[source](../../src/com/zoho/crm/api/territories/TerritoriesOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/territories/TerritoriesOperations.java)
 
 ## Territory
 
-Structure of Zoho CRM [Territory](../../src/com/zoho/crm/api/territories/Territory.java).
+Structure of Zoho CRM [Territory](../../src/main/java/com/zoho/crm/api/territories/Territory.java).
 
 ### Methods
 
@@ -92,4 +92,4 @@ Structure of Zoho CRM [Territory](../../src/com/zoho/crm/api/territories/Territo
 | ***void***   | setCreatedBy(***[User](Users.md#user)*** createdBy)             | The method to set the value of ***Territory CreatedBy***    |
 ----
 
-[source](../../src/com/zoho/crm/api/territories/Territory.java)
+[source](../../src/main/java/com/zoho/crm/api/territories/Territory.java)

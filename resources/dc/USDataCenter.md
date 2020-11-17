@@ -23,4 +23,4 @@ This class represents the properties of Zoho CRM in US Domain.
 | ***String***     | getFileUploadUrl() | The method to get the ***File Upload URL***. |
 ----
 
-[source](../../src/com/zoho/crm/api/dc/USDataCenter.java)
+[source](../../src/main/java/com/zoho/crm/api/dc/USDataCenter.java)

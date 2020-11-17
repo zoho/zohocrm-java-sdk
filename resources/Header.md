@@ -8,7 +8,7 @@ This class represents the HTTP header.
 
 | Constructor                                                   | Description                                                                     |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------ |
-| [Header](../src/com/zoho/crm/api/Header.java)(***String*** name, ***String*** className) | Creates a ***Header class*** instance with the specified header name and class name. |
+| [Header](../src/main/java/com/zoho/crm/api/Header.java)(***String*** name, ***String*** className) | Creates a ***Header class*** instance with the specified header name and class name. |
 ----
 
 ## Methods
@@ -19,4 +19,4 @@ This class represents the HTTP header.
 | ***String***     | getClassName() | The getter method to get ***Header Class Name***. |
 ----
 
-[source](../src/com/zoho/crm/api/Header.java)
+[source](../src/main/java/com/zoho/crm/api/Header.java)

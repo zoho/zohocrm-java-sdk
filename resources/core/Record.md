@@ -47,21 +47,21 @@ The Zoho CRM [Records API](https://www.zoho.com/crm/developer/docs/api/get-recor
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/record/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/record/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
 
 ### Methods
 
 | Return Type | Method                                  | Description                                                      |
 | :---------  | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/record/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances |
-| ***void***  | setData(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/record/ActionResponse.java)&gt;*** data) | The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/record/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances |
+| ***void***  | setData(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/record/ActionResponse.java)&gt;*** data) | The method to set the list of obtained ***ActionResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/record/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/record/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/record/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/record/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -77,7 +77,7 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 
 ----
-[source](../../src/com/zoho/crm/api/record/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/record/APIException.java)
 
 ## BodyWrapper
 
@@ -101,7 +101,7 @@ A structure that contains all possible keys of a single request.
 | ***void***                            | setLarId(***String*** larId) | The method to set the value of ***Request Body LarId*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/record/BodyWrapper.java)
 
 ## Comment
 
@@ -121,21 +121,21 @@ Structure representing the properties of Comment.
 | ***void***    | setId(***Long*** id)                               | The method to set the value of ***Comment Id***             |
 ----
 
-[source](../../src/com/zoho/crm/api/record/Comment.java)
+[source](../../src/main/java/com/zoho/crm/api/record/Comment.java)
 
 ## ConvertActionWrapper
 
-After a successful Convert Lead request, an instance of [ConvertActionWrapper](../../src/com/zoho/crm/api/record/ConvertActionWrapper.java) is returned.
+After a successful Convert Lead request, an instance of [ConvertActionWrapper](../../src/main/java/com/zoho/crm/api/record/ConvertActionWrapper.java) is returned.
 
 ### Methods
 
 | Return Type | Method                                  | Description                                                      |
 | :---------  | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ConvertActionResponse](../../src/com/zoho/crm/api/record/ConvertActionResponse.java)&gt;*** | getData() | The method to get the list of obtained **ConvertActionResponse** instances. |
-| ***void***  | setData(***List&lt;[ConvertActionResponse](../../src/com/zoho/crm/api/record/ConvertActionResponse.java)&gt;*** data) | The method to set the list of obtained **ConvertActionResponse** instances. |
+| ***List&lt;[ConvertActionResponse](../../src/main/java/com/zoho/crm/api/record/ConvertActionResponse.java)&gt;*** | getData() | The method to get the list of obtained **ConvertActionResponse** instances. |
+| ***void***  | setData(***List&lt;[ConvertActionResponse](../../src/main/java/com/zoho/crm/api/record/ConvertActionResponse.java)&gt;*** data) | The method to set the list of obtained **ConvertActionResponse** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/record/ConvertActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/record/ConvertActionWrapper.java)
 
 ## ConvertBodyWrapper
 
@@ -149,7 +149,7 @@ Structure that serves as the request for Lead Convert operation
 | ***void*** | setData(***List&lt;[LeadConverter](#leadconverter)&gt;*** data) | The method to set the list of obtained ***LeadConverter*** instances |
 ----
 
-[source](../../src/com/zoho/crm/api/record/ConvertBodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/record/ConvertBodyWrapper.java)
 
 ## Criteria
 
@@ -171,11 +171,11 @@ The structure that represents the condition to MassUpdate Records.
 | ***void***    | setGroup(***List&lt;[Criteria](#criteria)&gt;*** group) | The method to set the value of ***Criteria Group*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/Criteria.java)
+[source](../../src/main/java/com/zoho/crm/api/record/Criteria.java)
 
 ## DeletedRecord
 
-Structure representing the properties of [DeletedRecord](../../src/com/zoho/crm/api/record/DeletedRecord.java).
+Structure representing the properties of [DeletedRecord](../../src/main/java/com/zoho/crm/api/record/DeletedRecord.java).
 
 ### Methods
 
@@ -195,11 +195,11 @@ Structure representing the properties of [DeletedRecord](../../src/com/zoho/crm/
 | ***void***    | setDeletedTime(***OffsetDateTime*** deletedTime) | The method to set the value of ***DeletedRecord DeletedTime*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/DeletedRecord.java)
+[source](../../src/main/java/com/zoho/crm/api/record/DeletedRecord.java)
 
 ## DeletedRecordsWrapper
 
-After a successful **API** request, an instance of [DeletedRecordsWrapper](../../src/com/zoho/crm/api/record/DeletedRecordsWrapper.java) is returned for the GET Deleted Records operation.
+After a successful **API** request, an instance of [DeletedRecordsWrapper](../../src/main/java/com/zoho/crm/api/record/DeletedRecordsWrapper.java) is returned for the GET Deleted Records operation.
 
 ### Methods
 
@@ -211,7 +211,7 @@ After a successful **API** request, an instance of [DeletedRecordsWrapper](../..
 | ***void***              | setInfo(***Info*** info) | The method to set the ***Info*** instance |
 ----
 
-[source](../../src/com/zoho/crm/api/record/DeletedRecordsWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/record/DeletedRecordsWrapper.java)
 
 ## Field&lt;T>
 
@@ -249,7 +249,7 @@ Structure containing the default fields of all the default modules.
 | [Notes](#notes)                     |
 ----
 
-[source](../../src/com/zoho/crm/api/record/Field.java)
+[source](../../src/main/java/com/zoho/crm/api/record/Field.java)
 
 ## FileBodyWrapper
 
@@ -263,7 +263,7 @@ Serves as the request for uploading photo and response for downloading photo ope
 | ***void***            | setFile(***[StreamWrapper](../util/StreamWrapper.md#streamwrapper)*** file)| The method to set the ***StreamWrapper*** class instance |
 ----
 
-[source](../../src/com/zoho/crm/api/record/FileBodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/record/FileBodyWrapper.java)
 
 ## FileDetails
 
@@ -305,7 +305,7 @@ Structure representing the properties of the FileUpload field.
 | ***void***    | setDelete(***String*** delete)                     | The method to set the value of ***FileDetails Delete*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/FileDetails.java)
+[source](../../src/main/java/com/zoho/crm/api/record/FileDetails.java)
 
 ## Info
 
@@ -325,7 +325,7 @@ Structure representing additional information about the retrieved data.
 | ***void***    | setMoreRecords(***Boolean*** moreRecords) | The method to set the value of ***Info MoreRecords*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/Info.java)
+[source](../../src/main/java/com/zoho/crm/api/record/Info.java)
 
 ## InventoryLineItems
 
@@ -363,7 +363,7 @@ Structure representing the properties of LineItems used in Inventory modules.
 | ***void***    | setLineTax(***List&lt;[LineTax](#linetax)&gt;*** lineTax) | The method to set the value of ***InventoryLineItems LineTax*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/InventoryLineItems.java)
+[source](../../src/main/java/com/zoho/crm/api/record/InventoryLineItems.java)
 
 ## LeadConverter
 
@@ -389,7 +389,7 @@ Structure that contains all possible keys for the Convert Lead Operation.
 | ***void***    | setDeals(***[Record](#record-1)*** deals) | The method to set the value of ***LeadConverter Deals*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/LeadConverter.java)
+[source](../../src/main/java/com/zoho/crm/api/record/LeadConverter.java)
 
 ## LineItemProduct
 
@@ -407,7 +407,7 @@ Structure representing the properties of Product in Line Items of Inventory modu
 | ***void***    | setName(***String*** name)               | The method to set the value of ***LineItemProduct Name***        |
 ----
 
-[source](../../src/com/zoho/crm/api/record/LineItemProduct.java)
+[source](../../src/main/java/com/zoho/crm/api/record/LineItemProduct.java)
 
 ## LineTax
 
@@ -427,7 +427,7 @@ Structure representing the properties of Tax.
 | ***void***    | setValue(***Double*** value)           | The method to set the value of ***LineTax Value***      |
 ----
 
-[source](../../src/com/zoho/crm/api/record/LineTax.java)
+[source](../../src/main/java/com/zoho/crm/api/record/LineTax.java)
 
 ## MassUpdate
 
@@ -449,11 +449,11 @@ Structure representing the result of a Mass Update operation.
 | ***void***    | setTotalCount(***Integer*** totalCount)           | The method to set the value of ***MassUpdate TotalCount*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/MassUpdate.java)
+[source](../../src/main/java/com/zoho/crm/api/record/MassUpdate.java)
 
 ## MassUpdateActionWrapper
 
-After a successful **API** request, an instance of [MassUpdateActionWrapper](../../src/com/zoho/crm/api/record/MassUpdateActionWrapper.java) is returned for the GET MassUpdate records operation.
+After a successful **API** request, an instance of [MassUpdateActionWrapper](../../src/main/java/com/zoho/crm/api/record/MassUpdateActionWrapper.java) is returned for the GET MassUpdate records operation.
 
 ### Methods
 
@@ -463,7 +463,7 @@ After a successful **API** request, an instance of [MassUpdateActionWrapper](../
 | ***void*** | setData(***List&lt;[MassUpdateActionResponse](#massupdateactionresponse)&gt;*** data) | The method to set the list of obtained ***MassUpdateActionResponse*** instances |
 ----
 
-[source](../../src/com/zoho/crm/api/record/MassUpdateActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/record/MassUpdateActionWrapper.java)
 
 ## MassUpdateBodyWrapper
 
@@ -487,25 +487,25 @@ A structure that contains all possible keys of a single MassUpdate request.
 | ***void***                              | setCriteria(***List&lt;[Criteria](#criteria)&gt;*** criteria) | The method to set the value of ***Request Body LarId*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/BodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/record/BodyWrapper.java)
 
 ## MassUpdateResponseWrapper
 
-After a successful **API** request, an instance of [MassUpdateResponseWrapper](../../src/com/zoho/crm/api/record/MassUpdateResponseWrapper.java) is returned for GET MassUpdate Status operation.
+After a successful **API** request, an instance of [MassUpdateResponseWrapper](../../src/main/java/com/zoho/crm/api/record/MassUpdateResponseWrapper.java) is returned for GET MassUpdate Status operation.
 
 ### Methods
 
 | Return Type                      | Method                                          | Description                                                  |
 | :------------------------------- | :---------------------------------------------- | :----------------------------------------------------------- |
-| ***List&lt;[MassUpdateResponse](../../src/com/zoho/crm/api/record/MassUpdateResponse.java)&gt;***  | getData() | The method to get the list of obtained ***MassUpdateResponse*** instances  |
-| ***void*** | setData(***List&lt;[MassUpdateResponse](../../src/com/zoho/crm/api/record/MassUpdateResponse.java)&gt;*** data) | The method to set the list of obtained ***MassUpdateResponse*** instances. |
+| ***List&lt;[MassUpdateResponse](../../src/main/java/com/zoho/crm/api/record/MassUpdateResponse.java)&gt;***  | getData() | The method to get the list of obtained ***MassUpdateResponse*** instances  |
+| ***void*** | setData(***List&lt;[MassUpdateResponse](../../src/main/java/com/zoho/crm/api/record/MassUpdateResponse.java)&gt;*** data) | The method to set the list of obtained ***MassUpdateResponse*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/record/MassUpdateResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/record/MassUpdateResponse.java)
 
 ## MassUpdateSuccessResponse
 
-After a successful MassUpdate request, an instance of [MassUpdateSuccessResponse](../../src/com/zoho/crm/api/record/MassUpdateSuccessResponse.java) is returned.
+After a successful MassUpdate request, an instance of [MassUpdateSuccessResponse](../../src/main/java/com/zoho/crm/api/record/MassUpdateSuccessResponse.java) is returned.
 
 ### Methods
 
@@ -521,11 +521,11 @@ After a successful MassUpdate request, an instance of [MassUpdateSuccessResponse
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/record/MassUpdateSuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/record/MassUpdateSuccessResponse.java)
 
 ## Participants
 
-Structure representing the properties of a [Participant](../../src/com/zoho/crm/api/record/Participants.java).
+Structure representing the properties of a [Participant](../../src/main/java/com/zoho/crm/api/record/Participants.java).
 
 ### Methods
 
@@ -545,11 +545,11 @@ Structure representing the properties of a [Participant](../../src/com/zoho/crm/
 | ***void***    | setStatus(***String*** status)    | The method to set the value of ***Participants Status***  |
 ----
 
-[source](../../src/com/zoho/crm/api/record/Participants.java)
+[source](../../src/main/java/com/zoho/crm/api/record/Participants.java)
 
 ## PricingDetails
 
-Structure representing the properties of [PricingDetail](../../src/com/zoho/crm/api/record/PricingDetails.java).
+Structure representing the properties of [PricingDetail](../../src/main/java/com/zoho/crm/api/record/PricingDetails.java).
 
 ### Methods
 
@@ -563,11 +563,11 @@ Structure representing the properties of [PricingDetail](../../src/com/zoho/crm/
 | ***void***    | setFromRange(***Boolean*** fromRange) | The method to set the value of ***PricingDetails FromRange*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/PricingDetails.java)
+[source](../../src/main/java/com/zoho/crm/api/record/PricingDetails.java)
 
 ## Record
 
-Structure of Zoho CRM [Record](../../src/com/zoho/crm/api/record/Record.java).
+Structure of Zoho CRM [Record](../../src/main/java/com/zoho/crm/api/record/Record.java).
 
 ### Methods
 
@@ -591,32 +591,32 @@ Structure of Zoho CRM [Record](../../src/com/zoho/crm/api/record/Record.java).
 | ***HashMap&lt;String, Object&gt;*** | getKeyValues()               | The method to obtain the field values. |
 ----
 
-[source](../../src/com/zoho/crm/api/record/Record.java)
+[source](../../src/main/java/com/zoho/crm/api/record/Record.java)
 
 ## RecordOperations
 
-Contains methods for all possible [Record operations](../../src/com/zoho/crm/api/record/RecordOperations.java).
+Contains methods for all possible [Record operations](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/record/ResponseHandler.java)&gt;*** | getRecord(***Long*** id, ***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get a specific record from a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | updateRecord(***Long*** id, ***String*** moduleAPIName, ***[BodyWrapper](#bodywrapper)*** request) | To update a specific record in a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | deleteRecord(***Long*** id, ***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete a specific record from a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/record/ResponseHandler.java)&gt;*** | getRecords(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get all records from a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | createRecords(***String*** moduleAPIName, ***[BodyWrapper](#bodywrapper)*** request) | To insert records in a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | updateRecords(***String*** moduleAPIName, ***[BodyWrapper](#bodywrapper)*** request)| To update records in a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | deleteRecords(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance)| To delete records from a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | upsertRecords(***String*** moduleAPIName, ***[BodyWrapper](#bodywrapper)*** request)| To insert/update records in a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[DeletedRecordsHandler](../../src/com/zoho/crm/api/record/DeletedRecordsHandler.java)&gt;*** | getDeletedRecords( ***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance)| To get the deleted records from a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | searchRecords(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance)| To search for records in a module that match certain criteria, email, phone number, or a word. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ConvertActionHandler](../../src/com/zoho/crm/api/record/ConvertActionHandler.java)&gt;*** | convertLead(***Long*** id, ***[ConvertBodyWrapper](#convertbodywrapper)*** request)| To convert records(Leads to Contacts/Deals). |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[DownloadHandler](../../src/com/zoho/crm/api/record/DownloadHandler.java)&gt;*** | getPhoto(***Long*** id, ***String*** moduleAPIName) | To get the photo of a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[FileHandler](../../src/com/zoho/crm/api/record/FileHandler.java)&gt;*** | uploadPhoto(***Long*** id, ***String*** moduleAPIName, ***[FileBodyWrapper](#filebodywrapper)*** request)| To upload a photo to a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[FileHandler](../../src/com/zoho/crm/api/record/FileHandler.java)&gt;*** | deletePhoto(***Long*** id, ***String*** moduleAPIName)| To delete the photo of a record. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[MassUpdateActionHandler](../../src/com/zoho/crm/api/record/MassUpdateActionHandler.java)&gt;*** | massUpdateRecords(***String*** moduleAPIName, ***[MassUpdateBodyWrapper](#massupdatebodywrapper)*** request)| To update the same field for multiple records in a module. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[MassUpdateActionHandler](../../src/com/zoho/crm/api/record/MassUpdateActionHandler.java)&gt;*** | getMassUpdateStatus(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance)| To get the status of the mass update job scheduled previously. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/record/ResponseHandler.java)&gt;*** | getRecord(***Long*** id, ***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get a specific record from a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | updateRecord(***Long*** id, ***String*** moduleAPIName, ***[BodyWrapper](#bodywrapper)*** request) | To update a specific record in a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | deleteRecord(***Long*** id, ***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance) | To delete a specific record from a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/record/ResponseHandler.java)&gt;*** | getRecords(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance) | To get all records from a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | createRecords(***String*** moduleAPIName, ***[BodyWrapper](#bodywrapper)*** request) | To insert records in a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | updateRecords(***String*** moduleAPIName, ***[BodyWrapper](#bodywrapper)*** request)| To update records in a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | deleteRecords(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance)| To delete records from a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | upsertRecords(***String*** moduleAPIName, ***[BodyWrapper](#bodywrapper)*** request)| To insert/update records in a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[DeletedRecordsHandler](../../src/main/java/com/zoho/crm/api/record/DeletedRecordsHandler.java)&gt;*** | getDeletedRecords( ***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance, ***[HeaderMap](../HeaderMap.md#headermap)*** headerInstance)| To get the deleted records from a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/record/ActionHandler.java)&gt;*** | searchRecords(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance)| To search for records in a module that match certain criteria, email, phone number, or a word. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ConvertActionHandler](../../src/main/java/com/zoho/crm/api/record/ConvertActionHandler.java)&gt;*** | convertLead(***Long*** id, ***[ConvertBodyWrapper](#convertbodywrapper)*** request)| To convert records(Leads to Contacts/Deals). |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[DownloadHandler](../../src/main/java/com/zoho/crm/api/record/DownloadHandler.java)&gt;*** | getPhoto(***Long*** id, ***String*** moduleAPIName) | To get the photo of a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[FileHandler](../../src/main/java/com/zoho/crm/api/record/FileHandler.java)&gt;*** | uploadPhoto(***Long*** id, ***String*** moduleAPIName, ***[FileBodyWrapper](#filebodywrapper)*** request)| To upload a photo to a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[FileHandler](../../src/main/java/com/zoho/crm/api/record/FileHandler.java)&gt;*** | deletePhoto(***Long*** id, ***String*** moduleAPIName)| To delete the photo of a record. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[MassUpdateActionHandler](../../src/main/java/com/zoho/crm/api/record/MassUpdateActionHandler.java)&gt;*** | massUpdateRecords(***String*** moduleAPIName, ***[MassUpdateBodyWrapper](#massupdatebodywrapper)*** request)| To update the same field for multiple records in a module. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[MassUpdateActionHandler](../../src/main/java/com/zoho/crm/api/record/MassUpdateActionHandler.java)&gt;*** | getMassUpdateStatus(***String*** moduleAPIName, ***[ParameterMap](../ParameterMap.md#parametermap)*** paramInstance)| To get the status of the mass update job scheduled previously. |
 ----
 
 ### Inner Static Classes
@@ -635,11 +635,11 @@ Contains methods for all possible [Record operations](../../src/com/zoho/crm/api
 | [GetMassUpdateStatusParam](#getmassupdatestatusparam) |
 ----
 
-[source](../../src/com/zoho/crm/api/record/RecordOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java)
 
 ## RecurringActivity
 
-Structure representing the properties of a [RecurringActivity](../../src/com/zoho/crm/api/record/RecurringActivity.java).
+Structure representing the properties of a [RecurringActivity](../../src/main/java/com/zoho/crm/api/record/RecurringActivity.java).
 
 ### Methods
 
@@ -649,7 +649,7 @@ Structure representing the properties of a [RecurringActivity](../../src/com/zoh
 | ***void***    | setRrule(***String*** rrule)  | The method to set the value of ***RecurringActivity Rrule*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/RecurringActivity.java)
+[source](../../src/main/java/com/zoho/crm/api/record/RecurringActivity.java)
 
 ## RemindAt
 
@@ -663,7 +663,7 @@ Structure representing the properties of the reminder set by the user.
 | ***void***    | setAlarm(***String*** alarm)  | The method to set the value of ***RemindAt Alarm*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/RemindAt.java)
+[source](../../src/main/java/com/zoho/crm/api/record/RemindAt.java)
 
 ## Reminder
 
@@ -679,11 +679,11 @@ Structure representing the properties of the reminder set by the user for the Pa
 | ***void***    | setUnit(***String*** unit)     | The method to set the value of ***Reminder Unit***   |
 ----
 
-[source](../../src/com/zoho/crm/api/record/Reminder.java)
+[source](../../src/main/java/com/zoho/crm/api/record/Reminder.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/record/ResponseWrapper.java) is returned for GET operations.
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/record/ResponseWrapper.java) is returned for GET operations.
 
 ### Methods
 
@@ -695,11 +695,11 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void***                       | setInfo(***[Info](#info)*** info)                   | The method to set the value of ***Info*** instance.            |
 ----
 
-[source](../../src/com/zoho/crm/api/record/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/record/ResponseWrapper.java)
 
 ## SuccessfulConvert
 
-After a successful Convert Lead operation, an instance of [SuccessfulConvert](../../src/com/zoho/crm/api/record/SuccessfulConvert.java) is returned.
+After a successful Convert Lead operation, an instance of [SuccessfulConvert](../../src/main/java/com/zoho/crm/api/record/SuccessfulConvert.java) is returned.
 
 ### Methods
 
@@ -713,11 +713,11 @@ After a successful Convert Lead operation, an instance of [SuccessfulConvert](..
 | ***void***    | setAccounts(***String*** accounts) | The method to set the value of ***SuccessfulConvert Accounts*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/SuccessfulConvert.java)
+[source](../../src/main/java/com/zoho/crm/api/record/SuccessfulConvert.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/record/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/record/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -737,7 +737,7 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void*** | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response |
 ----
 
-[source](../../src/com/zoho/crm/api/record/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/record/SuccessResponse.java)
 
 ## Territory
 
@@ -753,7 +753,7 @@ Structure representing the properties of the territory the user is associated wi
 | ***void***    | setIncludeChild(***Boolean*** includeChild) | The method to set the value of ***Territory IncludeChild*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/Territory.java)
+[source](../../src/main/java/com/zoho/crm/api/record/Territory.java)
 
 ## Consent
 
@@ -783,11 +783,11 @@ Structure representing the consent properties of the record, when  privacy setti
 | ***void*** | setDataProcessingBasis(***String*** dataProcessingBasis) | The method to set the value of ***Consent DataProcessingBasis*** |
 ----
 
-[source](../../src/com/zoho/crm/api/record/Consent.java)
+[source](../../src/main/java/com/zoho/crm/api/record/Consent.java)
 
 ## GetRecordParam
 
-Contains all possible parameters for the [Get Record operation](../../src/com/zoho/crm/api/record/RecordOperations.java).
+Contains all possible parameters for the [Get Record operation](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java).
 
 ### Fields
 
@@ -806,7 +806,7 @@ Contains all possible parameters for the [Get Record operation](../../src/com/zo
 
 ## GetRecordHeader
 
-Contains all possible headers for the [Get Record operation](../../src/com/zoho/crm/api/record/RecordOperations.java).
+Contains all possible headers for the [Get Record operation](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java).
 
 ### Fields
 
@@ -817,7 +817,7 @@ Contains all possible headers for the [Get Record operation](../../src/com/zoho/
 
 ## DeleteRecordParam
 
-Contains all possible parameters for the [Delete Record operation](../../src/com/zoho/crm/api/record/RecordOperations.java).
+Contains all possible parameters for the [Delete Record operation](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java).
 
 ### Fields
 
@@ -828,7 +828,7 @@ Contains all possible parameters for the [Delete Record operation](../../src/com
 
 ## GetRecordsParam
 
-Contains all possible parameters for the [Get Records operation](../../src/com/zoho/crm/api/record/RecordOperations.java).
+Contains all possible parameters for the [Get Records operation](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java).
 
 ### Fields
 
@@ -852,7 +852,7 @@ Contains all possible parameters for the [Get Records operation](../../src/com/z
 
 ## GetRecordsHeader
 
-Contains all possible headers for the [Get Records operation](../../src/com/zoho/crm/api/record/RecordOperations.java).
+Contains all possible headers for the [Get Records operation](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java).
 
 ### Fields
 
@@ -863,7 +863,7 @@ Contains all possible headers for the [Get Records operation](../../src/com/zoho
 
 ## DeleteRecordsParam
 
-Contains all possible parameters for the [Delete Records operation](../../src/com/zoho/crm/api/record/RecordOperations.java).
+Contains all possible parameters for the [Delete Records operation](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java).
 
 ### Fields
 
@@ -875,7 +875,7 @@ Contains all possible parameters for the [Delete Records operation](../../src/co
 
 ## GetDeletedRecordsParam
 
-Contains all possible parameters for the [Get Deleted Records operation](../../src/com/zoho/crm/api/record/RecordOperations.java).
+Contains all possible parameters for the [Get Deleted Records operation](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java).
 
 ### Fields
 
@@ -888,7 +888,7 @@ Contains all possible parameters for the [Get Deleted Records operation](../../s
 
 ## GetDeletedRecordsHeader
 
-Contains all possible headers for the [Get Deleted Records operation](../../src/com/zoho/crm/api/record/RecordOperations.java).
+Contains all possible headers for the [Get Deleted Records operation](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java).
 
 ### Fields
 
@@ -899,7 +899,7 @@ Contains all possible headers for the [Get Deleted Records operation](../../src/
 
 ## SearchRecordsParam
 
-Contains all possible parameters for the [Search Records operation](../../src/com/zoho/crm/api/record/RecordOperations.java).
+Contains all possible parameters for the [Search Records operation](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java).
 
 ### Fields
 
@@ -917,7 +917,7 @@ Contains all possible parameters for the [Search Records operation](../../src/co
 
 ## GetMassUpdateStatusParam
 
-Contains all possible parameters for the [Get Mass UpdateStatus operation](../../src/com/zoho/crm/api/record/RecordOperations.java).
+Contains all possible parameters for the [Get Mass UpdateStatus operation](../../src/main/java/com/zoho/crm/api/record/RecordOperations.java).
 
 ### Fields
 

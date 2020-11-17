@@ -8,9 +8,9 @@ This class represents the properties of proxy for the user.
 
 | Constructor                                                                     | Description                                                            |
 | :------------------------------------------------------------------------------ | :--------------------------------------------------------------------- |
-| [RequestProxy](../src/com/zoho/crm/api/RequestProxy.java)(***String*** host, ***Integer*** port) | Creates a RequestProxy class instance with the specified parameters. |
-| [RequestProxy](../src/com/zoho/crm/api/RequestProxy.java)(***String*** host, ***Integer*** port, ***String*** user, ***String*** password) | Creates a RequestProxy class instance with the specified parameters. |
-| [RequestProxy](../src/com/zoho/crm/api/RequestProxy.java)(***String*** host, ***Integer*** port, ***String*** user, ***String*** password, ***String*** userDomain) | Creates a RequestProxy class instance with the specified parameters. |
+| [RequestProxy](../src/main/java/com/zoho/crm/api/RequestProxy.java)(***String*** host, ***Integer*** port) | Creates a RequestProxy class instance with the specified parameters. |
+| [RequestProxy](../src/main/java/com/zoho/crm/api/RequestProxy.java)(***String*** host, ***Integer*** port, ***String*** user, ***String*** password) | Creates a RequestProxy class instance with the specified parameters. |
+| [RequestProxy](../src/main/java/com/zoho/crm/api/RequestProxy.java)(***String*** host, ***Integer*** port, ***String*** user, ***String*** password, ***String*** userDomain) | Creates a RequestProxy class instance with the specified parameters. |
 ----
 
 ### host
@@ -44,4 +44,4 @@ A String containing the domain of the proxy server
 | ***String***     | getPassword()   | The getter method to get the ***Proxy Password***. |
 ----
 
-[source](../src/com/zoho/crm/api/RequestProxy.java)
+[source](../src/main/java/com/zoho/crm/api/RequestProxy.java)

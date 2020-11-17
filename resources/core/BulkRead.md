@@ -24,23 +24,23 @@ The Zoho CRM [BulkRead API](https://www.zoho.com/crm/developer/docs/api/bulk-rea
 
 ## ActionWrapper
 
-After a successful **API** request, an instance of [ActionWrapper](../../src/com/zoho/crm/api/bulkread/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
+After a successful **API** request, an instance of [ActionWrapper](../../src/main/java/com/zoho/crm/api/bulkread/ActionWrapper.java) is returned for **POST**, **PUT** and **DELETE** operations
 
 ### Methods
 
 | Return Type                 | Method                                  | Description                                                      |
 | :-------------------------------  | :---------------------------------------| :--------------------------------------------------------------- |
-| ***List&lt;[ActionResponse](../../src/com/zoho/crm/api/bulkread/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances  |
-| ***void***                       | setData(***List&lt;[ActionResponse](../../src/com/zoho/crm/api/bulkread/ActionResponse.java)&gt;*** data)| The method to set the list of obtained ***ActionResponse*** instances. |
+| ***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/bulkread/ActionResponse.java)&gt;*** | getData() | The method to get the list of obtained ***ActionResponse*** instances  |
+| ***void***                       | setData(***List&lt;[ActionResponse](../../src/main/java/com/zoho/crm/api/bulkread/ActionResponse.java)&gt;*** data)| The method to set the list of obtained ***ActionResponse*** instances. |
 | ***Map&lt;String, Object&gt;*** | getInfo() | The method to get the value of ***ActionWrapper Info***  |
 | ***void*** | setInfo(***Map&lt;String, Object&gt;*** info)| The method to set the value of ***ActionWrapper Info*** |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/ActionWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/ActionWrapper.java)
 
 ## APIException
 
-Whenever the **API** returns an error response, an instance of [APIException](../../src/com/zoho/crm/api/bulkread/APIException.java) is returned for all operations.
+Whenever the **API** returns an error response, an instance of [APIException](../../src/main/java/com/zoho/crm/api/bulkread/APIException.java) is returned for all operations.
 
 ### Methods
 
@@ -56,22 +56,22 @@ Whenever the **API** returns an error response, an instance of [APIException](..
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/APIException.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/APIException.java)
 
 ## BulkReadOperations
 
-Contains methods for all possible [BulkRead operations](../../src/com/zoho/crm/api/bulkread/BulkReadOperations.java).
+Contains methods for all possible [BulkRead operations](../../src/main/java/com/zoho/crm/api/bulkread/BulkReadOperations.java).
 
 ### Methods
 
 | Return Type                               | Method                                          | Description                                               |
 | :---------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/bulkread/ResponseHandler.java)&gt;*** | getBulkReadJobDetails(***Long*** jobId) | To know the status of the bulk read job scheduled previously.  |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/com/zoho/crm/api/bulkread/ResponseHandler.java)&gt;***   | downloadResult(***Long*** jobId) | To download the result of the bulk read job. The response contains a zip file. Extract it to get the CSV or ICS file depending on the "file_type" you specified while creating the bulk read job. |
-| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/com/zoho/crm/api/bulkread/ActionHandler.java)&gt;***   | createBulkReadJob(***[RequestWrapper](#requestwrapper)*** request) | To schedule a bulk read job to export records that match the criteria. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/bulkread/ResponseHandler.java)&gt;*** | getBulkReadJobDetails(***Long*** jobId) | To know the status of the bulk read job scheduled previously.  |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ResponseHandler](../../src/main/java/com/zoho/crm/api/bulkread/ResponseHandler.java)&gt;***   | downloadResult(***Long*** jobId) | To download the result of the bulk read job. The response contains a zip file. Extract it to get the CSV or ICS file depending on the "file_type" you specified while creating the bulk read job. |
+| ***[APIResponse](../util/APIResponse.md#apiresponse&lt;t>)&lt;[ActionHandler](../../src/main/java/com/zoho/crm/api/bulkread/ActionHandler.java)&gt;***   | createBulkReadJob(***[RequestWrapper](#requestwrapper)*** request) | To schedule a bulk read job to export records that match the criteria. |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/BulkReadOperations.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/BulkReadOperations.java)
 
 ## CallBack
 
@@ -87,7 +87,7 @@ Structure containing the URL where the BulkRead Job details are posted upon comp
 | ***void*** | setMethod(***[Choice](../util/Choice.md#choice&lt;t>)&lt;String&gt;*** method) | The method to set the value of ***CallBack HTTP Method*** |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/CallBack.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/CallBack.java)
 
 ## Criteria
 
@@ -109,7 +109,7 @@ The structure represents the condition to filter records.
 | ***void*** | setComparator(***[Choice](../util/Choice.md#choice&lt;t>)&lt;String&gt;*** comparator) | The method to set the value of ***Criteria Comparator*** |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/Criteria.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/Criteria.java)
 
 ## FileBodyWrapper
 
@@ -123,11 +123,11 @@ Serves as the response for downloading the result of bulk read job.
 | ***void***           | setFile(***[StreamWrapper](../util/StreamWrapper.md#streamwrapper)*** file)| The method to set the ***StreamWrapper*** class instance|
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/FileBodyWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/FileBodyWrapper.java)
 
 ## JobDetail
 
-Structure of Zoho CRM [JobDetail](../../src/com/zoho/crm/api/bulkread/JobDetail.java).
+Structure of Zoho CRM [JobDetail](../../src/main/java/com/zoho/crm/api/bulkread/JobDetail.java).
 
 ### Methods
 
@@ -151,7 +151,7 @@ Structure of Zoho CRM [JobDetail](../../src/com/zoho/crm/api/bulkread/JobDetail.
 | ***void***           | setFileType(***String*** fileType)           | The method to set the value of ***JobDetail FileType***  |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/JobDetail.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/JobDetail.java)
 
 ## Query
 
@@ -173,7 +173,7 @@ The structure containing the query to retrieve the required records.
 | ***void*** | setCriteria(***[Criteria](#criteria)*** criteria) | The method to set the value of ***Query Criteria*** |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/Query.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/Query.java)
 
 ## RequestWrapper
 
@@ -191,11 +191,11 @@ A structure that contains all possible keys of a single request.
 | ***void*** | setFileType(***[Choice](../util/Choice.md#choice&lt;t>)&lt;String&gt;*** fileType) | The method to set the value of ***RequestWrapper FileType*** |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/RequestWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/RequestWrapper.java)
 
 ## ResponseWrapper
 
-After a successful **API** request, an instance of [ResponseWrapper](../../src/com/zoho/crm/api/bulkread/ResponseWrapper.java) is returned for GET operations
+After a successful **API** request, an instance of [ResponseWrapper](../../src/main/java/com/zoho/crm/api/bulkread/ResponseWrapper.java) is returned for GET operations
 
 ### Methods
 
@@ -205,7 +205,7 @@ After a successful **API** request, an instance of [ResponseWrapper](../../src/c
 | ***void*** | setData(***List&lt;[JobDetail](#jobdetail)&gt;*** data)| The method to set the list of obtained ***JobDetail*** instances. |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/ResponseWrapper.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/ResponseWrapper.java)
 
 ## Result
 
@@ -227,11 +227,11 @@ Structure represents the result of a BulkRead job.
 | ***void***    | setMoreRecords(***Boolean*** moreRecords) | The method to set the value of ***Result MoreRecords*** |
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/Result.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/Result.java)
 
 ## SuccessResponse
 
-After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/com/zoho/crm/api/bulkread/SuccessResponse.java) is returned.
+After a successful **POST**, **PUT** or **DELETE** operation, an instance of [SuccessResponse](../../src/main/java/com/zoho/crm/api/bulkread/SuccessResponse.java) is returned.
 
 ### Methods
 
@@ -247,4 +247,4 @@ After a successful **POST**, **PUT** or **DELETE** operation, an instance of [Su
 | ***void***                      | setDetails(***Map&lt;String, Object&gt;*** details) | The method to set the value of ***details*** key in  the **API** response|
 ----
 
-[source](../../src/com/zoho/crm/api/bulkread/SuccessResponse.java)
+[source](../../src/main/java/com/zoho/crm/api/bulkread/SuccessResponse.java)

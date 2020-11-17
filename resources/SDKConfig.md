@@ -24,7 +24,7 @@ The Builder class to build SDKConfig
 
 | Constructor                                          | Description                              |
 | :--------------------------------------------------- | :--------------------------------------- |
-| [Builder](../../src/com/zoho/crm/api/SDKConfig.java) |  Creates a ***Builder*** class instance. |
+| [Builder](../src/main/java/com/zoho/crm/api/SDKConfig.java) |  Creates a ***Builder*** class instance. |
 ----
 
 ## Methods
@@ -36,4 +36,4 @@ The Builder class to build SDKConfig
 | ***SDKConfig*** | build()                 | The method to build the ***SDKConfig*** instance                  |
 ----
 
-[source](../../src/com/zoho/crm/api/SDKConfig.java)
+[source](../src/main/java/com/zoho/crm/api/SDKConfig.java)
