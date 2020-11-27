@@ -145,6 +145,18 @@ public class Record implements Model
 		 this.addKeyValue(field.getAPIName(), value);
 
 	}
+	
+	/**
+	* The method to add field value for Lookup Fields
+     	* @param field An instance of Field<Record>
+     	* @param value Record
+     	*/
+	public void addFieldValue(Field<Record> field, Record value) {
+		Record record = new Record();
+		record.setId(value.getId());
+		this.addKeyValue(field.getAPIName(), record);
+
+	}
 
 	/**
 	 * The method to add key value
