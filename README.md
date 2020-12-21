@@ -10,6 +10,9 @@
 ](#using-the-java-sdk-for-zoho-crm-through-maven
 )
 * [Persistence](#token-persistence)
+  * [DataBase Persistence](#database-persistence)
+  * [File Persistence](#file-persistence)
+  * [Custom Persistence](#custom-persistence)
 * [Configuration](#configuration)
 * [Initialization](#initializing-the-application)
 * [Class Hierarchy](#class-hierarchy)
@@ -21,7 +24,7 @@
 
 ## Overview
 
-The JAVA SDK offers a way to create client Java applications that can be integrated with Zoho CRM.
+Zoho CRM JAVA SDK offers a way to create client Java applications that can be integrated with Zoho CRM.
 
 ## Registering a Zoho Client
 
@@ -137,11 +140,11 @@ Token persistence refers to storing and utilizing the authentication tokens that
 
 ### Table of Contents
 
-- DataBase Persistence
+- [DataBase Persistence](#database-persistence)
 
-- File Persistence
+- [File Persistence](#file-persistence)
 
-- Custom Persistence
+- [Custom Persistence](#custom-persistence)
 
 ### Implementing OAuth Persistence
 
