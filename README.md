@@ -1,8 +1,27 @@
 # ZOHO CRM JAVA SDK
 
+## Table Of Contents
+
+* [Overview](#overview)
+* [Registering a Zoho Client](#registering-a-zoho-client)
+* [Environmental Setup](#environmental-setup)
+* [Including the SDK in your project](#including-the-sdk-in-your-project)
+* [Using the Java SDK for Zoho CRM through Maven
+](#using-the-java-sdk-for-zoho-crm-through-maven
+)
+* [Persistence](#token-persistence)
+* [Configuration](#configuration)
+* [Initialization](#initializing-the-application)
+* [Class Hierarchy](#class-hierarchy)
+* [Responses And Exceptions](#responses-and-exceptions)
+* [Threading](#threading-in-the-java-sdk)
+  * [Multithreading in a Multi-User App](#multithreading-in-a-multi-user-app)
+  * [Multi-threading in a Single User App](#multi-threading-in-a-single-user-app)
+* [Sample Code](#sdk-sample-code)
+
 ## Overview
 
-Zoho CRM JAVA SDK offers a way to create client Java applications that can be integrated with Zoho CRM.
+The JAVA SDK offers a way to create client Java applications that can be integrated with Zoho CRM.
 
 ## Registering a Zoho Client
 
@@ -608,7 +627,7 @@ Threads in a Java program help you achieve parallelism. By using multiple thread
 
 The **Java SDK** (from version 3.x.x) supports both single-threading and multi-threading irrespective of a single-user or a multi-user app.
 
-### Multithreading in a Multi-user App
+### Multithreading in a Multi-User App
 
 Multi-threading for multi-users is achieved using Initializer's static **switchUser()**.
 
