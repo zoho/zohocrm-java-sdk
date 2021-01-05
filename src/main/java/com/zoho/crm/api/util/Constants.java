@@ -66,7 +66,7 @@ public class Constants
 
 	public static final String ZOHO_SDK = "X-ZOHO-SDK";
 
-	public static final String SDK_VERSION = "3.0.0";
+	public static final String SDK_VERSION = "3.0.1";
 
 	public static final String TOKEN_STORE = "TOKEN_STORE";
 

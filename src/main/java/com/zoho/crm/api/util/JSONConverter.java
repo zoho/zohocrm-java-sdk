@@ -1075,7 +1075,12 @@ public class JSONConverter extends Converter
 
 		for (int nameIndex = index; nameIndex < name.size(); nameIndex++)
 		{
-			String firstLetterUppercase = (name.get(nameIndex).substring(0, 1).toUpperCase()).concat(name.get(nameIndex).substring(1));
+			String firstLetterUppercase = "";
+			
+			if(name.get(nameIndex).length() > 0)
+			{
+				firstLetterUppercase = (name.get(nameIndex).substring(0, 1).toUpperCase()).concat(name.get(nameIndex).substring(1));
+			}
 
 			sdkName = sdkName.concat(firstLetterUppercase);
 		}
