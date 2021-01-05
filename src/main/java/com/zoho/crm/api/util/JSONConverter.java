@@ -174,25 +174,7 @@ public class JSONConverter extends Converter
 
 					if (requestInstance instanceof FileDetails)
 					{
-						if (keyName.equalsIgnoreCase(Constants.ATTACHMENT_ID))
-						{
-							requestJSON.put(keyName.toLowerCase(), fieldValue);
-						}
-						else if (keyName.equalsIgnoreCase(Constants.FILE_ID))
-						{
-							requestJSON.put(keyName.toLowerCase(), fieldValue);
-						}
-						else
-						{
-							if (fieldValue == null)
-							{
-								requestJSON.put(keyName.toLowerCase(), JSONObject.NULL);
-							}
-							else
-							{
-								requestJSON.put(keyName.toLowerCase(), fieldValue);
-							}
-						}
+						requestJSON.put(keyName.toLowerCase(), (fieldValue != null ? fieldValue : JSONObject.NULL));
 					}
 					else
 					{
@@ -507,7 +489,7 @@ public class JSONConverter extends Converter
 			}
 		}
 
-		return null;
+		return JSONObject.NULL;
 	}
 
 	private JSONObject setJSONObject(Object fieldValue, JSONObject memberDetail) throws Exception
@@ -1093,7 +1075,12 @@ public class JSONConverter extends Converter
 
 		for (int nameIndex = index; nameIndex < name.size(); nameIndex++)
 		{
-			String firstLetterUppercase = (name.get(nameIndex).substring(0, 1).toUpperCase()).concat(name.get(nameIndex).substring(1));
+			String firstLetterUppercase = "";
+			
+			if(name.get(nameIndex).length() > 0)
+			{
+				firstLetterUppercase = (name.get(nameIndex).substring(0, 1).toUpperCase()).concat(name.get(nameIndex).substring(1));
+			}
 
 			sdkName = sdkName.concat(firstLetterUppercase);
 		}

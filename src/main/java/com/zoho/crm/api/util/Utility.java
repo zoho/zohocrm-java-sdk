@@ -974,13 +974,13 @@ public class Utility
 			return;
 		}
 		
-		String[] fieldAPINamesString = new String[] { "textarea", "text", "website", "email", "phone", "mediumtext", "multiselectlookup", "profileimage" };
+		String[] fieldAPINamesString = new String[] { "textarea", "text", "website", "email", "phone", "mediumtext", "multiselectlookup", "profileimage", "autonumber"};
 
 		String[] fieldAPINamesInteger = new String[] { "integer" };
 
 		String[] fieldAPINamesBoolean = new String[] { "boolean" };
 
-		String[] fieldAPINamesLong = new String[] { "long", "bigint", "autonumber" };
+		String[] fieldAPINamesLong = new String[] { "long", "bigint" };
 
 		String[] fieldAPINamesDouble = new String[] { "double", "percent", "lookup", "currency" };
 

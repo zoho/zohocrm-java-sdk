@@ -87,6 +87,11 @@ public class DataTypeConverter
 	
 	private static Object preConvertObjectData(Object obj) throws Exception
 	{
+		if (obj == null)
+		{
+			return null;
+		}
+		
 		if(obj instanceof JSONArray)
 		{
 			JSONArray jsonArray = (JSONArray)obj;
@@ -97,18 +102,7 @@ public class DataTypeConverter
 			{
 				for (Object response : jsonArray)
 				{
-					if(response instanceof JSONObject)
-					{
-						values.add(DataTypeConverter.preConvertObjectData(response));
-					}
-					else if(response.getClass().getName().equalsIgnoreCase("Object"))
-					{
-						values.add(DataTypeConverter.preConvertObjectData(response));
-					}
-					else
-					{
-						values.add(DataTypeConverter.preConvert(response, response.getClass().getName()));
-					}
+					values.add(DataTypeConverter.preConvertObjectData(response));
 				}
 			}
 			
@@ -118,7 +112,7 @@ public class DataTypeConverter
 		{
 			JSONObject jsonObject = (JSONObject)obj;
 			
-			Map<String, Object> mapInstance = new HashMap<>();
+			Map<Object, Object> mapInstance = new HashMap<>();
 			
 			if(jsonObject.length() > 0)
 			{	
@@ -126,18 +120,7 @@ public class DataTypeConverter
 				{
 					Object jsonValue = jsonObject.get(memberName);
 					
-					if(jsonValue instanceof JSONArray)
-					{
-						mapInstance.put(memberName, DataTypeConverter.preConvertObjectData(jsonValue));
-					}
-					else if(jsonValue.getClass().getName().equalsIgnoreCase("Object"))
-					{
-						mapInstance.put(memberName, DataTypeConverter.preConvertObjectData(jsonValue));
-					}
-					else
-					{
-						mapInstance.put(memberName, DataTypeConverter.preConvert(jsonValue, jsonValue.getClass().getName()));
-					}
+					mapInstance.put(memberName, DataTypeConverter.preConvertObjectData(jsonValue));
 				}
 			}
 			
@@ -156,27 +139,18 @@ public class DataTypeConverter
 	@SuppressWarnings("rawtypes")
 	private static Object postConvertObjectData(Object obj) throws Exception
 	{
+		if(obj == null)
+        {
+			return JSONObject.NULL;
+		}
+			
 		if(obj instanceof List)
 		{
 			JSONArray list = new JSONArray();
 			
-			if(obj != null)
+			for(Object value : (List)obj)
 			{
-				for(Object value : (List)obj)
-				{
-					if(value instanceof Map)
-					{
-						list.put(DataTypeConverter.postConvertObjectData(value));
-					}
-					else if(value.getClass().getName().equalsIgnoreCase("Object"))
-					{
-						list.put(DataTypeConverter.postConvertObjectData(value));
-					}
-					else
-					{
-						list.put(DataTypeConverter.postConvert(value, value.getClass().getName()));
-					}
-				}
+				list.put(DataTypeConverter.postConvertObjectData(value));
 			}
 			
 			return list;
@@ -193,18 +167,7 @@ public class DataTypeConverter
 				{
 					Object keyValue = requestObject.get(key);
 					
-					if(keyValue instanceof List)
-					{
-						value.put((String) key, DataTypeConverter.postConvertObjectData(keyValue));
-					}
-					else if(keyValue.getClass().getName().equalsIgnoreCase("Object"))
-					{
-						value.put((String) key, DataTypeConverter.postConvertObjectData(keyValue));
-					}
-					else
-					{
-						value.put((String) key, DataTypeConverter.postConvert(keyValue, keyValue.getClass().getName()));
-					}
+					value.put((String) key, DataTypeConverter.postConvertObjectData(keyValue));
 				}
 			}
 			
