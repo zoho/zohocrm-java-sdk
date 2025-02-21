@@ -1,17 +1,7 @@
 
 # Archival Notice:
 
-This SDK is archived. You can continue to use it, but no new features or support requests will be accepted. For the new version, refer to
-
-ZOHO CRM v2 API SDK :
-- [GitHub Repository](https://github.com/zoho/zohocrm-java-sdk-2.0)
-- [Help Doc](https://www.zoho.com/crm/developer/docs/server-side-sdks/v2/java.html)
-
-ZOHO CRM v2.1 API SDK :
-- [GitHub Repository](https://github.com/zoho/zohocrm-java-sdk-2.1)
-- [Help Doc](https://www.zoho.com/crm/developer/docs/api2.1/server-side-sdks/v2/java.html)
-
-# ZOHO CRM JAVA SDK
+$${\color{red}This \space version \space of \space SDK \space is \space archived}$$. You can continue to use it, but no new features or support requests will be accepted. We recommend using our latest [SDK version](https://www.zoho.com/crm/developer/docs/sdk/server-side/java-sdk.html)
 
 ## Table Of Contents
 
